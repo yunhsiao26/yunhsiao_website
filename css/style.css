@@ -79,12 +79,21 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: rgba(40,33,132,0);
+	color: rgba(38,38,38,0.8);
+	font-weight: 500;
 }
-a:hover, a:focus {
+a:hover, a:focus, a:active {
 	text-decoration: none;
-	color:rgba(40,33,132,0.9);
+	color:#71c9a5;
 }
+
+a:visited {
+	color: rgba(38,38,38,0.8);
+	font-weight: 500;
+}
+
+
+
 ul, ol {
 	list-style: none;
 }
