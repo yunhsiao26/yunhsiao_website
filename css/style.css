@@ -180,6 +180,7 @@ height: 23px;
 
 
 
+
 /* Home Section */
 
 #header{
@@ -572,7 +573,7 @@ img.contact-img:hover {
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/shard_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/shard_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -596,7 +597,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/cms_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/cms_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -621,7 +622,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/parking_angel_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/parking_angel_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -645,7 +646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/helper_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/helper_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -670,7 +671,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/byom_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/byom_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -694,7 +695,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/sushi_train_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/sushi_train_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -719,7 +720,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: auto;
 	text-align: center;
 	padding-bottom: 3%; 
-	background: url(../img/project_header/design_gallery_project_header.png) no-repeat center fixed;
+	background: url(../img/project_header/design_gallery_project_header.jpg) no-repeat center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
