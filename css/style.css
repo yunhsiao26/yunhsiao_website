@@ -1258,11 +1258,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .invision_prototype{
-	position: absolute;
-	left:50%;
 	width: 430px;
 	height: 913px;
-	transform: translate(-50%, -50%);
 }
 
 
@@ -1359,4 +1356,5 @@ header .intro-text {
 #about img {
 	margin-bottom: 20px;
 }
+
 }
