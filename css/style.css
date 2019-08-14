@@ -1258,8 +1258,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .invision_prototype{
-	width: 430px;
-	height: 913px;
+	width: 425px;
+	height: 902px;
+	margin:0;
+	padding:0;
 }
 
 
