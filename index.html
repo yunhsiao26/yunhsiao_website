@@ -27,6 +27,26 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -77,9 +97,9 @@
       <div class="container">
         <div class="row">
           <div class="intro-text">
-              <img src="img/about_me/homepage_photo.png" class="me-profile" alt="my profile">
-              <h1>Hi, I'm Yun</h1>
-              <p> – a UX Designer, a Critical Thinker and a Problem Solver.</p>
+              <img src="img/about_me/homepage_photo.png" class="me-profile" class="fade" alt="my profile">
+              <h1 class="fade">Hi, I'm Yun</h1>
+              <p class="fade"> – a UX Designer, a Critical Thinker and a Problem Solver.</p>
  <!-- <a href="#portfolio"><img class="button_scroll_down" src="img/scroll_down_blue.svg"></a> -->
         </div>
       </div>
@@ -104,22 +124,22 @@
               <li>
   
             <ol class="type">
-              <li><a href="#" data-filter="*" class="active">All</a></li>
-              <li><a href="#" data-filter=".web">Web</a></li>
-              <li><a href="#" data-filter=".app">App</a></li>
-              <li><a href="#" data-filter=".graphic">Graphic</a></li>
+              <li class="fade"><a href="#" data-filter="*" class="active">All</a></li>
+              <li class="fade"><a href="#" data-filter=".web">Web</a></li>
+              <li class="fade"><a href="#" data-filter=".app">App</a></li>
+              <li class="fade"><a href="#" data-filter=".graphic">Graphic</a></li>
             </ol>
   
         </li>
-        </ul>  
+        </ul>
 
-
-
-        <div class="clearfix"></div>
       </div>
+
+
+
       <div class="row">
         <div class="portfolio-items">
-          <div class="col-sm-6 col-md-4 col-lg-4 web">
+          <div class="col-sm-6 col-md-4 col-lg-4 web" class="fade">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/shard.html" title="Shard">
                 <div class="hover-text">
@@ -128,7 +148,7 @@
                 <img class="portfolio_photo" src="img/project_picture/shard_project_picture.jpg" class="img-responsive" alt="Shard"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 web">
+          <div class="col-sm-6 col-md-4 col-lg-4 web" class="fade">
               <div class="portfolio-item">
                 <div class="hover-bg"> <a href="http://yunhsiao.space/cms.html" title="Concept Management">
                   <div class="hover-text">
@@ -137,7 +157,7 @@
                   <img class="portfolio_photo" src="img/project_picture/cms_project_picture.jpg" class="img-responsive" alt="Concept Management"> </a> </div>
               </div>
             </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 app">
+            <div class="col-sm-6 col-md-4 col-lg-4 app" class="fade">
                 <div class="portfolio-item">
                   <div class="hover-bg"> <a href="http://yunhsiao.space/parking_angel.html" title="Parking Angel">
                     <div class="hover-text">
@@ -146,7 +166,7 @@
                     <img class="portfolio_photo" src="img/project_picture/parking_angel_project_picture.jpg" class="img-responsive" alt="Parking Angel"> </a> </div>
                 </div>
               </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 app">
+          <div class="col-sm-6 col-md-4 col-lg-4 app" class="fade">
               <div class="portfolio-item">
                 <div class="hover-bg"> <a href="http://yunhsiao.space/helper.html" title="Helper">
                   <div class="hover-text">
@@ -155,7 +175,7 @@
                   <img class="portfolio_photo" src="img/project_picture/helper_project_picture.jpg" class="img-responsive" alt="Helper"> </a> </div>
               </div>
             </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 app">
+          <div class="col-sm-6 col-md-4 col-lg-4 app" class="fade">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/byom.html" title="B.Y.O.M.">
                 <div class="hover-text">
@@ -164,7 +184,7 @@
                 <img class="portfolio_photo" src="img/project_picture/byom_project_picture.jpg" class="img-responsive" alt="B.Y.O.M."> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 app">
+          <div class="col-sm-6 col-md-4 col-lg-4 app" class="fade">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/sushi_train.html" title="Sushi Train">
                 <div class="hover-text">
@@ -173,7 +193,7 @@
                 <img class="portfolio_photo" src="img/project_picture/sushi_train_project_picture.jpg" class="img-responsive" alt="Sushi Train"> </a> </div>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4 col-lg-4 graphic">
+          <div class="col-sm-6 col-md-4 col-lg-4 graphic" class="fade">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/design_gallery.html" title="Design Gallery">
                 <div class="hover-text">
@@ -196,35 +216,33 @@
 <div id="about">
   <div class="container">
     <div class="col-md-8 col-md-offset-2 section-title text-center">
-      <h2>About Yun</h2>   
+      <h2 class="fade">About Yun</h2>   
     </div>
     <div class="row">
-      <div class="col-xs-12 col-md-6"> <img src="img/about_me/me_profile.png" class="about-image" alt="my profile"> </div>
+      <div class="col-xs-12 col-md-6"> <img src="img/about_me/me_profile.png" class="about-image" class="fade" alt="my profile"> </div>
       <div class="col-xs-12 col-md-6">
        <div class="item-with-padding">
         <div class="about-text">
 
-
-
-            <p>As a designer who believes in human-centered design, I aim to <b>bring design thinking into businesses to bridge gaps for people</b>. I am also...</p>
+            <p class="fade">As a designer who believes in human-centered design, I aim to <b>bring design thinking into businesses to bridge gaps for people</b>. I am also...</p>
 
             <table class="a">
                 <tr>
-                  <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                  <td class="column02"><p>Excited about co-working with multi-discipline teams and transforming complex concepts into intuitive and engaging experiences.</p></td>
+                  <td class="column01"><p class="fade"><i class="fas fa-caret-right"></i></p></td>
+                  <td class="column02"><p class="fade">Excited about co-working with multi-discipline teams and transforming complex concepts into intuitive and engaging experiences.</p></td>
                 </tr>
                 <tr>
-                  <td><p><i class="fas fa-caret-right"></i></p></td>
-                  <td><p>Having a great sense of humor and respecting inclusiveness very much.</p></td>
+                  <td><p class="fade"><i class="fas fa-caret-right"></i></p></td>
+                  <td><p class="fade">Having a great sense of humor and respecting inclusiveness very much.</p></td>
                 </tr>
   
                 <tr>
-                    <td><p><i class="fas fa-caret-right"></i></p></td>
-                    <td><p>Taking feedback as a gift for me and my team to improve and grow.</p></td>
+                    <td><p class="fade"><i class="fas fa-caret-right"></i></p></td>
+                    <td><p class="fade">Taking feedback as a gift for me and my team to improve and grow.</p></td>
                   </tr>
               </table>
 
-          <p>If you are interested to know more about me and my stories, please feel free to contact me at <a href="mailto:yunhsiao@umich.edu"><b>yunhsiao@umich.edu</b></a>. I look forward to talking with you!</p>
+          <p class="fade">If you are interested to know more about me and my stories, please feel free to contact me at <a href="mailto:yunhsiao@umich.edu"><b>yunhsiao@umich.edu</b></a>. I look forward to talking with you!</p>
   
         </div>
       </div>
@@ -241,31 +259,31 @@
     <div class="team_overlay">
   <div class="container">
     <div class="col-md-8 col-md-offset-2 section-title">
-      <h2>My Tool Kit</h2>
+      <h2 class="fade">My Tool Kit</h2>
     </div>
     <div id="row">
       <div class="col-md-4 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/skill_set/skillset_design.png" alt="UX research" class="team-img">
+        <div class="thumbnail"> <img src="img/skill_set/skillset_design.png" alt="UX research" class="team-img" class="fade">
           <div class="caption">
-            <h4>Design</h4>
-            <p>I have great passion for human-centered design, and cultivate myself as a full-stack designer specializing in interaction design, information architecture design, information visualization design and graphic/visual design.
+            <h4 class="fade">Design</h4>
+            <p class="fade">I have great passion for human-centered design, and cultivate myself as a full-stack designer specializing in interaction design, information architecture design, information visualization design and graphic/visual design.
               </p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 team">
-        <div class="thumbnail"> <img src="img/skill_set/skillset_research.png" alt="UX design" class="team-img">
+        <div class="thumbnail"> <img src="img/skill_set/skillset_research.png" alt="UX design" class="team-img" class="fade">
           <div class="caption">
-            <h4>Research</h4>
-            <p>I conduct both qualitative and quantitative research in user studies, market research, and design evaluation to involve stakeholder needs and support engaging user experience and implicable design solutions.</p>
+            <h4 class="fade">Research</h4>
+            <p class="fade">I conduct both qualitative and quantitative research in user studies, market research, and design evaluation to involve stakeholder needs and support engaging user experience and implicable design solutions.</p>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 team">
         <div class="thumbnail"> <img src="img/skill_set/skillset_tools.png" alt="Tools" class="team-img">
           <div class="caption">
-            <h4>Values</h4>
-            <p>
+            <h4 class="fade">Values</h4>
+            <p class="fade">
             With training in both human-computer interaction and library information science, I respect these values and try to adopt them in my design: usability, accessibility, scalability, sustainability, feasibility, and diversity.</p>
           </div>
         </div>
@@ -282,27 +300,27 @@
     <div class="contact_overlay">
   <div class="container">
     <div class="col-md-8 col-md-offset-2 section-title">
-      <h2>Contact Me</h2>
+      <h2 class="fade">Contact Me</h2>
     </div>
     <div id="row">
       <div class="col-md-4 col-sm-6 team">
-        <div class="thumbnail"> <a href="https://www.linkedin.com/in/yun-hsiao/" target="_blank"><img class="medialink" src="img/contact_me/linkedin_logo.svg" alt="LinkedIn"></a>  
+        <div class="thumbnail"> <a href="https://www.linkedin.com/in/yun-hsiao/" target="_blank"><img class="medialink" class="fade" src="img/contact_me/linkedin_logo.svg" alt="LinkedIn"></a>  
           <div class="caption">
-              <a href="https://www.linkedin.com/in/yun-hsiao/" target="_blank"><h6>in/yun-hsiao</h6></a>
+              <a href="https://www.linkedin.com/in/yun-hsiao/" target="_blank"><h6 class="fade">in/yun-hsiao</h6></a>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 team">
-        <div class="thumbnail"> <a href="mailto:yunhsiao@umich.edu"><img class="medialink" src="img/contact_me/email_logo.svg" alt="Email"></a>
+        <div class="thumbnail"> <a href="mailto:yunhsiao@umich.edu"><img class="medialink" class="fade" src="img/contact_me/email_logo.svg" alt="Email"></a>
           <div class="caption">
-              <a href="mailto:yunhsiao@umich.edu"><h6>yunhsiao@umich.edu</h6></a>
+              <a href="mailto:yunhsiao@umich.edu"><h6 class="fade">yunhsiao@umich.edu</h6></a>
           </div>
         </div>
       </div>
       <div class="col-md-4 col-sm-6 team">
-        <div class="thumbnail"> <a href="https://dribbble.com/yunhsiao" target="_blank"><img class="medialink" src="img/contact_me/dribbble_logo.svg" alt="Dribbble"></a>
+        <div class="thumbnail"> <a href="https://dribbble.com/yunhsiao" target="_blank"><img class="medialink" class="fade" src="img/contact_me/dribbble_logo.svg" alt="Dribbble"></a>
           <div class="caption">
-              <a href="https://dribbble.com/yunhsiao" target="_blank"><h6>@yunhsiao</h6></a>
+              <a href="https://dribbble.com/yunhsiao" target="_blank"><h6 class="fade">@yunhsiao</h6></a>
           </div>
         </div>
       </div>

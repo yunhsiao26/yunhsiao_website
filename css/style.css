@@ -198,7 +198,17 @@ height: 23px;
 
 
 
+
+
+
 /* Home Section */
+
+
+.fade{
+	opacity:0;
+}
+
+
 
 #header{
 	background-color: #fcfcfc;
