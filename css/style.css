@@ -313,7 +313,7 @@ ol.type li a.active {
 }
 ol.type li a:hover {
 	background: rgba(38,38,38);
-	color: rgba(242,242,242);
+	color: #ffffff;
 }
 .isotope-item {
 	z-index: 2
@@ -1367,6 +1367,16 @@ header .intro-text {
 }
 #about img {
 	margin-bottom: 20px;
+}
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+.collapse{
+	background-color: rgba(255,255,255,0.9);	
 }
 
 }
