@@ -212,8 +212,8 @@ height: 23px;
 
 #header{
 	background-color: #fcfcfc;
-	padding-top: 1.3%; 
-	padding-bottom: 1%; 
+	padding-top: 0%; 
+	padding-bottom: 1.1%; 
 }
 
 .intro {
@@ -236,8 +236,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', end
 
 
 .me-profile {
-	width: 330px;
-	height: 330px;
+	width: 380px;
+	height: 349.5px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
