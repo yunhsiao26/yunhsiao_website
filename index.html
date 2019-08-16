@@ -29,6 +29,8 @@
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
+
 <script>
 $(window).on("load",function() {
   $(window).scroll(function() {
@@ -39,14 +41,16 @@ $(window).on("load",function() {
       
       /* If the element is completely within bounds of the window, fade it in */
       if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+        if ($(this).css("opacity")==0) {$(this).fadeTo(400,1);}
       } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(500,1);}
+        if ($(this).css("opacity")==1) {$(this).fadeTo(400,1);}
       }
     });
   }).scroll(); //invoke scroll-handler on page-load
 });
 </script>
+
+
 
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
