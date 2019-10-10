@@ -351,6 +351,7 @@ ol.type li a:hover {
 .portfolio_photo{
 	width: 100%;
 	height: auto;
+	border-radius: 8px;
 }
 	
 .portfolio-items{
@@ -377,8 +378,8 @@ ol.type li a:hover {
 	overflow: hidden;
 	position: relative;
 	border-radius: 8px;
-
 }
+
 .hover-bg .hover-text {
 	position: absolute;
 	text-align: center;
@@ -619,8 +620,6 @@ img.contact-img:hover {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
-
-
 
 
 .project_intro_shard {
