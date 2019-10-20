@@ -67,18 +67,17 @@ p {
 	padding-top: 10px;
 	line-height: 34px;
 	text-align: left;
-	color: rgba(38,38,38,0.7);
+	color: rgba(38,38,38,0.75);
 }
 
-ul {
-	font-size: 16px;
-}
 
 p.intro {
 	font-size: 16px;
 	margin: 12px 0 0;
 	line-height: 24px;
 }
+
+
 a {
 	color: rgba(38,38,38,0.8);
 	font-weight: 500;
@@ -93,11 +92,22 @@ a:visited {
 	font-weight: 500;
 }
 
-
+ul {
+	font-size: 16px;
+}
 
 ul, ol {
 	list-style: none;
 }
+
+
+b{
+	color: rgba(38,38,38,0.9);
+	font-weight: 800;
+}
+
+
+
 .clearfix:after {
 	visibility: hidden;
 	display: block;
