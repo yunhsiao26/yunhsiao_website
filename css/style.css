@@ -82,6 +82,7 @@ a {
 	color: rgba(38,38,38,0.8);
 	font-weight: 500;
 }
+
 a:hover, a:focus {
 	text-decoration: none;
 	color:#058D9B;
@@ -158,8 +159,9 @@ height: 23px;
 	color: rgba(38,38,38,0.8);
 	font-weight: 450;
 	text-transform: uppercase;
-	letter-spacing: 1px;
+	letter-spacing: 1.3px;
 }
+
 #menu a.navbar-brand i.fa {
 	color: rgba(38,38,38,0.8);
 }
@@ -167,12 +169,13 @@ height: 23px;
 	text-transform: uppercase;
 	color: rgba(38,38,38,0.8);
 	font-size: 15px;
-	letter-spacing: 1.6px;
+	letter-spacing: 1.3px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
 	color:#079299;
 	font-weight: 550;
 }
+
 
 .navbar-header{
 	color: #262626;
@@ -189,7 +192,7 @@ height: 23px;
 
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color:  rgba(40,33,132,0.8); !important;
+	color:  rgba(38,38,38,0.8); !important;
 	background-color: transparent;
 	font-weight: 650;
 }
@@ -319,11 +322,11 @@ ol.type li a {
 }
 ol.type li a.active {
 	background: rgba(38,38,38);
-	color: rgba(242,242,242,0.9);
+	color: rgba(245,245,245,0.9);
 }
 ol.type li a:hover {
 	background: rgba(38,38,38);
-	color: #ffffff;
+	color: rgba(218,237,235);
 }
 .isotope-item {
 	z-index: 2
@@ -470,6 +473,21 @@ padding-right: 10%;
 }
 
 
+#about a {
+	color: rgba(38,38,38,0.8);
+	font-weight: 700;
+}
+
+#about a:hover, a:focus {
+	text-decoration: none;
+	color: rgba(7,146,153,0.9);
+}
+
+#about a:visited {
+	color: rgba(38,38,38,0.8);
+	font-weight: 700;
+}
+
 
 /* img.about-img { } */
 
@@ -485,7 +503,7 @@ padding-right: 10%;
 
 
 #about .fa-caret-right{
-color: rgba(7,146,153,0.8);
+    color: rgba(7,146,153,0.8);
 }
 
 
