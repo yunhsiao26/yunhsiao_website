@@ -84,7 +84,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color:#71c9a5;
+	color:#058D9B;
 }
 
 a:visited {
@@ -170,7 +170,7 @@ height: 23px;
 	letter-spacing: 1.6px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color:#71c9a5;
+	color:#079299;
 	font-weight: 550;
 }
 
@@ -221,7 +221,7 @@ height: 23px;
 
 
 #header{
-	background-color: #fdfdfd;
+	background-color: #fefefe;
 	padding-top: 0%; 
 	padding-bottom: 1.1%; 
 }
@@ -275,7 +275,7 @@ header .intro-text {
 /* Portfolio Section */
 #portfolio {
 	padding-top: 2.5%; 
-	background-color: #fcfcfc;
+	background-color: #fefefe;
 }
 
 
@@ -436,7 +436,7 @@ ol.type li a:hover {
 #portfolio i.fa {
 	font-size: 20px;
 	padding: 5px;
-	color: #92d6c1;
+	color: #079299;
 }
 
 
@@ -485,7 +485,7 @@ padding-right: 10%;
 
 
 #about .fa-caret-right{
-color: #71c9a5;
+color: rgba(7,146,153,0.8);
 }
 
 
@@ -1324,6 +1324,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+
+
 /* Footer Section*/
 #footer {
 	background: rgba(22, 21, 21, 0.9);
@@ -1374,7 +1376,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 #footer a:hover, a:focus{
 	text-decoration: none;
-	color: rgba(255,255,255,0.9);
+	color: #DAEDEB;
 	font-weight: 500;
 }
 
@@ -1393,6 +1395,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .footer_contact{
 	padding-top: 6%;
 }
+
+
+
 
 
 
