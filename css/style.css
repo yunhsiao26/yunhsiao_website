@@ -1268,6 +1268,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+.design_gallery_even_smaller_picture{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	padding-top: 8%;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 2%;
+}
+
+
+
+.design_gallery_mobile_picture{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	position: center;
+	padding-top: 8%;
+	padding-left: 37%;
+	padding-right: 37%;
+	padding-bottom: 2%;
+}
+
+
 
 
 
