@@ -25,7 +25,7 @@ h2 {
 	margin: 0;
 	color: rgba(38,38,38,0.8);
 	margin-bottom: 30px;
-	letter-spacing: 0.15px;
+	letter-spacing: 0.1px;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 	padding-bottom: 10px;
@@ -829,7 +829,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	margin: 0;
 	color: rgba(38,38,38,0.9);
 	font-size: 34px;
-	letter-spacing: 0.2px;
+	letter-spacing: 0.1px;
 	font-weight: 500;
 	font-family: 'Poppins', sans-serif;
 }
@@ -1290,9 +1290,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	padding-right: 37%;
 	padding-bottom: 2%;
 }
-
-
-
 
 
 
