@@ -36,7 +36,7 @@ h3 {
 	letter-spacing: 0.2px;
 	color: rgba(38,38,38,0.8);
 	font-weight: 550;
-	line-height: 150%;
+	padding-bottom: 0px;
 }
 
 
@@ -61,6 +61,8 @@ h6 {
 }
 
 
+
+
 p {
 	font-size: 18px;
 	font-weight: 450;
@@ -76,6 +78,9 @@ p.intro {
 	margin: 12px 0 0;
 	line-height: 24px;
 }
+
+
+
 
 
 a {
@@ -627,6 +632,58 @@ img.contact-img:hover {
 
 /*Project Header*/
 
+
+
+
+
+.project_intro_msa_edp {
+	display: table;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 3%; 
+	background: url(../img/project_header/msa_edp_project_header.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.project_intro_msa_edp .overlay {
+	padding: 100px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+
+
+
+.project_intro_msa_tf {
+	display: table;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 3%; 
+	background: url(../img/project_header/msa_topic_filter_project_header.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+.project_intro_msa_tf .overlay {
+	padding: 100px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+
+
+
 .project_intro_msa {
 	display: table;
 	width: 100%;
@@ -853,7 +910,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+.msa_new_color{
+	color: #07306D;
+}
 
+#msa_new_page .fa-caret-right{
+	color: #07306D;
+}
 
 
 .msa_color{
@@ -933,6 +996,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+.hover_extra_link {
+	font-weight: 600;
+}
+
 
 
 .item01 {
@@ -971,6 +1038,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 /*Project Body*/
+
+
 
 .project_body_overlay01 {
 	padding: 100px 0;
@@ -1091,8 +1160,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
-
-
 .sushi_train_project_overview_picture{
 	object-fit: contain;
 	width: 100%;
@@ -1102,6 +1169,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	padding-right: 18%;
 	padding-bottom: 3%;
 }
+
 
 
 
@@ -1405,6 +1473,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	line-height: 100%;
 	text-align: left;
 	letter-spacing: 0.6px;
+	line-height: 1.6;
 }
 
 #footer a {
