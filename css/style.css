@@ -1347,6 +1347,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+.tablet_design_refinement_picture_portrait{
+	object-fit: contain;
+	width: 100%;
+	height: auto;
+	padding-top: 8%;
+	padding-left: 30%;
+	padding-right: 30%;
+	padding-bottom: 2%;
+}
+
 
 
 .design_gallery_big_picture{
