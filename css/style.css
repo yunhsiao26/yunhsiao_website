@@ -82,6 +82,12 @@ p.intro {
 
 
 
+.paragraph_with_space_above{
+	margin-top: 60px;
+}
+
+
+
 
 a {
 	color: rgba(38,38,38,0.8);
