@@ -1440,6 +1440,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+
+
+.kosmos_issue_icon {
+	width: 40px;
+	height: 40px;
+	margin-top: 50%;
+}
+
+
+
+
+.msa_issue_icon {
+	width: 40px;
+	height: 40px;
+	margin-top: 50%;
+}
+
+
+
 .shard_issue_icon {
 	width: 40px;
 	height: 40px;
@@ -1480,6 +1499,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .paragraph_below_image{
 	padding-top: 12%;
+}
+
+
+.paragraph_above_issue_section{
+	padding-bottom: 10%;
 }
 
 
