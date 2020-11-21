@@ -204,7 +204,7 @@
 
 
 
- <!-- Current Issues & Design Requirements -->
+ <!-- Feature Goals -->
 
  <div id="project_body_section">
         <div class="project_body_overlay01">
@@ -212,16 +212,16 @@
               <div class="row">
                   <div class="col-sm-6"> 
                       <div class="item02" id="msa_new_page">
-                      <h3>Current Issues & Design Requirements</h3>
+                      <h3>Feature Goals</h3>
 
-                      <h6 class="msa_new_color">Support topic explore for researchers at different career stages.</h6>
+                      <h6 class="msa_new_color">Support topic exploration for researchers at different career stages.</h6>
 
                     <p>
-                       The topic filter is a feature for users to <b>filter their interested field of studies to see the trend analysis</b> (mainly in data visualization format) in Entity Type Analytic Pages (ETAPs). 
-                       (The picture beside is the previous version of Topic ETAP as an example.) Based on previous user studies, the target user groups of Microsoft Academic website were <b>researchers across various career 
-                       stages and fields</b>. They could be students who just joined the academic community without a clear idea about what to focus on, and were eager to explore and learn more. They could be established researchers 
-                       who were overwhelmed by their works and wanted to have a quick view of the development trend of topics they cared about. Therefore, this feature could <b>serve as not only a filter, but also a quick 
-                       view of different topics and their relationships for users to easier understand the academic field</b>.
+                       In the very beginning of the project, I tried to clarify the serving purposes of the topic browser feature. It is for users to <b>filter their interested field of studies to see the trend analysis</b> 
+                       (mainly in data visualization format) in Entity Type Analytic Pages (ETAPs). (The picture beside is the previous version of Topic ETAP as an example.) Based on previous user studies, the target user 
+                       groups of Microsoft Academic website were <b>researchers across various career stages and fields</b>. They could be students who just joined the academic community without a clear idea about what to 
+                       focus on, and were eager to explore and learn more. They could be established researchers who were overwhelmed by their works and wanted to have a quick view of the development trend of topics they 
+                       cared about. Therefore, this feature could <b>serve as not only a filter, but also a quick view of different topics and their relationships for users to easier understand the academic field</b>.
                     </p>    
 
                       </div>
@@ -230,42 +230,10 @@
 
 
                     <div class="col-sm-6"> 
-                        <div class="item02" id="msa_page">
+                        <div class="item02" id="msa_new_page">
                       
                               <img src="img/msa_topic_filter_picture/topic_etap_previous_version.png" class="picture_half" alt="Topic ETAP Previous Version">
       
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-sm-12"> 
-                        <div class="item04" id="msa_new_page">
-
-                    <p class="paragraph_below_image">
-                      Through a kickoff meeting, I had a better understanding of how this feature worked and the direction for improvement. I also noticed some readability issues by evaluating the website, so I proposed a plan 
-                      to fix them together with this project. Below are the key issues and action items:
-                    </p> 
-
-                    <table class="a">
-                        <tr>
-                          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                          <td class="column02"><p>Allowing only browsing without searching topics was insufficient, so we planned to <b>support a searching experience</b> for users to easier access their desired topics.</p></td>
-                        </tr>
-                        <tr>
-                          <td><p><i class="fas fa-caret-right"></i></p></td>
-                          <td><p>Unclear about topic relationships was a pain point, so we wanted to <b>present the topic hierarchy to show topic relationships</b> for users to easily understand in this feature.</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><i class="fas fa-caret-right"></i></p></td>
-                            <td><p>The smaller topics were hard to read and easy to be ignored in the tag cloud (the font size of text representing the number of publications), and when there were so many topics in one layer, it was overwhelming. We could <b>apply other visual treatments on topic "tags" to enhance readability and reduce information overload</b>.</p></td>
-                        </tr>
-                        <tr>
-                            <td><p><i class="fas fa-caret-right"></i></p></td>
-                            <td><p>Some functional colors were undefined and the color contrast of some color combinations were not enough, so <b>redefining colors for different action statuses (e.g., hover, selected, inactive, etc.) and data visualizations</b> was an urgent need.</p></td>
-                        </tr>
-                      </table>    
-    
                         </div>
                     </div>
     
@@ -276,6 +244,138 @@
             </div>
         </div>
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Current Issues & Design Requirements -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay02">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"> 
+                <div class="item02" id="msa_new_page">
+                <h3>Current Issues & Design Requirements</h3>
+
+                <h6 class="msa_new_color">Improve the accessibility of information and make the knowledge graph more understandable.</h6>
+
+
+
+                <p>
+                  Through a kickoff meeting, I had a better understanding of how this feature worked and the direction for improvement. I also noticed some readability issues by evaluating the website, so I proposed a plan 
+                  to fix them together with this project. Below are the key issues and action items:
+                </p> 
+  
+                <table class="a">
+                    <tr>
+                      <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                      <td class="column02"><p>Allowing only browsing and filtering topics shown on the current layer were insufficient, so we planned to <b>support a searching experience</b> for users to easier access their desired topics.</p></td>
+                    </tr>
+                    <tr>
+                      <td><p><i class="fas fa-caret-right"></i></p></td>
+                      <td><p>Unclear about topic relationships was a pain point, so we wanted to <b>present the topic hierarchy to show topic relationships</b> for users to easily understand in this feature.</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><i class="fas fa-caret-right"></i></p></td>
+                        <td><p>The smaller topics were hard to read and easy to be ignored in the tag cloud (the font size of text representing the number of publications), and when there were so many topics in one layer, it was overwhelming. We could <b>apply other visual treatments on topic "tags" to enhance readability and reduce information overload</b>.</p></td>
+                    </tr>
+                    <tr>
+                        <td><p><i class="fas fa-caret-right"></i></p></td>
+                        <td><p>Some functional colors were undefined and the color contrast of some color combinations were not enough, so <b>redefining colors for different action statuses (e.g., hover, selected, inactive, etc.) and data visualizations</b> was an urgent need.</p></td>
+                    </tr>
+                  </table>    
+
+
+
+                </div>
+             </div>
+
+
+
+              <div class="col-sm-6"> 
+                  <div class="item02" id="msa_new_page">
+                
+                        <img src="img/msa_topic_filter_picture/topic_filter_previous_version.png" class="picture_half" alt="Topic ETAP Previous Version">
+
+                  </div>
+              </div>
+
+    
+
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Data Structure -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12"> 
+                <div class="item04" id="msa_new_page">
+                <h3>Data Structure</h3>
+
+                <h6 class="msa_new_color">Understand the DAG (Directed Acyclic Graph) structure before starting the design work.</h6>
+
+              <p>
+                 Based on the above design requirements, I started to clarify questions regarding the topic hierarchy structure with my manager. I realized that it was <b>a complex DAG (Directed Acyclic Graph) 
+                 instead of a tree</b>. There were 700,000 topics in the knowledge graph, and they were organized into a six-layer hierarchy. For each layer, we showed at most 200 top topics according to the API. 
+              </p>
+                </div>                      
+            </div>
+
+
+
+            <img src="img/msa_topic_filter_picture/data_structure_comparison.png" class="smaller_picture_middle" alt="Data Structure Comparison">
+
+
+                 
+            <div class="col-sm-12"> 
+                  <div class="item04" id="msa_new_page">                       
+                 
+              <p class="paragraph_above_issue_section">
+                  At that time, there were two types of unaccessible topics, including orphan topics without an ancestor and descendant, and those topics not in the list of the top 200 in each layer. 
+                  For the first issue, the data team has been putting effort to fix it. As for the second one, we were hoping to solve it through a search feature in the new design.
+              </p>    
+    
+                  </div>
+            </div>
+
+  
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
 
 
 
@@ -296,31 +396,16 @@
 
                       <h6 class="msa_new_color">Break down the project into actionable tasks to ensure smooth progress and moving forward on the right track.</h6>
 
-                    <p>
-                       Based on the above design requirements, I started to clarify questions regarding the topic hierarchy structure with my manager. I realized that it was <b>a complex DAG (Directed Acyclic Graph) 
-                       instead of a tree</b>. Among the 700,000 topics in the knowledge graph, some were orphans without an ancestor and not belonging to the first layer either, which means they were unable to be seen 
-                       in this filter feature. 
+
+
+                    <p class="paragraph_above_issue_section">
+                        With the above in mind, I made several decisions as a project owner to <b>ensure a smooth execution process and intuitive user experience</b>:
                     </p>
                       </div>                      
                   </div>
 
 
-
-                  <img src="img/msa_topic_filter_picture/data_structure_comparison.png" class="smaller_picture_middle" alt="Data Structure Comparison">
-
-
-                       
-                  <div class="col-sm-12"> 
-                        <div class="item04" id="msa_new_page">                       
-                       
-                    <p class="paragraph_above_issue_section">
-                       However, the good news was that this issue was going to be fixed by the data team soon, so I did not need to consider this case in the design. Besides, we had <b>six layers in total, and 
-                       showed up to the top 200 topics in each layer</b> based on our API. With these in mind, I made several decisions as a project owner to <b>ensure a smooth execution process and intuitive 
-                       user experience</b>:
-                    </p>    
-          
-                        </div>
-                  </div>
+                </div>
 
 
 
