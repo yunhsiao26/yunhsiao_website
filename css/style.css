@@ -1488,6 +1488,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+
+
 .column05 {
 	width: 50pt;
 }
@@ -1499,6 +1501,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .paragraph_below_image{
 	padding-top: 12%;
+}
+
+
+.paragraph_in_even_columns{
+	padding-top: 7%;
 }
 
 

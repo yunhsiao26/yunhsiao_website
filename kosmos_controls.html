@@ -208,8 +208,8 @@
         <div class="project_body_overlay01">
           <div class="container">
               <div class="row">
-                  <div class="col-sm-6"> 
-                      <div class="item02" id="kosmos_page">
+                  <div class="col-sm-12"> 
+                      <div class="item04" id="kosmos_page">
                       <h3>Current Issues</h3>
 
                       <h6 class="kosmos_color">Empathize readability, unintuitive, and rough operation issues.</h6>
@@ -218,8 +218,25 @@
                        In KOSMOS, there were two main scan types – free flow, and protocol-driven flow. <b>The free flow was a more basic type focusing on the heart, lungs, and abdomen, in which B, M, and C modes 
                        were provided, with PW and CW new modes added on</b>. B mode was the most basic mode in which the amplitude of the returned echoes was used to create images. While in Doppler modes (PW & CW), the change or shift in frequency of the 
                        returned echoes were used to detect and quantify blood flow velocity, direction, and flow patterns. The above modes were what we mainly focused on in this project (and later applied the same new design to the protocol-driven flow). 
-                       Each mode had its own scan views (aka imaging views), generally with <b>control panel and imaging window</b> two parts (as shown in pictures beside).
+                       Each mode had its own scan views (aka imaging views), generally with <b>control panel and imaging window</b> two parts (as shown in pictures below).
                     </p>    
+
+
+                </div>
+            </div>
+
+
+
+
+            <img src="img/kosmos_controls_picture/interaction_map.png" class="big_picture_middle" alt="Interaction Map">
+
+
+
+
+
+
+                    <div class="col-sm-12"> 
+                        <div class="item04" id="kosmos_page">
 
                     <p>
                         Through kickoff meetings with PMs and other designers, I realized that current critical usability issues for sonographers were: 
@@ -229,7 +246,7 @@
                     <table class="a">
                         <tr>
                           <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                          <td class="column02"><p>The control widgets for depth and gain that <b>required circular motion of fingers were hard to operate and locate to an accurate value</b> (as the 2nd picture shows beside).</p></td>
+                          <td class="column02"><p>The control widgets for depth and gain that <b>required circular motion of fingers were hard to operate and locate to an accurate value</b>.</p></td>
                         </tr>
                         <tr>
                           <td><p><i class="fas fa-caret-right"></i></p></td>
@@ -237,7 +254,7 @@
                         </tr>
                         <tr>
                             <td><p><i class="fas fa-caret-right"></i></p></td>
-                            <td><p>The <b>folding and expanding control panels</b> for the B and C mode control shifting in C mode was <b>easy to be ignored</b> (as the 3rd picture beside shows).</p></td>
+                            <td><p>The <b>folding and expanding control panels</b> for the B and C mode control shifting in C mode was <b>easy to be ignored</b>.</p></td>
                         </tr>
                         <tr>
                             <td><p><i class="fas fa-caret-right"></i></p></td>
@@ -245,21 +262,12 @@
                         </tr>
                         <tr>
                             <td><p><i class="fas fa-caret-right"></i></p></td>
-                            <td><p>The tick marks on the scale were too thin, dim, long, and crowded in some cases, which was <b>hard to read and occupied too much space in the imaging area</b> (for the field of view), not ideal for a reference scale (as the 1st, 2nd, and 3rd pictures show beside).</p></td>
+                            <td><p>The tick marks on the scale were too thin, dim, long, and crowded in some cases, which was <b>hard to read and occupied too much space in the imaging area</b> (for the field of view), not ideal for a reference scale.</p></td>
                         </tr>
                       </table>    
     
                       </div>
                       </div>
-    
-                  <div class="col-sm-6"> 
-                      <div class="item02" id="kosmos_page">
-                
-                        <img src="img/kosmos_controls_picture/old_version/old_version_design.png" class="picture_half" alt="Old Version Design">
-
-                  </div>
-         
-                 </div>
 
 
 
@@ -300,33 +308,128 @@
                   <h6 class="kosmos_color">Clarify the functionalities and window heights of all modes, and redesign scales, controls, and control panels.</h6>
   
   
-                  <p>
+                  <p class="paragraph_above_issue_section">
                     I also clarified the expectations for the new design at the very beginning of the project:
                   </p>    
         
-  
-                  <table class="a">
-                      <tr>
-                        <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                        <td class="column02"><p>A new layout for control panels and interactions for controls were required. <b>Transient sliders could be a potential solution</b> for depth, gain, TGC (Time Gain Compensation – for image brightness and contrast), and PRF (Pulse Repetition Frequency – for velocity in PW/CW) controls.</p></td>
-                      </tr>
-                      <tr>
-                        <td><p><i class="fas fa-caret-right"></i></p></td>
-                        <td><p>As PW/CW developed, new <b>intuitive mode shifting (accessing) and control switching features</b> were required.</p></td>
-                      </tr>
-                      <tr>
-                          <td><p><i class="fas fa-caret-right"></i></p></td>
-                          <td><p>The depth scale should be able to <b>serve users in efficiently knowing the physical location (the distance from the “skin line”) and the size of the field of view (FOV)</b> (the two-dimensional region the anatomy shown in the image), and in <b>making informal/approximate measurements</b>. (Both time scale and velocity scale were also serving as references.)
-                            </p></td>
-                      </tr>
-                      <tr>
-                          <td><p><i class="fas fa-caret-right"></i></p></td>
-                          <td><p>The new design was expected to be released with PW and CW new features in May 2020.</p></td>
-                      </tr>
-                    </table>    
+                </div>
+            </div>
+        </div>
 
 
-                    <p>
+
+            <div class="row">
+                    <div class="col-sm-6"> 
+                        <div class="item02" id="kosmos_page">
+          
+                            <table class="a">
+                            <tr>
+                              <td class="column05"><img src="img/icons_issues/layout.svg" class="kosmos_issue_icon" alt="Layout Icon"></td>
+                              <td>
+          
+                                <p class="paragraph_in_even_columns">
+                                    A new layout for control panels and interactions for controls were required. <b>Transient sliders could be a potential solution</b> for depth, gain, TGC (Time Gain Compensation – for image 
+                                    brightness and contrast), and PRF (Pulse Repetition Frequency – for velocity in PW/CW) controls.
+                                  </p>
+          
+                                </td>
+                            </tr>
+          
+                            </table>
+              
+                      </div>
+                </div>
+          
+
+
+
+          
+                         <div class="col-sm-6"> 
+                            <div class="item02" id="kosmos_page">
+              
+                              <table class="a">
+                                <tr>
+                                  <td class="column05"><img src="img/icons_issues/switch.svg" class="kosmos_issue_icon" alt="Switch Icon"></td>
+                                  <td>
+              
+                                <p class="paragraph_in_even_columns">
+                                    As PW/CW developed, new <b>intuitive mode shifting (accessing) and control switching features</b> were required.
+                                  </p>
+              
+                                    </td>
+                                </tr>
+              
+                                </table>
+                  
+                          </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-sm-6"> 
+                            <div class="item02" id="kosmos_page">
+              
+                              <table class="a">
+                                <tr>
+                                  <td class="column05"><img src="img/icons_issues/ruler.svg" class="kosmos_issue_icon" alt="Ruler Icon"></td>
+                                  <td>
+              
+                                    <p class="paragraph_in_even_columns">
+                                        The depth scale should be able to <b>serve users in efficiently knowing the physical location (the distance from the “skin line”) and the size of the field of view (FOV)</b> 
+                                        (the two-dimensional region the anatomy shown in the image), and in <b>making informal/approximate measurements</b>. (Both time scale and velocity scale were also serving as references.)
+                                      </p>
+              
+                                    </td>
+                                </tr>
+              
+                                </table>
+                  
+                          </div>
+                             </div>
+              
+    
+    
+    
+              
+                             <div class="col-sm-6"> 
+                                <div class="item02" id="kosmos_page">
+                  
+                                  <table class="a">
+                                    <tr>
+                                      <td class="column05"><img src="img/icons_issues/date.svg" class="kosmos_issue_icon" alt="Date Icon"></td>
+                                      <td>
+                  
+                                      <p class="paragraph_in_even_columns">
+                                        The new design was expected to be released with PW and CW new features in May 2020.
+                                      </p>
+                  
+                                        </td>
+                                    </tr>
+                  
+                                    </table>
+                      
+                              </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+               <div class="row">
+                <div class="col-sm-12"> 
+                    <div class="item04" id="kosmos_page">
+
+                    <p class="paragraph_below_image">
                         This project covered three main tasks – <b>scale redesign, control redesign, and control panel redesign</b>. To conduct the project efficiently, I followed this order and 
                         <b>broke the tasks into separate actionable items</b> together with PMs.
                     </p>    
@@ -505,7 +608,7 @@
 
               <div class="row">
                 <div class="col-sm-4"> 
-                    <div class="item02" id="msa_new_page">
+                    <div class="item02" id="kosmos_page">
       
                       <table class="a">
                         <tr>
@@ -526,7 +629,7 @@
       
       
                      <div class="col-sm-4"> 
-                        <div class="item02" id="msa_new_page">
+                        <div class="item02" id="kosmos_page">
           
                           <table class="a">
                             <tr>
@@ -546,7 +649,7 @@
                          </div>
       
                          <div class="col-sm-4"> 
-                            <div class="item02" id="msa_new_page">
+                            <div class="item02" id="kosmos_page">
               
                               <table class="a">
                                 <tr>
@@ -574,7 +677,7 @@
 
                   <div class="row">
                     <div class="col-sm-4"> 
-                        <div class="item02" id="msa_new_page">
+                        <div class="item02" id="kosmos_page">
           
                           <table class="a">
                             <tr>
@@ -595,7 +698,7 @@
           
           
                          <div class="col-sm-4"> 
-                            <div class="item02" id="msa_new_page">
+                            <div class="item02" id="kosmos_page">
               
                               <table class="a">
                                 <tr>
