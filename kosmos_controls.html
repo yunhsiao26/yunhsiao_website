@@ -436,8 +436,9 @@
 
 
                     <p>
-                        Besides, <b>the user flow of free flow and the functionalities of each mode</b>, including the controls and mode access, were clarified with other designers' help. Starting from B mode, users were able to 
-                        access all the other modes. In each mode, there were different accessible modes for users to choose. They could go back and forth to shift between different modes.
+                        Besides, <b>the user flow of the free flow and the functionalities of each mode</b>, including the controls and mode access, were clarified with other designers' help. Starting from B mode, users were able to 
+                        access all the other modes. <b>In each mode, there were two control panels for users to switch between</b> (except in M mode). One was for <b>ultrasound controls</b>. The other was for <b>ECG (electrocardiography) and DA (digital audio) controls</b>. 
+                        Also, there were <b>different accessible modes for users to choose</b>. They could go back and forth to shift between different modes. 
                     </p>    
 
   
@@ -500,7 +501,7 @@
                        <h6 class="kosmos_color">Understand user types, goals, needs and frustrations.</h6>
  
                      <p>
-                        With a better understanding of the project scope and the product, I started to understand our target users and their needs through <b>reviewing previous user research documentations and 
+                        With a better understanding of the project scope and the product, I started to understand the target users and their needs through <b>reviewing previous user research documentations and 
                         talking with designers and the PM</b>. 
 
                      </p>    
@@ -579,15 +580,15 @@
 
 
               <p>
-                In addition to user types, I also clarified user workflows. For cardiologists and students, they scanned for education/studies, and exercises/assignments. Their workflow usually started with ultrasound scanning, 
-                and they would save images and clips, and add annotations and measurements. After completing scanning, they might do some data management works (such as filtering, tagging, deleting, etc.) and could export the 
+                In addition to user types, I also clarified user workflows. For cardiologists and students, they scanned for education/studies, and exercises/assignments. Their workflow usually started with ultrasound scanning. 
+                They would save images and clips, and add annotations and measurements. After completing scanning, they might do some data management works (such as filtering, tagging, deleting, etc.) and could export the 
                 data to a USB drive or to the MedEd online platform, which was an educational cloud service for exam review and management (for both operators and reviewers) provided by EchoNous.
              </p>    
 
 
              <p>
                 As for medical usage, creating patient and exam profiles were required. Users might do it before or after scanning, depending on how emergent the case was, and they could do it manually or import patient data 
-                from EHR (Electronic Health Record) system. They would save images and clips, and add notes later or instantly. Eventually, they would review/edit/fill in patient info and exam info before archiving the data 
+                from EHR (Electronic Health Record) systems. They would save images and clips, and add notes later or instantly. Eventually, they would review/edit/fill in patient info and exam info before archiving the data 
                 to PACS (Picture archiving and communication systems).
              </p>    
 
@@ -652,7 +653,7 @@
                     <p>
                         With the above understanding, I moved forward to the design stage. My first task was scale redesign, focusing on the depth scale first. Through reviewing other POCUS products in the market, 
                         I found that most of them had <b>both major and minor tick marks, and not only threads but also dots could be used</b>. Besides, <b>showing numbers and the unit</b> beside tick marks were helpful, 
-                        and <b>setting breakpoints</b> for different ranges could help <b>to present more scale details when the range is small and fewer details when the range is large</b>.
+                        and <b>setting breakpoints</b> for different ranges could help <b>to present more scale details in a smaller range and fewer details in a larger range</b>.
                     </p>    
 
                    </div>
@@ -696,7 +697,7 @@
                 <div class="col-sm-12"> 
                         <div class="item04" id="kosmos_page">
                     <p>
-                      During the process, we had <b>design review meetings and discussions with both front-end and back-end developers very frequently</b>. 
+                      During the process, I had <b>design review meetings and discussions with other designers, the PM, and both front-end and back-end developers very frequently</b>. 
                     </p>    
          
 
@@ -741,7 +742,7 @@
 
 
                       <p class="paragraph_above_issue_section">
-                            After some initial thoughts visualized, and before running into iterations, I double confirmed with the PM to ensure that I was on the right track. We made a couple of design decisions as a team:
+                            After visualizing some initial thoughts, I double confirmed with the PM to ensure that I was on the right track before jumping to iterations. We made a couple of design decisions as a team:
                         </p>    
     
                       </div>
@@ -764,7 +765,7 @@
                           <td>
       
                               <p class="paragraph_below_image">
-                                <b>Designing breakpoints</b> for both depth scale and velocity scale.
+                                <b>Designing breakpoints</b> for both depth scale and velocity scale to present tick marks aptly in different ranges.
                               </p>
       
                             </td>
@@ -805,7 +806,7 @@
                                   <td>
               
                                       <p class="paragraph_below_image">
-                                        Applying numbers on the scales, always <b>showing the start and the end numbers, and present the unit</b> for user reference.
+                                        Applying numbers on the scales, always <b>showing the start and the end numbers, and presenting the unit</b> for user reference.
                                       </p>
               
                                     </td>
@@ -833,7 +834,7 @@
                               <td>
           
                                   <p class="paragraph_below_image">
-                                    Differentiating the visual style of the regular and zoom in status for depth scale.
+                                    Using different visual style for the regular and zoom in status of the depth scale to help users to differentiate the two.
                                   </p>
           
                                 </td>
@@ -854,7 +855,7 @@
                                   <td>
               
                                   <p class="paragraph_below_image">
-                                    <b>Showing one digit behind the decimal point</b> for both depth and velocity scales.
+                                    <b>Showing one digit behind the decimal point</b> for both depth and velocity scales based on user needs.
                                   </p>
               
                                     </td>
@@ -874,7 +875,7 @@
                                       <td>
                   
                                           <p class="paragraph_below_image">
-                                            <b>Considering scalability</b> in the new control panel design.
+                                            <b>Considering scalability</b> in the new control panel design since more features with new controls might be added on in the near future.
                                           </p>
                   
                                         </td>
@@ -915,9 +916,9 @@
                       <h6 class="kosmos_color">Visualize ideas following the previously discussed task order, and collect feedback from team members and target users.</h6>
 
                     <p>
-                      With the above decisions, I utilized hi-fi wireframes to <b>present how the design could work in real situations</b>. According to the previously mentioned task order, the design was visualized and <b>iterated 
-                      based on team member and user feedback</b>, as below – the visual style and rules for depth, velocity, and time scale; depth, PRF, gain, and TGC control (transient slider); ultrasound, ECG (electrocardiography), 
-                      and DA (digital audio) control panel for all the scan modes.
+                      With the above decisions, I utilized hi-fi wireframes to <b>present how the design could work in real situations</b>. According to the aforementioned task order, the design was visualized and <b>iterated 
+                      based on team member and user feedback</b> as below – the visual styles and rules for depth, velocity, and time scales; depth, PRF, gain, and TGC controls (transient sliders); ultrasound, and ECG & DA control 
+                      panels for all the scan modes.
                     </p>    
 
                    </div>
@@ -980,8 +981,8 @@
                                     tick marks</b>. To let the scale easier to read but occupy less space, I made all tick marks <b>thicker and shorter</b> along the way, and <b>picked colors that were not too dim or too bright</b> for the regular and zoom in status 
                                     (#DDDDDD and # F2B95B). As for numbers on major tick marks, by <b>increasing font weight and changing the typeface from Roboto (the predefined one across the device) to Helvetica Neue</b>, the readability was enhanced. 
                                     We wanted to show both start and end numbers on the scale (with its original tick marks), so I <b>saved a certain space (16 px distance) between the first/last tick mark to the top/bottom imaging area border for 
-                                    presenting the start/end number</b>. In some cases, while users zoom in or move the imaging area, the first/last emphasized number on major tick marks would be too close to the start/end number, so I also tried to 
-                                    <b>define a range (28 px) in which the start/end number would be hidden and only the first/last emphasized number would be shown</b>.
+                                    presenting the start/end number</b>. In some cases, while users zoom in or move the imaging area, the first/last emphasized number on major tick marks would be too close to the start/end number, so I also
+                                    <b>defined a range (28 px) in which the start/end number would be hidden and only the first/last emphasized number would be visible</b>.
                                 </p></td>
                               </tr>
                               <tr>
@@ -1036,7 +1037,7 @@
                                 <td class="column02"><p>
                                         For the velocity scale for PRF in PW/CW, there was no zoom in status. I tried to apply the same visual style as what we had for the regular depth scale, but it looked unclear with imaging running behind. Therefore, I <b>applied different colors that had color 
                                         harmony with the theme colors of KOSMOS, such as orange and blue with different tint, shade, and brightness</b>. Since they all looked <b>a little bit eye-catching and distracting</b>, we picked <b>pure white (#FFFFFF)</b> at the end, which was <b>easier to be seen but 
-                                        not too standing out</b>. Since the depth scale in M mode would also be placed on top of moving images, we decided to borrow the idea here and apply pure white for it as well.
+                                        not too standing out</b>. Since the image in M mode was similar to PW/CW, we decided to use pure white for its depth scale as well.
                                 </p></td>
                               </tr>
                               <tr>
@@ -1062,7 +1063,7 @@
                                 <td class="column06"><img src="img/icons_numbers/icons_number-44.png" class="icon_numbers" alt="Number 4"></td>
                                 <td class="column02"><p>
                                     Regarding the breakpoint rules, only two medium views (720, 540 px) in PW/CW needed to be taken care of, but the range was quite huge, from +-20 to +-600 (equals to 40-1200). I tried to <b>tackle it with the same methods used for depth scale</b>, and iterated two rounds to figure out 
-                                    a set of rules that we all satisfied with.
+                                    a set of rules that could work effectively.
                                 </p></td>
                               </tr>
                               <tr>
@@ -1087,9 +1088,11 @@
                               <tr>
                                 <td class="column06"><img src="img/icons_numbers/icons_number-45.png" class="icon_numbers" alt="Number 5"></td>
                                 <td class="column02"><p>
-                                    As for the time scale for sweep speed in ECG, DA trace and M mode, I tried to <b>apply the same design concepts for depth scale here</b> to make tick marks thicker, shorter, and brighter. The numbers were added on, different colors were presented, and the unit for speed was added in the description info section. 
-                                    Based on user feedback, they <b>did not need to see numbers on tick marks to tell the time, description beside was already sufficient</b>. Besides, <b>too many colors on the screen could be distracting</b>. Therefore, I eventually <b>applied the same colors used for the depth scale, 
-                                    removed the numbers on scale and the icons in the description section to make the screen cleaner</b>, and modified the tick marks a little bit to <b>apparently differentiate the major and minor tick marks</b> corresponding to the changes to numbers.
+                                    As for the time scale for sweep speed in ECG, DA trace and M mode, I tried to <b>apply the same design concepts for depth scale here</b> to make tick marks thicker, shorter, and brighter. 
+                                    The numbers were added on, different colors were presented, and the unit for speed was added in the description info section. Based on user feedback, they <b>did not need to see numbers on 
+                                    tick marks to tell the time. The description beside was already sufficient</b>. Besides, <b>too many colors on the screen was distracting</b>. Therefore, I eventually <b>applied the same colors 
+                                    used for the depth scale, and removed the numbers on the scale and the icons in the description section to make the screen cleaner</b>. Also, the visual style of the tick marks was modified a 
+                                    little bit to <b>differentiate the major and minor tick marks apparently</b> corresponding to the changes to numbers.
                                 </p></td>
                               </tr>
                               <tr>
@@ -1209,7 +1212,7 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-43.png" class="icon_numbers" alt="Number 3"></td>
                             <td class="column02"><p>
-                                    With the gain control designed, I also created mockups for TGC controls based on discussions with other designers, to <b>present how they would look like in different mode views (with different window sizes)</b>.
+                                With the gain control designed, I also created mockups for TGC controls to <b>present how they look like in different mode views (with different window sizes)</b> based on discussions with other designers.
                             </p></td>
                           </tr>
                           <tr>
@@ -1281,10 +1284,10 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-41.png" class="icon_numbers" alt="Number 1"></td>
                             <td class="column02"><p>
-                                To create a layout that could be applied to all scan modes across KOSMOS, I borrowed the idea from the PW/CW new design and <b>tried rectangle buttons with icons, button names, and statuses</b> instead. The team had 
+                                To create a layout that could be applied to all scan modes across KOSMOS, I borrowed the idea from the PW/CW ultrasound control panel new design and <b>tried rectangle buttons with icons, button labels, and statuses</b>. The team had 
                                 a great favor on this idea, so we started iterating from here. We tried different ways to present control buttons for both mode shifting (accessing) and control switching. In the end, we figured out <b>a concise 
                                 way to present buttons by combining icons and different statues into one</b>. Also, we removed the text for mode buttons since they were self-explanatory based on user feedback. Starting with B mode, I finally applied the design 
-                                to all modes. <b>The button orders for each mode were also adjusted to align with usage frequency and be more consistent across</b>.We also <b>enlarged the button name font size to serve user needs in looking at the screen 
+                                to all modes. <b>The button orders for each mode were also adjusted to align with the usage frequency and be more consistent across</b>. We also <b>enlarged the button label font size to serve user needs in looking at the screen 
                                 from a certain distance</b>.
  
                             </p></td>
@@ -1310,8 +1313,8 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-42.png" class="icon_numbers" alt="Number 2"></td>
                             <td class="column02"><p>
-                                After finding the right direction for the ultrasound control panel, we also went through several rounds of iteration for ECG and DA control panel. In the beginning, we tried to <b>remove the ultrasound toggle to help users more focusing on 
-                                ECG and DA</b>, <b>move ECG Lead control from the imaging area to the panel together with other controls</b>, and separate ECG and DA controls by using tabs. Later, we figured out another efficient way to present ECG and DA controls by <b>using 
+                                With the same approach, we also went through several iterations for ECG and DA control panels. In the beginning, we tried to <b>remove the ultrasound toggle to help users more focusing on 
+                                ECG and DA</b>, <b>moved ECG Lead control from the imaging area to the panel together with other controls</b>, and separated ECG and DA controls by using tabs. Later, we figured out another efficient way to present ECG and DA controls by <b>using 
                                 just one tab but disabled the corresponding controls while the signal was turned off</b>.
                             </p></td>
                           </tr>
@@ -1337,7 +1340,7 @@
                             <td class="column02"><p>
                                 At this point, the touch-sensitive area for transient sliders was also discussed. At first, I proposed to place the depth wheel at around one-third of the imaging area, and allow users to <b>scroll on both left-hand and right-hand side of the wheel to take care 
                                 of both left-handedness and tight-handedness</b>. However, the team had the concern that the wheel would block too much part of the imaging area, so later decided to place it closer to the imaging area border instead, and applied the same behavior to the gain and 
-                                TGC slider. After collecting feedback from users, we realized that <b>supporting scrolling on the depth button (the control trigger) itself would make the control easier for users since they normally had only one hand for operation</b> (the other hand was used for 
+                                TGC slider. After collecting feedback from users, we realized that <b>supporting scrolling on the depth button (the control trigger) itself would make the control easier since users normally had only one hand for operation</b> (the other hand was used for 
                                 holding the probe). Therefore, we <b>enlarged the touch-sensitive area by allowing users to scroll vertically on the whole control panel after pressing the depth button and before the wheel dismissed</b>. This design was also applied to gain control that users could 
                                 directly scroll on the gain button horizontally in the control panel area. Besides, I also proposed two ways to dismiss transient sliders – auto dismiss and by <b>tapping anywhere in the imaging area</b>. After discussing with the team, we together defined the <b>auto dismiss 
                                 after user finger released for two seconds</b>, and added one more rule of <b>tapping any other control buttons to dismiss</b>. 
@@ -1367,7 +1370,7 @@
                             <td class="column02"><p>
                                 With the concern that users may need some explanations to better understand each control, the design team decided to use a pop-up to tackle this issue. While users tapping on a button, <b>a pop up would show up with several options (3-4) and 
                                 the corresponding brief explanations</b> for users to choose. In the end of this project, I also helped with the pop up design. We finally picked a set of designs that were able to <b>present all the options clearly and better contain longer strings 
-                                for option names and explanations</b>. We also tried to <b>convey positive messages in each explanation to encourage usage</b>.
+                                for option labels and explanations</b>. We also tried to <b>convey positive messages in each explanation to encourage usage</b>.
                             </p></td>
                           </tr>
                           <tr>
@@ -1554,8 +1557,8 @@
                               <tr>
                                 <td class="column06"><img src="img/icons_numbers/icons_number-44.png" class="icon_numbers" alt="Number 4"></td>
                                 <td class="column02"><p>
-                                    In addition to the ultrasound tab, there was another tab on the control panel for ECG and DA. This tab was accessible in all modes except M mode. In ECG and DA tab, the two signals had their own on-off toggles 
-                                    to show and hide ECG and DA trace. In PW, users could also choose to turn off the DA audio and focus on the doppler sound.
+                                    As for ECG and DA controls, they were accessible in all modes except M mode. In ECG and DA tab, the two signals had their own on-off toggles 
+                                    to show and hide ECG and DA trace, and enable or disable corresponding controls. In PW, users could also choose to turn off the DA audio and focus on the doppler sound.
                                 </p></td>
                               </tr>
                               <tr>
@@ -1638,7 +1641,7 @@
 
                 <p>
                     After this project, I had opportunities to explore different layouts and visual treatments of control panels in live imaging views and cine review, trying to see if there were other ways to <b>make the views look 
-                    cleaner</b>. Potential solutions such as <b>hiding the mode shifting buttons in the second layer</b>, and changing the background of the control panel to <b>enhance the sense of unity</b>. At that time, we did not 
+                    cleaner</b>. Potential solutions could be <b>hiding the mode shifting buttons in the second layer</b>, and changing the background of the control panel to <b>enhance the sense of unity</b>. At that time, we did not 
                     pick these ideas with big changes to polish and move on due to time limitation and scope consideration, but they could be future references when we come back to refine the control panels again.
                 </p>    
 
