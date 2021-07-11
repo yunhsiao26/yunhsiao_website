@@ -602,7 +602,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', end
 
 .medialink:hover {
 	filter: alpha(opacity=80);
-	opacity: .8;
+	opacity: .6;
 }
 
 
