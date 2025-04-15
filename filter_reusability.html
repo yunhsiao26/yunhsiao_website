@@ -103,7 +103,7 @@
                           </tr>
                           <tr>
                             <td><p><b>My Role</b>:</p></td>
-                            <td><p>I served as a UX designer and co-worked closely with PM, design system team, and multiple parties and stakeholders.</p></td>
+                            <td><p>I served as a UX designer and co-worked closely with PM, design system (DS) team, and multiple parties and stakeholders.</p></td>
                           </tr>
                         </table>
 
@@ -227,23 +227,13 @@
                 <div class="item04" id="f5xc_page">
                 <h3>Project Goals & Design Requirements</h3>
 
-                <h6 class="f5xc_color">Clarify target users, their goals, workflow and pain points.</h6>
+                <h6 class="f5xc_color">Clarify target user goals, workflow, pain points, and reshape project scope.</h6>
 
               <p>
-                Through many discussions, I learned that we could serve multiple types of clinical people. The target usage scenarios include:
+                Bot Defense protects Internet applications from automated attacks. It identifies and mitigates malicious bots using telemetry collected from web and mobile endpoints, 
+                and applies configurable mitigation actions to block or redirect harmful traffic before it reaches the application. It has been migrating from the SHAPE Security Platform (SPM) 
+                to the F5XC console with the <b>improvement of information architecture, data organization and presentation, and functionalities</b> to support better <b>self-serviceability</b>. 
               </p>    
-
-
-              <table class="a">
-                <tr>
-                  <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                  <td class="column02"><p><b>Small clinics</b> who need an <b>exam storage and management</b> system, or need a system to support <b>ultrasound trainings for physicians</b>.</p></td>
-                </tr>
-                <tr>
-                  <td><p><i class="fas fa-caret-right"></i></p></td>
-                  <td><p><b>Teaching hospitals</b> who need a system to support <b>ultrasound trainings for residency medicine</b>.</p></td>
-              </tr>
-              </table>
 
 
           </div>
@@ -252,7 +242,7 @@
 
 
    
-          <img src="img/f5_filter_reusability_picture/shape_to_xc.png" class="big_picture" alt="Target User Groups">
+          <img src="img/f5_filter_reusability_picture/shape_to_xc.png" class="big_picture" alt="Service Migration & Improvement">
 
 
 
@@ -261,25 +251,9 @@
                <div class="item04" id="f5xc_page">
     
              <p class="paragraph_below_image">
-              The use cases had many common needs and common parts in their user journeys, and the users could be roughly categorized into two types of roles – the <b>exam operator</b>, and the <b>exam reviewer</b>.
-             </p>    
-
-             <p>
-              To keep it simple, we tried to integrate them into one representative general user journey:
-             </p>    
-
-
-             <table class="a">
-              <tr>
-                <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                <td class="column02"><p>In the beginning, the ultrasound exam operators could use our software and device to scan and acquire desired data.</p></td>
-              </tr>
-              <tr>
-                <td><p><i class="fas fa-caret-right"></i></p></td>
-                <td><p>Operators could upload exams to the online web portal, <b>review and edit there, fill in reports, and submit for reviewers to review</b>.</p></td>
-            </tr>
-            </table>
-
+              We envisioned an improved Bot Defense service, informed by our <b>user journey study on 3 persona types</b>. An integrated user journey started with the onboarding stage, including account and configuration setup, threat briefing, 
+              and next, checking out the data summary and diving deeper to gain more insights. Later, users could review reports for particular use cases, investigate events, and configure policies to mitigate the threats.
+             </p>     
     
          </div>
      </div>
@@ -297,24 +271,11 @@
             <div class="item04" id="f5xc_page">
  
           <p class="paragraph_below_image">
-           The use cases had many common needs and common parts in their user journeys, and the users could be roughly categorized into two types of roles – the <b>exam operator</b>, and the <b>exam reviewer</b>.
+            Filtering is one of the most important functionalities that users need to use across the <b>stages of value awareness, diving deeper, reporting and investigation</b>. If the filter sets could be reusable, 
+            it would greatly enhance the convenience and efficiency for the workflow of the two primary target personas of the service – <b>Application Owners</b> and <b>Security Engineers</b>, who monitor and analyze traffic, 
+            use dashboard and report pages frequently, and would co-work with our technical account managers (TAMs).
           </p>    
 
-          <p>
-           To keep it simple, we tried to integrate them into one representative general user journey:
-          </p>    
-
-
-          <table class="a">
-           <tr>
-             <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-             <td class="column02"><p>In the beginning, the ultrasound exam operators could use our software and device to scan and acquire desired data.</p></td>
-           </tr>
-           <tr>
-             <td><p><i class="fas fa-caret-right"></i></p></td>
-             <td><p>Operators could upload exams to the online web portal, <b>review and edit there, fill in reports, and submit for reviewers to review</b>.</p></td>
-         </tr>
-         </table>
 
  
       </div>
@@ -332,22 +293,19 @@
         <div class="item04" id="f5xc_page">
 
       <p class="paragraph_below_image">
-       The use cases had many common needs and common parts in their user journeys, and the users could be roughly categorized into two types of roles – the <b>exam operator</b>, and the <b>exam reviewer</b>.
-      </p>    
-
-      <p>
-       To keep it simple, we tried to integrate them into one representative general user journey:
+        However, in F5XC, there was no way for users to reuse filters or use others' filters, which caused inefficient communication between our TAMs and clients. Previously, in SPM, users had the functionality but were 
+        unable to delete expired ones. Thus, we got two main goals to achieve in this project: 
       </p>    
 
 
       <table class="a">
        <tr>
          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-         <td class="column02"><p>In the beginning, the ultrasound exam operators could use our software and device to scan and acquire desired data.</p></td>
+         <td class="column02"><p>Support <b>sharing, saving, and reusing a set of filters</b> created by all users in the same tenant to smoother the communication between our TAMs and clients, as well as the communication between security engineers of our clients. </p></td>
        </tr>
        <tr>
          <td><p><i class="fas fa-caret-right"></i></p></td>
-         <td><p>Operators could upload exams to the online web portal, <b>review and edit there, fill in reports, and submit for reviewers to review</b>.</p></td>
+         <td><p>Support <b>deleting invalid saved filters</b>.</p></td>
      </tr>
      </table>
 
@@ -364,13 +322,42 @@
 
 
 
+   <div class="col-sm-12"> 
+    <div class="item04" id="f5xc_page">
+
+  <p class="paragraph_below_image">
+    The project scope was also reshaped along with the design iteration. We focused on these functionalities for phase one:
+  </p>    
+
+
+  <table class="a">
+   <tr>
+     <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+     <td class="column02"><p>Save filters (including logic for saving and saving as). </p></td>
+   </tr>
+   <tr>
+     <td><p><i class="fas fa-caret-right"></i></p></td>
+     <td><p>Access saved filters.</p></td>
+ </tr>
+ <tr>
+  <td><p><i class="fas fa-caret-right"></i></p></td>
+  <td><p>Apply saved filters (including logic for applying and handling expiration situations).</p></td>
+</tr>
+<tr>
+  <td><p><i class="fas fa-caret-right"></i></p></td>
+  <td><p>Delete saved filters (including logic for deleting).</p></td>
+</tr>
+ </table>
+
+</div>
+</div>
+
+
+
       </div>
-  </div>
+    </div>
 </div>
 </div>
-
-
-
 
 
 
@@ -389,83 +376,111 @@
   <div class="project_body_overlay02">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12"> 
-                <div class="item04" id="f5xc_page">
+            <div class="col-sm-6"> 
+                <div class="item02" id="f5xc_page">
 
                     <h3>Design Challenges & Strategies</h3>
-                    <h6 class="f5xc_color">Tackle xxx challenges by.</h6>
+                    <h6 class="f5xc_color">Co-work closely with project stakeholders to make comprehensive design decisions.</h6>
     
      
               <p>
-               The use cases had many common needs and common parts in their user journeys, and the users could be roughly categorized into two types of roles – the <b>exam operator</b>, and the <b>exam reviewer</b>.
-              </p>    
-    
-              <p>
-               To keep it simple, we tried to integrate them into one representative general user journey:
+                During the design ideation and iteration process, I faced several challenges, the most complex and interesting of which included:
               </p>    
     
     
               <table class="a">
                <tr>
                  <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                 <td class="column02"><p>In the beginning, the ultrasound exam operators could use our software and device to scan and acquire desired data.</p></td>
+                 <td class="column02"><p>Constructing <b>new design patterns</b>.</p></td>
                </tr>
                <tr>
                  <td><p><i class="fas fa-caret-right"></i></p></td>
-                 <td><p>Operators could upload exams to the online web portal, <b>review and edit there, fill in reports, and submit for reviewers to review</b>.</p></td>
+                 <td><p>Handling information <b>presentation and control</b>.</p></td>
              </tr>
+             <tr>
+              <td><p><i class="fas fa-caret-right"></i></p></td>
+              <td><p>Addressing <b>time expiration</b> situations.</p></td>
+             </tr>
+             <tr>
+             <td><p><i class="fas fa-caret-right"></i></p></td>
+             <td><p>Addressing filter <b>value missing</b> situations.</p></td>
+             </tr>
+             <tr>
+            <td><p><i class="fas fa-caret-right"></i></p></td>
+            <td><p>Tackling edge cases related to <b>deleted filters</b>. </p></td>
+            </tr>
              </table>
-    
-     
-          </div>
-      </div>
-    
 
 
+             <p>
+              The details of each will be introduced and explained in the sections below.
+            </p>    
+  
 
 
-            <div class="col-sm-6"> 
-                <div class="item02" id="f5xc_page">
-
-              <p class="paragraph_below_image">
-                Initially, KOSMOS UP only served students and faculties in medical schools. As the company expanded the service area to clinical usage, we wanted to build a new product which was similar to 
-                the existing product – Kosmos UP Education, but it could <b>better support clinical use cases – “Kosmos UP Clinical.”</b>
-              </p>    
-    
               <p>
-                When I got looped in in an early stage, I found that the project scope was very ambiguous, so I <b>worked together with the PM to clarify the scope</b> that we should <b>focus on for the MVP and for the future, based on the market needs.</b>
+                To <b>tackle the challenges and facilitate collaboration and communication</b> with project stakeholders, I implemented several strategies throughout the process: 
               </p>    
+     
     
               <table class="a">
                   <tr>
                     <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                    <td class="column02"><p>In the beginning, the ultrasound exam operators could use our software and device to scan and acquire desired data.</p></td>
+                    <td class="column02"><p>Iterating on the information architecture design to accommodate the new feature and <b>collaborating with the design system (DS) team to gather feedback and gain a broader perspective</b> for making more comprehensive design decisions.
+                    </p></td>
                   </tr>
                   <tr>
                     <td><p><i class="fas fa-caret-right"></i></p></td>
-                    <td><p>Operators could upload exams to the online web portal, <b>review and edit there, fill in reports, and submit for reviewers to review</b>.</p></td>
-                </tr>
-                </table>
+                    <td><p>Implementing a <b>bi-weekly recurring meeting to clarify requirements and user needs while collecting feedback from our subject matter experts (SMEs)</b> (including technical account managers (TAMs), 
+                        data scientists, solution architects, PMs, etc.), whose insights are closely aligned with those of our clients/end-users.
+                    </p></td>
+                  </tr>
 
-              <p>
-                It happened that the company created a new branding guideline for marketing usage months before the project got kicked off, so my design partners and I followed the concept, typeface, and theme colors to <b>develop a new design guideline for the new product</b>. 
-              </p>    
+                  <tr>
+                      <td><p><i class="fas fa-caret-right"></i></p></td>
+                      <td><p>Employing <b>visualizations to enhance communication</b> with all project stakeholders, such as flowcharts to illustrate interaction logic and tables to present the various statuses of a new component.
+                      </p></td>
+                    </tr>
+              </table>
 
-              <p>
-                I also found that there were many issues found in the previous free trials to our potential customers in the industry that were not covered in the scope, so I advocated to <b>include usability improvement in the MVP</b> 
-                as well, including the major issues in navigation, search, and input interaction.
-              </p>    
 
+
+                <p>
+                  During the early ideation stage, I also explored various designs for inspiration. Some of the ideas I incorporated include:
+                </p>    
+      
+      
+                <table class="a">
+                 <tr>
+                   <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                   <td class="column02"><p>Apply, adjust, and save as a new one.</p></td>
+                 </tr>
+                 <tr>
+                   <td><p><i class="fas fa-caret-right"></i></p></td>
+                   <td><p>Filter description.</p></td>
+               </tr>
+               <tr>
+                <td><p><i class="fas fa-caret-right"></i></p></td>
+                <td><p>Tabs to categorize saved filters.</p></td>
+               </tr>
+               <tr>
+               <td><p><i class="fas fa-caret-right"></i></p></td>
+               <td><p>Search for saved filters.</p></td>
+               </tr>
+               </table>
+  
 
                 </div>
                 </div>
+
+
 
             <div class="col-sm-6"> 
                 <div class="item02" id="f5xc_page">
 
-                  <img src="img/f5_filter_reusability_picture/stakeholders.png" class="picture_half" alt="Project Stakeholders">
-
                   <img src="img/f5_filter_reusability_picture/design_strategy.png" class="picture_half" alt="Design Strategy">
+
+                  <img src="img/f5_filter_reusability_picture/stakeholders.png" class="picture_half" alt="Project Stakeholders">
 
                   <img src="img/f5_filter_reusability_picture/filter_inspiration_no_bg.png" class="picture_half" alt="Filter Inspiration Moodboard">
 
@@ -495,6 +510,225 @@
 
 
 
+<!-- Design Challenges & Iteration -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Design Challenges & Iteration</h3>
+
+                <h6 class="f5xc_color">Create new patterns, optimize info architecture, and address value missing situations.</h6>
+
+
+                <p>
+                  By utilizing recurring meetings and Maze, I <b>collected feedback from over 20 SMEs</b> to help rescope the project and make decisions on the logic design and information presentation.
+                </p>   
+
+                <p>
+                  As mentioned above, I encountered several design challenges during the process. The below are the most complex and interesting ones:
+                </p>   
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_01.png" class="design_refinement_picture" alt="Challenge 1 - New Design Pattern">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
+                          <td class="column02"><p>
+                              There was no existing component that could accommodate the new functionality, so we needed to propose a new one that could <b>meet the needs of Bot Defense and apply to other workspaces</b> in the console. 
+                              I explored the idea of utilizing “filter icon” or “more action icon” as a control to show a dropdown menu, and with SMEs’ feedback of wanting to know which filter is currently applied, explored 
+                              <b>presenting the saved filter name with status</b> on the first layer. In the second iteration, I moved the “Saved Filters” control to the first layer to make it stand out and easier to access, made 
+                              the “Save” feature more dominant, and later figured out a way to <b>show all key controls in the first layer, in a more concise way</b>. I also added new functionalities, including the <b>“Return to Previous 
+                              Status” control and the “Restore Defaults” control</b> to make the feature more user-friendly. The “save filter” logic was also polished – <b>only allow owners and admins to save (update) after editing 
+                              a saved filter</b>. Others could only “save as” a new one.   
+                          </p>
+                        
+                          <p>
+                              Besides, I explored different information architecture design for the filter feature, and the <b>visual treatments for the edited part</b> of a saved filter. After consulting with the DS team, I realized it 
+                              was a significant change that required more thinking and would take a long time, which would delay the release time. It might also not be able to be implemented in other workspaces simultaneously with 
+                              the implementation of this project, which may lead to an inconsistency issue. Therefore, we did not go with this option for phase one. 
+                          </p>
+                        
+                          <p>
+                              During the exploration, I gained a deep understanding that although I was working on and responsible for Bot Defense, I was also <b>accountable for other workspaces</b>. Thus, I kept this in mind and <b>actively 
+                              communicated with my PM to ensure we remained aligned</b>. This concept also shaped my decision to <b>involve the design system team in the feedback collection process and to approach design decisions from a more 
+                              systematic perspective</b>.
+                          </p>
+                        
+                        </td>
+                        </tr>
+                   
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_02.png" class="design_refinement_picture" alt="Challenge 2 - Information Presentation & Control">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
+                          <td class="column02"><p>
+                              Since filters could not be reused and used by others, and there was no option to delete expired filters, we aimed to develop a feature to address the issues, which information presentation and 
+                              control required exploration. Some initial ideas I had included: presenting a saved filter list with an apply, a share by copy URL, and a delete control. In each page, <b>only presenting the filters 
+                              that could be applied to that page</b>. Regarding filter naming rules, <b>allowing any characters (no input restriction), and allowing a name to be used only once in the same namespace (clients' user 
+                              segmentation)</b>. Later with SMEs' feedback, I added a "Description" column to allow users to articulate the purposes of the filter set, and added a “Created by” column as a reference.
+                          </p>
+                        
+                          <p>
+                              I also explored different ideas, such as allowing access to saved filters in different pages through a dropdown menu, viewing all filter values in an accordion, <b>dividing filters into “My Filters” & 
+                              “Others” to support efficient navigation and access</b>, and presenting a delete feature in a side modeless or a management page. Eventually, we moved forward with a pattern that aligned with the design 
+                              system and better met user needs.
+                          </p>
+                        
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_03.png" class="design_refinement_picture" alt="Challenge 3 - Time Expiration Situations">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              The system only retained data in the past 30 days, so we needed to figure out a way to tackle the situation when the data was no longer available owing to the outdated time frame, either <b>the whole or 
+                              part of the time expiration causes the whole or part of the data missing</b>. There were two types of time selection: generic (e.g., past X days), and custom (where users could pick a range in the past 30 
+                              days). My initial idea for treatments was that for the <b>filters with a generic time frame, we kept it the same</b>. It would never expire. We would allow users to apply and show the corresponding results. 
+                              As for the filters with a custom time frame, <b>when the partial or whole timeframe was out of 30 days, we would make the filter disabled without showing the apply or copy control</b>. I also utilized a warning 
+                              icon to present time expiration messages to users in the filter list view, but I later realized that it required API call. We were unable to know if the time had expired or not right at this moment. 
+                              Therefore, we eventually <b>presented the message in the detail view</b> instead, and planned to consider the edit feature in phase two.
+                          </p></td>
+                        </tr>
+                 
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_04.png" class="design_refinement_picture" alt="Challenge 4 - Filter Value Missing & Data Missing">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-55.png" class="icon_numbers" alt="Number 4"></td>
+                          <td class="column02"><p>
+                              The filter <b>keys and values were naturally dynamic</b>. They would change based on configuration. It was possible that a filter had been saved, but later some configurations changed, causing part of the filter keys and values 
+                              to no longer exist. We needed to figure out a treatment for this situation and convey it to users. My initial idea was to either automatically remove the non-existent filter keys and values, and inform 
+                              users that those values were no longer available, or disable the entire filter set and notify users that the filters could not be applied by displaying messages in the filter list view. Because the proposal 
+                              could not work due to API call constraints, I ideated other solutions, such as in both the result page and each filter detail view, indicating which exact values were missing. I later realized it was not 
+                              possible to identify exactly which part was missing without making an additional API call, which would negatively impact system performance.
+                            </p>
+  
+                            <p>
+                              Next, I explored the idea of giving users two options: applying the original ones and showing the corresponding results, or applying and omitting the missing values in the filter set. I learned from the 
+                              development team that in the result page, the missing values would be presented, but they were not applied. We were unable to automatically remove the display of missing values from the result page. 
+                              Eventually, we <b>utilized a disclaimer</b> as a workaround to address API limitations.
+                            </p>
+                        </td>
+                        </tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_05.png" class="design_refinement_picture" alt="Challenge 5 - Deleted Filters.png">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-56.png" class="icon_numbers" alt="Number 5"></td>
+                          <td class="column02"><p>
+                            In some situations, the system could not present the updated view, so users might accidentally apply a deleted saved filter. (E.g., When a saved filter got removed from UserA side, but UserB has the 
+                            saved filter detail view open and has not refreshed to get the updated list yet, it is possible that UserB "apply" or "copy the URL" of a deleted saved filter.) I <b>listed down all the scenarios we 
+                            needed to address first</b>, and started to ideate potential solutions. My initial thought was showing some error messages when users applied a deleted saved filter, and automatically refreshing the page 
+                            for them. After syncing up with developers, I realized that the system did not know the filter had been deleted when it was applied. It required an extra API call to check it, which would lead to a 
+                            legacy issue.
+                          </p>
+
+                          <p>
+                            Then we collaboratively proposed a new solution: <b>making an API call after a filter is applied</b> to check whether the associated saved filter still exists. If it has been deleted, we would display a message 
+                            prompting users to refresh the page to get the most up-to-date view. If users chooses not to refresh, but modifies some filter values and attempts to save, the “Update Saved Filters” button would be hidden, 
+                            while the option to “Save As” a new filter would remain available. Building on the feasible idea, we refined and iterated it, eventually arriving at an alternative version that could be more intuitive and 
+                            user-friendly: If users are only viewing the page and <b>make no changes, no reaction or message needs to be shown</b>. If users <b>make edits and attempt to update the filter, we display a message informing them that 
+                            the saved filter no longer exists and suggest using “Save As” to proceed</b>. If users <b>access a page via a URL tied to a deleted saved filter, we still present the filtered view, treating the filters as newly added</b>. 
+                            We would also show a message to inform users, and they have the option to save the filters as a new one.
+                          </p>
+                        </td>
+                        </tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+</div>  
 
 
 
@@ -504,6 +738,379 @@
 
 
 
+
+  <!-- Implementation Support -->
+
+  <div id="project_body_section">
+      <div class="project_body_overlay02">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12"> 
+                    <div class="item04" id="f5xc_page">
+                    <h3>Implementation Support</h3>
+    
+                    <h6 class="f5xc_color">Cater and visualize all situations to ensure smooth cross-team communication and successful implementation of design.</h6>
+    
+                    <p>
+                        To ensure a smooth implementation of the design, I finalized the interaction flow to clearly <b>outline the end-to-end user journey for developers</b>. I prepared a comprehensive Figma file with <b>detailed 
+                        documentation to support the implementation handoff</b>. Additionally, I collaborated with the DS team to <b>file tickets for new patterns</b>, and maintained ongoing communication with the DS team, developers, 
+                        and PMs to <b>address edge cases</b> throughout the process.
+                      </p>    
+    
+    
+                      <p>
+                        Following this project, I also supported the <b>design and implementation of similar functionalities across three additional workspaces</b> within F5XC. Once the refined version of the feature was in development, 
+                        I re-engaged with the Bot Defense PM and development team to ensure new change requests were properly ticketed and previous designs were updated to <b>maintain consistent logic and visual coherence across the platform</b>.
+                      </p>    
+    
+              </div>
+          </div>
+    
+    
+       
+          <img src="img/f5_filter_reusability_picture/confirmation_and_error_messages.png" class="smaller_picture_middle" alt="Implementation Support Materials – Confirmation and Error Messages">
+
+
+            </div>
+
+          </div>
+      </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Final Design -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Final Design</h3>
+
+                <h6 class="f5xc_color">Demonstrate the core functionalities of filter reusability.</h6>
+
+
+               <p>
+                Below are the hi-fi prototypes of the phase one design for filter reusability:
+              </p>   
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <img src="img/f5_filter_reusability_picture/gif/save_filter.gif" class="design_refinement_picture" alt="Browse Exam">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
+                          <td class="column02"><p>
+                              In F5XC, users can filter and narrow down the data displayed in dashboards and reports. These filters can be saved for future use, enabling users to quickly revisit specific views. When saving a 
+                              filter, users can assign a name and description for easier access and reference later on.
+                          </p></td>
+                        </tr>
+                        <tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/gif/access_saved_filters.gif" class="design_refinement_picture" alt="Search Exam">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
+                          <td class="column02"><p>
+                              The name of the currently applied filter is displayed in the saved filter access control. Once a filter is saved, its status is updated accordingly. Users can use the dropdown menu to access previously 
+                              saved filters. By clicking "View More Details," they can view additional information about filters, including their own, those created by others, and any that have expired due to the system’s data 
+                              retention policy. Users can also copy the URL to share or apply filters directly from this page.
+                          </p></td>
+                        </tr>
+                        <tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+        <img src="img/f5_filter_reusability_picture/gif/edit_and_update_filters.gif" class="design_refinement_picture" alt="Action on Exam">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              Users can edit and update their previously saved filters. If a filter was created by the user, they have the option to either update the existing filter or save the changes as a new one.
+                          </p></td>
+                        </tr>
+                        <tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/gif/manage_filters.gif" class="design_refinement_picture" alt="Report for Exam">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-55.png" class="icon_numbers" alt="Number 4"></td>
+                          <td class="column02"><p>
+                              Users can also use the Saved Filters Management page to access all filters across pages within the same tenant and namespace. Filters that reference a custom time range beyond the past 30 days may 
+                              produce inaccurate results and cannot be reapplied. Users can delete their own filters, while admins have the authority to delete any saved filters to help clean up outdated or unused entries in 
+                              the system.
+                          </p></td>
+                        </tr>
+                        <tr>
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Impacts -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay02">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"> 
+                <div class="item02" id="f5xc_page">
+                <h3>Impacts</h3>
+
+                <h6 class="f5xc_color">Enhance efficiency of resolution validation and set up model for team collaboration.</h6>
+
+                <p>
+                  The new feature allows customers to easily reapply previously used filters and <b>efficiently collaborate with team members and the F5 Managed Services team</b> on resolution validation.
+                </p>    
+
+
+                <p>
+                  Through this project, my cross-functional team and I <b>established a collaboration model that enabled close partnership with the DS team</b>. I was able to leverage their expertise, gather valuable input, 
+                  and <b>approach challenges from a system-level perspective</b>. This model is adaptable and can be reused by other team members for future projects.
+                </p>    
+
+
+                <p>
+                  I also <b>shared this experience with other F5 designers</b> through our designer all-hands and 1:1 conversations, highlighting the challenges I faced, the strategies I used to foster cross-functional collaboration, 
+                  and the approaches I took to overcome constraints and deliver an improved user experience.
+                </p>  
+
+
+                <p>
+                  I later had the opportunity to <b>support additional workspaces</b> (e.g., WAAP, MCAC, DA, etc.) in developing their filter reusability functionality. During this process, I refined and enhanced the feature, 
+                  and re-engaged with the Bot Defense PM and development team to support ongoing collaboration and feature updates.
+                </p>  
+
+
+            </div>
+          </div>
+
+
+
+            <div class="col-sm-6"> 
+                <div class="item02" id="f5xc_page">
+          
+                  <img src="img/f5_filter_reusability_picture/impacts.png" class="picture_half" alt="Impacts – Building Functionalities in Other Three Workspaces">
+
+          </div>
+      </div>
+
+
+
+
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Reflection -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+                <div class="item02" id="f5xc_page">
+                <h3>Reflection</h3>
+                </div>
+
+
+              <div class="col-sm-4"> 
+                  <div class=item02 id="f5xc_page">
+
+                      <h4>
+                          Limitation
+                      </h4>
+  
+                      
+                        <table class="a">
+                            <tr>
+                              <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>
+                                 Only core functionalities were built in phase one for the four workspaces. 
+                              </p></td>
+                            </tr>
+                            <tr>
+                              <td><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>
+                                API constraints lead to inefficient and inaccurate communication of value missing status.
+                              </p></td>
+                            </tr>
+                          </table>
+    
+                        </div>
+                 </div>
+
+              <div class="col-sm-4"> 
+                  <div class="item02" id="f5xc_page">
+
+                      <h4>
+                          Next Step
+                      </h4>
+  
+                        <table class="a">
+                            <tr>
+                              <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>Revise API to support easy tracking and presenting missing values in saved filters.
+                              </p></td>
+                            </tr>
+                             <tr>
+                              <td><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>Support editing right in the detail view when saving filters or after saving them.
+                              </p></td>
+                            </tr>
+                            <tr>
+                              <td><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>Support filter duplication and editing.
+                              </p></td>
+                            </tr>
+                            <tr>
+                                <td><p><i class="fas fa-caret-right"></i></p></td>
+                                <td><p>Polish info architecture of the global bar and visual treatments for different statuses of saved filters.
+                                </p></td>
+                              </tr>
+                            <tr>
+                              <td><p><i class="fas fa-caret-right"></i></p></td>
+                              <td><p>Improve filter functionality such as advanced filtering.
+                              </p></td>
+                            </tr>
+                          </table>
+    
+                        </div>
+                </div>
+
+
+
+              <div class="col-sm-4"> 
+                <div class="item02" id="f5xc_page">
+
+                  <h4>
+                      What I Learned
+                  </h4>
+
+                    <table class="a">
+                        <tr>
+                          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                          <td><p>
+                            Make stakeholders with different priorities aligned.
+                          </p></td>
+                        </tr>
+                        <tr>
+                          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                          <td><p>
+                            Make new component creation visible to the development team as early as possible.
+                          </p></td>
+                        </tr>
+                        <tr>
+                          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
+                          <td><p>
+                            Ally with PM to push for changes.
+                          </p></td>
+                        </tr>
+                      </table>
+
+                    </div>
+                </div>
+
+
+        </div>
+
+      </div>
+  </div>
+</div>
 
 
 
