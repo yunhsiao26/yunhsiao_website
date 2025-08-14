@@ -1049,7 +1049,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 #project_header h2 {
-	line-height: 0px;
+	line-height: 46px;
 	margin: 0;
 	color: rgba(38,38,38,0.9);
 	font-size: 34px;
