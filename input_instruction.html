@@ -138,10 +138,10 @@
                       <h3>Project Vision</h3>
                     <p>
                       F5XC (Distributed Cloud) is a SaaS-based platform that provides unified management, security, and networking for applications deployed across multi-cloud, on-premises, and edge environments. 
-                      During the onboarding setup, users needed to create a domain name and password. They both required multiple criteria to ensure uniqueness and security. However, poor readability and unclear 
+                      During the onboarding setup, users needed to create a domain name and password. They both <b>required multiple criteria to ensure uniqueness and security</b>. However, poor readability and unclear 
                       feedback made it difficult for users to understand which requirements were unmet and how to correct errors. A similar issue appeared in the configuration wizard when creating object names. 
-                      To solve this, we addressed all three scenarios together by designing a standardized interaction pattern. The new pattern helps users easily check requirements, understand their current status 
-                      at a glance, and clearly see what must be fixed before proceeding.
+                      To solve this, we addressed all three scenarios together by designing a standardized interaction pattern. The <b>new pattern helps users easily check requirements, understand their current status 
+                      at a glance, and clearly see what must be fixed before proceeding</b>.
                     </p>
   
                       </div>
@@ -236,7 +236,7 @@
   
                 <p>
                   At the start, we discovered that the instructions and error message presentation for both domain name and password creation in the F5XC platform made it difficult for users to understand input requirements, 
-                  restrictions, and errors. It was because multiple criteria were crammed into one paragraph, and there was no clear and specific feedback for user input. We later found the same issue in the object name creation 
+                  restrictions, and errors. It was because <b>multiple criteria were crammed into one paragraph</b>, and there was <b>no clear and specific feedback for user input</b>. We later found the same issue in the object name creation 
                   process within the configuration wizard. After discussing with the design system (DS) team, I decided to include this use case in the project as well. As a result, the project focused on four main scenarios: 
                 </p>    
   
@@ -274,21 +274,21 @@
                  <div class="item04" id="f5xc_page">
       
                <p class="paragraph_below_image">
-                I evaluated the current implementation and identified six usability issues across five heuristic categories (according to Jakob Nielsen’s heuristic principles):
+                I evaluated the current implementation and identified <b>six usability issues across five heuristic categories</b> (according to Jakob Nielsen’s heuristic principles):
                </p>     
 
 
                <table class="a">
                   <tr>
                     <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                    <td class="column02"><p>Visibility of System Status (The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time.):
+                    <td class="column02"><p><b>Visibility of System Status</b> (The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time.):
                                          <br> • The failing status becomes visible only after users press the proceed button.
                                          </p></td>
                   </tr>
 
                   <tr>
                     <td><p><i class="fas fa-caret-right"></i></p></td>
-                    <td><p>Consistency and Standards (Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.):
+                    <td><p><b>Consistency and Standards</b> (Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.):
                         <br> • The system shows inconsistent error messages for password input in the same scenario, which needs to be resolved.
                         <br> • The current password input pattern does not follow design system rules — error messages should appear inline rather than as section notifications.
                         <br> • Instructions and error messages are presented inconsistently across different use cases. They should either appear all at once or be shown contextually based on user input.
@@ -297,7 +297,7 @@
 
                   <tr>
                   <td><p><i class="fas fa-caret-right"></i></p></td>
-                  <td><p>Error Prevention (Even better than good error messages is a careful design that prevents a problem from occurring in the first place.):
+                  <td><p><b>Error Prevention</b> (Even better than good error messages is a careful design that prevents a problem from occurring in the first place.):
                     <br> • There is no input instructions for password and name fields.
                     <br> • Multiple criteria presented in a single sentence are difficult for users to digest and verify.
                      </p></td>
@@ -305,7 +305,7 @@
 
                <tr>
                  <td><p><i class="fas fa-caret-right"></i></p></td>
-                 <td><p>Aesthetic and Minimalist Design (Interfaces should not contain information that is irrelevant or rarely needed.) & Help Users Recognize, Diagnose, and Recover from Errors (Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution.):
+                 <td><p><b>Aesthetic and Minimalist Design</b> (Interfaces should not contain information that is irrelevant or rarely needed.) & <b>Help Users Recognize, Diagnose, and Recover from Errors</b> (Error messages should be expressed in plain language (no error codes), precisely indicate the problem, and constructively suggest a solution.):
                     <br> • Error messages do not specify which criteria have failed.
                      </p></td>
                </tr>
@@ -352,21 +352,21 @@
                 <table class="a">
                     <tr>
                       <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                      <td class="column02"><p>Error messages appear after a user action to indicate something went wrong and guide users on how to recover or proceed. Since users often scan rather than read in detail, 
-                                              error messages need to be clear, concise, and actionable.
+                      <td class="column02"><p>Error messages appear after a user action to <b>indicate something went wrong and guide users on how to recover or proceed</b>. Since users often scan rather than read in detail, 
+                                              error messages need to be <b>clear, concise, and actionable</b>.
                                            </p></td>
                     </tr>
   
                     <tr>
                       <td><p><i class="fas fa-caret-right"></i></p></td>
-                      <td><p>The message should address: "what happened,"  "why it happened and whether it might recur (if known and relevant)," "the impact, if any (only when helpful)," and "what actions to take next to resolve the issue."
+                      <td><p>The message should address: "<b>what</b> happened,"  "<b>why</b> it happened and whether it might recur (if known and relevant)," "the <b>impact</b>, if any (only when helpful)," and " <b>how</b> (what actions to take next) to resolve the issue."
                           </p></td>
                     </tr>
   
                     <tr>
                     <td><p><i class="fas fa-caret-right"></i></p></td>
-                    <td><p>The tone and terminology should be specific and clearly describe the problem to avoid confusion. It should feel human, avoiding unnecessary technical jargon or a robotic tone. 
-                           It should remain neutral — approachable yet credible. Avoid blaming the user or using all caps and excessive punctuation, as these can create feelings of alarm or aggression.
+                    <td><p>The tone and terminology should be specific and clearly describe the problem to avoid confusion. It should feel <b>human</b>, avoiding unnecessary technical jargon or a robotic tone. 
+                           It should remain <b>neutral</b> — approachable yet credible. <b>Avoid blaming</b> the user or using all caps and excessive punctuation, as these can create feelings of alarm or aggression.
                        </p></td>
                  </tr>
   
@@ -407,21 +407,21 @@
                   <h6 class="f5xc_color">Observe current design trends in the industry.</h6>
   
                 <p>
-                  With design principles in mind, I conducted feature benchmarking by reviewing around 20 tech systems to see how they handle multi-criteria input validation. From this research, I made several design decisions:
+                  With design principles in mind, I conducted <b>feature benchmarking</b> by reviewing around <b>20 tech systems</b> to see how they handle multi-criteria input validation. From this research, I made several design decisions:
                 </p>    
 
                 <table class="a">
                     <tr>
                       <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-                      <td class="column02"><p>Break a paragraph into multiple bullet-point checks.</p></td>
+                      <td class="column02"><p>Break a paragraph into <b>multiple bullet-point checks</b>.</p></td>
                     </tr>
                     <tr>
                       <td><p><i class="fas fa-caret-right"></i></p></td>
-                      <td><p>Start with a clean view, and display input instructions once users focus on the field.</p></td>
+                      <td><p>Start with a clean view, and <b>display input instructions once users focus on</b> the field.</p></td>
                   </tr>
                   <tr>
                    <td><p><i class="fas fa-caret-right"></i></p></td>
-                   <td><p>Provide instant feedback — show which criteria are met and which still need work. (Instruction list updates dynamically with colors and icons as users type.)</p></td>
+                   <td><p>Provide instant feedback — show which criteria are met and which still need work. (Instruction list <b>updates dynamically</b> with colors and icons as users type.)</p></td>
                  </tr>
                  <tr>
                    <td><p><i class="fas fa-caret-right"></i></p></td>
@@ -448,7 +448,7 @@
                  <div class="item04" id="f5xc_page">
       
                <p class="paragraph_below_image">
-                  Before moving into ideation, I clarified the interaction flow and defined all the statuses to cover in the design — from initial, focus, and unfocus states to typing, proceed, and error states.
+                  Before moving into ideation, I <b>clarified the interaction flow and defined all the statuses</b> to cover in the design — from initial, focus, and unfocus states to typing, proceed, and error states.
                </p>     
               
       
@@ -497,8 +497,8 @@
   
   
                   <p>
-                    Following the F5XC design system and drawing inspiration from other tech platforms, I began ideating potential information presentation and interaction methods, defining the visual style, and involving DS 
-                    team members throughout each design stage to gather instant feedback and ensure a smooth, concise experience. Below are the key improvements made throughout the iterations:
+                    Following the F5XC design system and drawing inspiration from other tech platforms, I began ideating potential <b>information presentation and interaction methods</b>, defining the <b>visual style</b>, and <b>involving DS 
+                    team members</b> throughout each design stage to gather instant feedback and ensure a smooth, concise experience. Below are the key improvements made throughout the iterations:
                   </p>   
   
 
@@ -524,7 +524,7 @@
                             <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
                             <td class="column02"><p>
                                 When users focus on the input field, all criteria appear as checkpoints. Initially, I used alert icons for unfulfilled items, which then switched to warning messages when the field was unfocused. 
-                                After feedback from the DS team, I shifted to a more neutral approach — using a grey check icon to indicate “to-do” status both during typing and when unfocused — to reduce frustration and avoid negative feelings.
+                                After feedback from the DS team, I shifted to a more neutral approach — using a <b>grey check icon to indicate “to-do” status both during typing and when unfocused</b> — to <b>reduce frustration and avoid negative feelings</b>.
                             </p>
 
                           
@@ -552,7 +552,7 @@
                             <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
                             <td class="column02"><p>
                                 When users proceeded and triggered an error, my initial idea was to keep the error status visible until all criteria were met. Later, considering users' feelings, I adjusted this by switching to 
-                                a neutral “to-do” status while users typed, better reflecting the "in-progress" state and reducing annoyance.
+                                a <b>neutral “to-do” status while users typed</b>, better <b>reflecting the "in-progress" state and reducing annoyance</b>.
                             </p>
 
                           
@@ -578,9 +578,9 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
                             <td class="column02"><p>
-                                From my observation, some systems use visual indicators to show password strength. At first, I explored this idea, thinking it might be helpful. However, after discussions with the DS team, 
+                                From my observation, some systems use <b>visual indicators to show password strength</b>. At first, I explored this idea, thinking it might be helpful. However, after discussions with the DS team, 
                                 we realized this approach works better when there are only one or two requirements. In our case, password strength could be addressed by simply increasing the minimum length (e.g., 12+ characters). 
-                                Since multiple validations were already in place, the visualization wouldn’t add much value. Ultimately, I decided not to pursue this approach.
+                                Since <b>multiple validations were already in place, the visualization wouldn’t add much value</b>. Ultimately, I decided not to pursue this approach.
                             </p></td>
                           </tr>
                    
@@ -606,7 +606,7 @@
                             <td class="column06"><img src="img/icons_numbers/icons_number-55.png" class="icon_numbers" alt="Number 4"></td>
                             <td class="column02"><p>
                                 Alongside inline instructions and error messages, I also considered using floating dialogs to avoid changes in input section height. However, keeping the dialog always visible could confuse users, 
-                                and in the configuration wizard, it would block the navigation bar. For these reasons, I ultimately chose to move forward with the inline message approach. 
+                                and in the configuration wizard, it would block the navigation bar. For these reasons, I ultimately chose to move forward with the <b>inline message approach</b>. 
                               </p>
     
                           </td>
@@ -633,7 +633,7 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-56.png" class="icon_numbers" alt="Number 5"></td>
                             <td class="column02"><p>
-                              I explored different color and icon options while following design system rules. Discussions with the DS team revealed that small outlined icons had poor legibility at 100% size compared to filled ones. 
+                              I explored different color and icon options while following design system rules. Discussions with the DS team revealed that <b>small outlined icons had poor legibility at 100% size compared to filled ones</b>. 
                               For the initial status, both outlined and filled grey icons could work, but creating a new outlined icon just for this case would not be reusable. 
                             </p>
   
@@ -666,7 +666,7 @@
                           <tr>
                             <td class="column06"></td>
                             <td class="column02"><p>
-                                I also tested for color blindness (e.g., protanopia, deuteranopia, achromatopsia) to ensure status differentiation. Eventually, I selected the option that best balanced legibility, consistency, and resource efficiency.
+                                I also tested for <b>color blindness</b> (e.g., protanopia, deuteranopia, achromatopsia) to ensure status differentiation. Eventually, I selected the option that best <b>balanced legibility, consistency, and resource efficiency</b>.
                             </p>
   
                           </td>
@@ -704,7 +704,7 @@
                                 While reviewing object name creation in the configuration wizard, I noticed that for the name taken scenario, the error message “Object already exists” was unclear and confusing — users would not 
                                 know how, where, or what to fix. Ideally, the system should specify “the name has been taken” and highlight the name field for correction. With this in mind, I explored several solutions: using a 
                                 section notification, highlighting the input field and section with a red border, adding an inline error message below the field, renaming “Name” to “Unique Name,” or integrating uniqueness into 
-                                the validation checkpoints. After feedback from the DS team, I decided to make uniqueness an independent requirement, supported by a progressive frontend API check while typing, rather than a 
+                                the validation checkpoints. After feedback from the DS team, I decided to <b>make uniqueness an independent requirement</b>, supported by a <b>progressive frontend API check while typing</b>, rather than a 
                                 backend-only check after submission (even with a delayed API call to reduce the number of requests).
                             </p>
   
@@ -732,9 +732,9 @@
                           <tr>
                             <td class="column06"><img src="img/icons_numbers/icons_number-58.png" class="icon_numbers" alt="Number 7"></td>
                             <td class="column02"><p>
-                                To make the criteria easier for users to understand, I worked with the DS team to break down long paragraphs into checkpoints and reorder them for better logic. We refined the wording to be more 
-                                straightforward and intuitive, and I proposed adding examples for special characters (any ASCII character is accepted, and leading/trailing spaces are not trimmed) to give users clarity. 
-                                During this process, I also noticed inconsistent terminology across different places. By collaborating with the DS team, we clarified definitions and documented standardized terms in the design 
+                                To make the criteria easier for users to understand, I worked with the DS team to <b>break down long paragraphs into checkpoints</b> and <b>reorder them for better logic</b>. We refined the wording to be more 
+                                straightforward and intuitive, and I proposed <b>adding examples for special characters</b> (any ASCII character is accepted, and leading/trailing spaces are not trimmed) to give users clarity. 
+                                During this process, I also noticed inconsistent terminology across different places. By collaborating with the DS team, we <b>clarified definitions and documented standardized terms</b> in the design 
                                 system for future reference.
                             </p>
   
@@ -893,8 +893,8 @@
                 <h6 class="f5xc_color">Enhance efficiency of multi-criteria input validation and standardize terminology usage.</h6>
 
                 <p>
-                    The new standardized design pattern enables users to efficiently review and verify multiple input criteria. This project also provided an opportunity to resolve other error message issues in configuration, 
-                    clarify input character and letter terminology, and define their usage in the design system.
+                    The <b>new standardized design pattern</b> enables users to efficiently review and verify multiple input criteria. This project also provided an opportunity to <b>resolve other error message issues</b> in configuration, 
+                  <b>clarify input character and letter terminology</b>, and define their usage in the design system.
                 </p>    
 
 
