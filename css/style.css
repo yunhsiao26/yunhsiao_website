@@ -161,7 +161,7 @@ ul, ol {
 	
 	#weblogo:hover {
 		filter: alpha(opacity=80);
-		opacity: .8;
+		opacity: .;
 	}
 	
 	
@@ -231,7 +231,7 @@ ul, ol {
 		font-weight: 650;
 	}
 	.navbar-default .navbar-toggle:hover >.icon-bar {
-		background-color: rgba(38,38,38, 0.8);
+		background-color: rgba(70,69,71, 0.8);
 	}
 	
 	
