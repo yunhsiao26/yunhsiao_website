@@ -218,7 +218,7 @@ ul, ol {
 	}
 	
 	
-	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	.navbar-default .navbar-nav c.active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 		color:  rgba(38,38,38,0.8); !important;
 		background-color: transparent;
 		font-weight: 650;
@@ -615,6 +615,14 @@ img.team-img {
 
 
 
+@keyframes fadeInOverlay {
+	from {
+	  opacity: 0; /* Start completely transparent */
+	}
+	to {
+	  opacity: 1; /* End fully visible */
+	}
+  }
 
 
 .project_intro_filter_reusability {
@@ -628,7 +636,12 @@ img.team-img {
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
+
+
+
+
 
 .project_intro_filter_reusability .overlay {
 	padding: 100px 0;
@@ -638,8 +651,6 @@ img.team-img {
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
 }
-
-
 
 
 
@@ -658,6 +669,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_waf_exclusion_policy .overlay {
@@ -686,6 +698,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_input_instruction .overlay {
@@ -715,6 +728,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_bad_bot_report .overlay {
@@ -744,6 +758,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_kosmos_up .overlay {
@@ -773,6 +788,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_kosmos_ots_exam_review .overlay {
@@ -800,6 +816,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_kosmos_measurements .overlay {
@@ -826,6 +843,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_kosmos_controls .overlay {
@@ -850,6 +868,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_msa_edp .overlay {
@@ -874,6 +893,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_msa_tf .overlay {
@@ -898,6 +918,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_msa .overlay {
@@ -921,6 +942,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_shard .overlay {
@@ -945,6 +967,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_cms .overlay {
@@ -970,6 +993,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_parking_angel .overlay {
@@ -994,6 +1018,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_helper .overlay {
@@ -1019,6 +1044,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_byom .overlay {
@@ -1043,6 +1069,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_sushi_train .overlay {
@@ -1068,6 +1095,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
 }
 
 .project_intro_design_gallery .overlay {
