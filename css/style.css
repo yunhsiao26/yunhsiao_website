@@ -12,6 +12,7 @@ body, html {
 
 h1 {
 	font-size: 46px;
+	line-height: 150%;
 	letter-spacing: 0.5px;
 	font-weight: 550;
 	font-family: 'Poppins', sans-serif;
@@ -21,7 +22,7 @@ h1 {
 
 h2 {
 	font-size: 34px;
-	line-height: 20px;
+	line-height: 150%;
 	margin: 0;
 	color: rgba(38,38,38,0.8);
 	margin-bottom: 30px;
@@ -34,6 +35,7 @@ h2 {
 h3 {
 	font-size: 25px;
 	letter-spacing: 0.2px;
+	line-height: 150%;
 	color: rgba(38,38,38,0.8);
 	font-weight: 550;
 	padding-bottom: 0px;
@@ -42,6 +44,7 @@ h3 {
 
 h4 {
 	font-size: 23px;
+	line-height: 34px;
 	color: rgba(38,38,38,0.8);
 	font-weight: 550;
 	line-height: 150%;
@@ -625,6 +628,43 @@ img.team-img {
   }
 
 
+
+
+
+
+.project_intro_get4x {
+	display: table;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 3%; 
+	background: url(../img/project_header/get4x_project_header.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
+}
+
+
+
+
+.project_intro_get4x .overlay {
+	padding: 100px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+
+
+
 .project_intro_filter_reusability {
 	display: table;
 	width: 100%;
@@ -1138,6 +1178,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	line-height: 30px;
 	text-align: left;
 	color: rgba(38,38,38,0.8);
+}
+
+
+
+
+
+
+
+
+.get4x_color{
+	color: #A6843B;
+}
+
+#get4x_page .fa-caret-right{
+	color: #A6843B;
 }
 
 
