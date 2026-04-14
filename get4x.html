@@ -986,19 +986,19 @@
                           <td class="column06"><img src="img/icons_numbers/icons_number-59.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
                             My initial concept was to position the AI assistant as a standalone category. After further consideration and consultations with SMEs, I decided to <b>embed the AI assistant into the browsing experience 
-                            to streamline exploration</b>, and renamed the category to Explore to better reflect its expanded functionality. I replaced the list view with the embedded AI assistant, as its use cases are largely 
-                            covered by GenAI capabilities and it is used less frequently than the map view and AI assistant, based on my assumption. To better support expats who revisit the same money changers regularly, I 
-                            moved the "Saved List" to the first navigation level, taking advantage of the freed-up space.
+                            to streamline exploration</b>, and renamed the category to “Explore” to better reflect its expanded functionality. I replaced the list view with the embedded AI assistant, as its use cases can now be 
+                            handled by GenAI, and it is used less often than the map view and likely the AI assistant itself. To better support expats who revisit the same money changers regularly, I moved the "Saved List" up 
+                            to the primary navigation level, taking advantage of the freed-up space.
                           </p>
                         
                           <p>
                             I also reworked the conversation structure — shifting from a single conversation thread to scenario-based channels driven by user filters and entry points. This evolved further into <b>starting a new 
-                            conversation by default</b>, while allowing users to revisit previous ones. This approach helps <b>reduce hallucination risks and prevents outdated information from misleading users</b>.
+                            conversation by default</b>, while allowing users to revisit previous ones. This approach helps <b>reduce hallucination risks and  prevents outdated information from carrying over and potentially misleading users</b>.
                           </p>                           
                         
                           <p>
-                            Finally, the AI assistant evolved from offering general help to delivering a more guided and <b>personalized onboarding experience</b> through suggested queries. Along the way, I finalized the service logic: 
-                            the AI assistant is available only after login to <b>protect user privacy, ensure data security, and allocate system resources to engaged users more efficiently</b>.
+                            Finally, the AI assistant evolved from from providing general help to offering a more guided and <b>personalized onboarding experience</b> through suggested queries. At the same time, I finalized the service logic: 
+                            the assistant is available only after login to <b>protect user privacy, ensure data security, and allocate system resources more efficiently to engaged users</b>.
                           </p>                              
                         
                           </td>
@@ -1028,9 +1028,9 @@
                           <td class="column06"><img src="img/icons_numbers/icons_number-60.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
                             For the query input, I designed the <b>initial experience with suggested prompts to avoid a blank starting state and help users get started quickly</b>. Input flexibility is supported through typing, voice 
-                            input, and media attachments. To keep the interface clean, concise, and intuitive, I grouped related functions together and aligned the interaction patterns with familiar GenAI tools. During iteration, 
-                            I replaced the expand input control with a clear-all action. Since the input field automatically expands as users type —and queries in the currency exchange context are typically short — the expand 
-                            option added limited value. This change also improved space efficiency on mobile design.
+                            input, and media attachments. To keep the interface clean, concise, and intuitive, I grouped related functions together and aligned the interaction patterns with those users are already familiar with from 
+                            popular GenAI tools. During iteration, I replaced the expand input control with a clear-all action. Since the input field automatically expands as users type —and queries in the currency exchange context 
+                            are typically short — the expand option added limited value. This change also improved space efficiency on mobile design.
                           </p></td>
                         </tr>
                     
@@ -1062,10 +1062,11 @@
                           </p>
                         
                           <p>
-                            Upon further consideration, instead of enabling reservations directly from the data grid, I guided users to the money changer’s main page to confirm real-time rates and store status before proceeding. 
-                            This avoids potential misinformation, as exchange rates and operating hours may change while users navigate the app. </b>To further build trust, I added a brief explanation of how the results were 
-                            generated</b>, bridging the generated content and follow-up suggestions. Finally, to <b>support one-handed use and consider user finger dexterity</b> as well as the scenario of multiple follow-up suggestions, 
-                            I used recommended query buttons, making it easier for users to scan, tap, and continue the conversation.
+                            Upon further consideration, I realized that exchange rates and store availability change over time. If this information is not automatically updated within the channel, it could become outdated and 
+                            potentially mislead users when they revisit it later. Therefore, instead of allowing reservations directly from the data grid, I guided users to the money changer’s main page to confirm real-time rates 
+                            and store status before proceeding. <b>To further build trust, I added a brief explanation of how the results were generated</b>, bridging the generated content and follow-up suggestions. Finally, to <b>support 
+                            one-handed use and account for user finger dexterity</b> as well as the scenario of multiple follow-up suggestions, I used recommended query buttons, making it easier for users to scan, tap, and continue 
+                            the conversation.
                           </p>                           
                         
                           </td>
@@ -1165,7 +1166,7 @@
 
 
 
-<!-- Design Iteration & Improvement - Notifications & Reservation Tracking -->
+<!-- Design Iteration & Improvement - Reservation Tracking & Notifications-->
 
 <div id="project_body_section">
   <div class="project_body_overlay01">
@@ -1174,7 +1175,7 @@
             <div class="col-sm-12"> 
                 <div class="item04" id="get4x_page">
 
-                <h3>Design Iteration & Improvement - Notifications & Reservation Tracking</h3>
+                <h3>Design Iteration & Improvement - Reservation Tracking & Notifications</h3>
 
                 <h6 class="get4x_color">Enable efficient reservation workflow.</h6>
 
