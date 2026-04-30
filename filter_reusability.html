@@ -329,19 +329,22 @@
         <div class="item04" id="f5xc_page">
 
       <p class="paragraph_below_image">
-        However, in F5XC, there was no way for users to reuse filters or use others' filters, which caused inefficient communication between our TAMs and clients. Previously, in SPM, users had the functionality but were 
-        unable to delete expired ones. Thus, we got two main goals to achieve in this project: 
+        In F5XC, we already had filtering capabilities, but there was no way to reuse filters or leverage filters created by others. This led to inefficient workflows and added friction in communication between TAMs and clients, 
+        as well as among client-side security teams. In contrast, the legacy SHAPE Security platform did support reusable filters, but lacked proper management, like the ability to delete expired ones. Thus, for this project, we 
+        defined two primary goals:
       </p>    
 
 
       <table class="a">
        <tr>
          <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-         <td class="column02"><p>Support <b>sharing, saving, and reusing a set of filters</b> created by all users in the same tenant to smoother the communication between our TAMs and clients, as well as the communication between security engineers of our clients. </p></td>
+         <td class="column02"><p>Enable users within the same tenant to <b>save, share, and reuse filters</b>, making collaboration between TAMs and clients much smoother.
+           </p></td>
        </tr>
        <tr>
          <td><p><i class="fas fa-caret-right"></i></p></td>
-         <td><p>Support <b>deleting invalid saved filters</b>.</p></td>
+         <td><p>Introduce proper lifecycle management by allowing users to <b>delete outdated or invalid filters</b>.
+        </p></td>
      </tr>
      </table>
 
@@ -369,19 +372,19 @@
   <table class="a">
    <tr>
      <td class="column01"><p><i class="fas fa-caret-right"></i></p></td>
-     <td class="column02"><p>Save filters (including logic for saving and saving as). </p></td>
+     <td class="column02"><p>Saving filters, including both “save” and “save as” logic.</p></td>
    </tr>
    <tr>
      <td><p><i class="fas fa-caret-right"></i></p></td>
-     <td><p>Access saved filters.</p></td>
+     <td><p>Accessing saved filters.</p></td>
  </tr>
  <tr>
   <td><p><i class="fas fa-caret-right"></i></p></td>
-  <td><p>Apply saved filters (including logic for applying and handling expiration situations).</p></td>
+  <td><p>Applying saved filters, with clear handling for expiration scenarios.</p></td>
 </tr>
 <tr>
   <td><p><i class="fas fa-caret-right"></i></p></td>
-  <td><p>Delete saved filters (including logic for deleting).</p></td>
+  <td><p>Deleting saved filters, with proper deletion logic in place.</p></td>
 </tr>
  </table>
 
