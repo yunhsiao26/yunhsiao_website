@@ -508,10 +508,17 @@
                <td><p>Introducing search to quickly locate saved filters.</p></td>
                </tr>
                </table>
-  
+
+
+
+              <p>
+                Through recurring stakeholder sessions and Maze testing, I <b>gathered feedback from over 20 SMEs</b> to help refine the project scope and drive decisions around interaction logic and information architecture.
+              </p>    
+     
 
                 </div>
                 </div>
+
 
 
 
@@ -550,7 +557,10 @@
 
 
 
-<!-- Design Challenges & Iteration -->
+
+
+
+<!-- Design Challenges & Iteration – New Design Pattern -->
 
 <div id="project_body_section">
   <div class="project_body_overlay01">
@@ -559,19 +569,18 @@
             <div class="col-sm-12"> 
                 <div class="item04" id="f5xc_page">
 
-                <h3>Design Challenges & Iteration</h3>
+                <h3>Design Challenges & Iteration – New Design Pattern</h3>
 
-                <h6 class="f5xc_color">Create new patterns, optimize info architecture, and address value missing situations.</h6>
+                <h6 class="f5xc_color">Develop feasible and scalable solutions to accommodate new functionality across the platform.</h6>
 
 
                 <p>
-                  By utilizing recurring meetings and Maze, I <b>collected feedback from over 20 SMEs</b> to help rescope the project and make decisions on the logic design and information presentation.
+                  There was no existing component to support this functionality, so we needed to create a new design pattern that <b>worked for Bot Defense and could scale across other XC workspaces</b>.
                 </p>   
 
                 <p>
-                  As mentioned above, I encountered several design challenges during the process. The below are the most complex and interesting ones:
+                  I started by exploring ways to reuse existing UI elements.
                 </p>   
-
 
 
                 </div>
@@ -584,7 +593,7 @@
 
 
 
-        <img src="img/f5_filter_reusability_picture/challenge_01.png" class="design_refinement_picture" alt="Challenge 1 - New Design Pattern">
+        <img src="img/f5_filter_reusability_picture/challenge_01.1.png" class="design_refinement_picture" alt="Ideate potential solutions to accommodate new functionality.">
 
         <div class="row">
             <div class="col-sm-12"> 
@@ -594,24 +603,11 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                              There was no existing component that could accommodate the new functionality, so we needed to propose a new one that could <b>meet the needs of Bot Defense and apply to other workspaces</b> in the console. 
-                              I explored the idea of utilizing “filter icon” or “more action icon” as a control to show a dropdown menu, and with SMEs’ feedback of wanting to know which filter is currently applied, explored 
-                              <b>presenting the saved filter name with status</b> on the first layer. In the second iteration, I moved the “Saved Filters” control to the first layer to make it stand out and easier to access, made 
-                              the “Save” feature more dominant, and later figured out a way to <b>show all key controls in the first layer, in a more concise way</b>. I also added new functionalities, including the <b>“Return to Previous 
-                              Status” control and the “Restore Defaults” control</b> to make the feature more user-friendly. The “save filter” logic was also polished – <b>only allow owners and admins to save (update) after editing 
-                              a saved filter</b>. Others could only “save as” a new one.   
-                          </p>
-                        
-                          <p>
-                              Besides, I explored different information architecture design for the filter feature, and the <b>visual treatments for the edited part</b> of a saved filter. After consulting with the DS team, I realized it 
-                              was a significant change that required more thinking and would take a long time, which would delay the release time. It might also not be able to be implemented in other workspaces simultaneously with 
-                              the implementation of this project, which may lead to an inconsistency issue. Therefore, we did not go with this option for phase one. 
-                          </p>
-                        
-                          <p>
-                              During the exploration, I gained a deep understanding that although I was working on and responsible for Bot Defense, I was also <b>accountable for other workspaces</b>. Thus, I kept this in mind and <b>actively 
-                              communicated with my PM to ensure we remained aligned</b>. This concept also shaped my decision to <b>involve the design system team in the feedback collection process and to approach design decisions from a more 
-                              systematic perspective</b>.
+                              My exploration began with using the filter icon or the “more actions” control to trigger a dropdown menu. During iteration, I realized users could already share filtered views simply by copying the 
+                              browser URL, so a dedicated “copy to share” action wasn’t essential. I also received feedback that users wanted clearer visibility of which filter was currently applied, so I explored <b>surfacing the 
+                              applied filter name and status directly in the first layer</b> of the UI, and continued the action control iteration. I also <b>reduced the steps required to access saved filters</b> by introducing a dropdown 
+                              that displayed filters available for the current page. In parallel, I <b>refined the save logic with role-based permissions</b> – only filter owners and admins could update an existing saved filter after 
+                              editing, while other users could only “save as” a new version.
                           </p>
                         
                         </td>
@@ -627,7 +623,9 @@
 
 
 
-        <img src="img/f5_filter_reusability_picture/challenge_02.png" class="design_refinement_picture" alt="Challenge 2 - Information Presentation & Control">
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_01.2.png" class="design_refinement_picture" alt="Ideate different treatments for edited part of saved filters.">
 
         <div class="row">
             <div class="col-sm-12"> 
@@ -637,16 +635,203 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
                           <td class="column02"><p>
-                              Since filters could not be reused and used by others, and there was no option to delete expired filters, we aimed to develop a feature to address the issues, which information presentation and 
-                              control required exploration. Some initial ideas I had included: presenting a saved filter list with an apply, a share by copy URL, and a delete control. In each page, <b>only presenting the filters 
-                              that could be applied to that page</b>. Regarding filter naming rules, <b>allowing any characters (no input restriction), and allowing a name to be used only once in the same namespace (clients' user 
-                              segmentation)</b>. Later with SMEs' feedback, I added a "Description" column to allow users to articulate the purposes of the filter set, and added a “Created by” column as a reference.
+                              I later explored alternative information architectures for the filter feature, along with different visual treatments for edited saved filters. However, after consulting with the DS team, I realized 
+                              the change would have a much broader impact than expected. It required deeper exploration, which would significantly delay the release timeline, and likely couldn’t be rolled out consistently across 
+                              other XC workspaces at the same time. This would create potential inconsistencies in the platform experience. As a result, we decided not to pursue this direction for phase one, though it remained a 
+                              strong candidate for future phases or a dedicated design system initiative.
+                          </p>
+                          
+                          <p>
+                              This experience also reinforced an important mindset for me: although I was directly responsible for Bot Defense, my design decisions also impacted the broader XC ecosystem. I proactively <b>aligned 
+                              with my PM on the importance of designing beyond a single workspace</b>, which further shaped my approach of <b>involving the DS team early and making decisions from a more scalable, system-level perspective</b>.
+                          </p>
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_01.3.png" class="design_refinement_picture" alt="Show all key controls concisely in the first layer.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              Continuing the exploration, I moved the “Saved Filters” control into the first layer to make the feature more <b>visible and easier to access</b>, while also giving the “Save” action greater prominence. 
+                              I also explored consolidating the “Update” action with filter access interactions, and placing the “Save Filter” and filter access controls closer together to <b>strengthen their relationship and 
+                              improve usability</b>. To maintain consistency with other XC workspaces, I additionally explored using the “More” menu to house actions such as “Show/Hide Filters.” Eventually, we found a way to <b>surface 
+                              all key controls within the first layer in a cleaner and more concise layout</b>. To make the experience more user-friendly, I also introduced new actions such as “Return to Previous Status” and 
+                              “Restore Defaults.” Based on feedback from other designers, I categorized saved filters into “My Filters” and “Others” to <b>improve discoverability and browsing efficiency</b>.
                           </p>
                         
                           <p>
-                              I also explored different ideas, such as allowing access to saved filters in different pages through a dropdown menu, viewing all filter values in an accordion, <b>dividing filters into “My Filters” & 
-                              “Others” to support efficient navigation and access</b>, and presenting a delete feature in a side modeless or a management page. Eventually, we moved forward with a pattern that aligned with the design 
-                              system and better met user needs.
+                              At the same time, I <b>refined the underlying logic with the PM and SMEs</b>: Users within the same tenant could access shared saved filters. The namespace-based data isolation was preserved to respect 
+                              separation across business units. In addition, each dashboard or report page would <b>only display filters relevant to that specific context, helping users stay focused on their current workflow</b>.
+                          </p>
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Design Challenges & Iteration – Information Presentation & Control -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay02">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Design Challenges & Iteration – Information Presentation & Control</h3>
+
+                <h6 class="f5xc_color">Streamline filter access, application, sharing, and management workflows.</h6>
+
+
+                <p>
+                  To support reusing filters, we needed a seamless way for users to access previously saved filters for quick application and sharing. To keep the system maintainable, we also introduced deletion capabilities 
+                  for outdated and invalid filters.
+                </p>   
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_02.1.png" class="design_refinement_picture" alt="Ideate filter access and detail presentation.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
+                          <td class="column02"><p>
+                              To support this workflow, I introduced a side modal in each dashboard and report page to present saved filters. The list was context-aware — showing only filters that could be applied to the current page — helping 
+                              users <b>stay focused and reducing unnecessary noise</b>. During iteration, I added a “Description” field so users could <b>provide context and quickly understand the purpose of each saved filter</b>. I also introduced a 
+                              “Created by” column, since saved filters were visible to all users within the same tenant.
+                          </p>
+                        
+                          <p>
+                              I explored multiple approaches for information architecture and interaction design along the way. One idea was enabling cross-page filter access through a dropdown menu. It was suggested during a design review. 
+                              However, after aligning with the PM and SMEs, I realized users rarely needed to switch pages in that moment, and the interaction also conflicted with design system guidelines, so we decided not to pursue it. 
+                              I also iterated on how users could view complete filter values. I initially explored accordions, but the component was being phased out due to long-scroll usability issues elsewhere in the system. I then tested 
+                              hover-based previews, but that conflicted with existing tooltip usage for truncated names. Eventually, I introduced a click-to-view detail pattern <b>using a multi-layer modeless experience, allowing users to focus 
+                              on filter details</b> such as the name, description, and full filter values. In parallel, I tested multiple layout and learned through SME feedback that <b>a wider layout was preferred because it could accommodate more 
+                              content more effectively</b>. Finally, I organized filters into “My Filters,” “Others,” and “Expired” categories to <b>improve navigation and easier access</b>.
+                          </p>   
+
+                        </td>
+                        </tr>
+                   
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_02.2.png" class="design_refinement_picture" alt="Streamline filter apply and share interactions.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
+                          <td class="column02"><p>
+                              For the filter apply interaction, my initial design used the filter name itself as a hyperlink to apply the filter. However, this pattern did not align with our design system guidelines, so I revised 
+                              the interaction by introducing a dedicated “Apply” button within the actions column of the table.
+                          </p>
+                          
+                          <p>
+                              There was also active discussion around the sharing experience. Although users could technically share a filtered view by copying the browser URL, the workflow wasn’t very intuitive or convenient. 
+                              I advocated for a dedicated “Copy to Share” action using existing components and moved it into the first layer to <b>make sharing faster and more discoverable</b>.
+                          </p>   
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_02.3.png" class="design_refinement_picture" alt="Tackle filter deletion and cleanup workflows.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              As more controls moved into the first layer, I realized the interface was becoming visually crowded. To <b>simplify the experience and support future scalability</b>, I moved deletion into a centralized 
+                              Management page where users could view and manage all filters across pages within the same tenant. In later iterations, I also <b>refined the deletion logic</b>: Users could only delete their own filters, 
+                              while admins had permission to delete any saved filter.
                           </p>
                         
                         </td>
@@ -661,37 +846,11 @@
 
 
 
-        <img src="img/f5_filter_reusability_picture/challenge_03.png" class="design_refinement_picture" alt="Challenge 3 - Time Expiration Situations">
-
-        <div class="row">
-            <div class="col-sm-12"> 
-                <div class="item04" id="f5xc_page">
-
-                    <table class="a">
-                        <tr>
-                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
-                          <td class="column02"><p>
-                              The system only retained data in the past 30 days, so we needed to figure out a way to tackle the situation when the data was no longer available owing to the outdated time frame, either <b>the whole or 
-                              part of the time expiration causes the whole or part of the data missing</b>. There were two types of time selection: generic (e.g., past X days), and custom (where users could pick a range in the past 30 
-                              days). My initial idea for treatments was that for the <b>filters with a generic time frame, we kept it the same</b>. It would never expire. We would allow users to apply and show the corresponding results. 
-                              As for the filters with a custom time frame, <b>when the partial or whole timeframe was out of 30 days, we would make the filter disabled without showing the apply or copy control</b>. I also utilized a warning 
-                              icon to present time expiration messages to users in the filter list view, but I later realized that it required API call. We were unable to know if the time had expired or not right at this moment. 
-                              Therefore, we eventually <b>presented the message in the detail view</b> instead, and planned to consider the edit feature in phase two.
-                          </p></td>
-                        </tr>
-                 
-
-                    </table>
-
-              </div>
-            </div>
-        </div>
 
 
 
 
-
-        <img src="img/f5_filter_reusability_picture/challenge_04.png" class="design_refinement_picture" alt="Challenge 4 - Filter Value Missing & Data Missing">
+        <img src="img/f5_filter_reusability_picture/challenge_02.4.png" class="design_refinement_picture" alt="Define comprehensive filter access and application logic.">
 
         <div class="row">
             <div class="col-sm-12"> 
@@ -701,20 +860,23 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-55.png" class="icon_numbers" alt="Number 4"></td>
                           <td class="column02"><p>
-                              The filter <b>keys and values were naturally dynamic</b>. They would change based on configuration. It was possible that a filter had been saved, but later some configurations changed, causing part of the filter keys and values 
-                              to no longer exist. We needed to figure out a treatment for this situation and convey it to users. My initial idea was to either automatically remove the non-existent filter keys and values, and inform 
-                              users that those values were no longer available, or disable the entire filter set and notify users that the filters could not be applied by displaying messages in the filter list view. Because the proposal 
-                              could not work due to API call constraints, I ideated other solutions, such as in both the result page and each filter detail view, indicating which exact values were missing. I later realized it was not 
-                              possible to identify exactly which part was missing without making an additional API call, which would negatively impact system performance.
-                            </p>
-  
-                            <p>
-                              Next, I explored the idea of giving users two options: applying the original ones and showing the corresponding results, or applying and omitting the missing values in the filter set. I learned from the 
-                              development team that in the result page, the missing values would be presented, but they were not applied. We were unable to automatically remove the display of missing values from the result page. 
-                              Eventually, we <b>utilized a disclaimer</b> as a workaround to address API limitations.
-                            </p>
+                              As the iteration progressed, I further refined the filter access and application logic. Saved filters were scoped to their dedicated namespaces to <b>respect data isolation across different business units</b>, 
+                              and shared URLs would preserve the associated namespace context. I also polished several interaction details — renaming the feature to “Saved Filters” to make it more intuitive, updating action 
+                              placements to <b>align with the latest design system patterns</b>, and <b>adding bulk deletion to help users manage multiple filters more efficiently</b>. To prevent conflicts and confusion, I decided <b>not to allow 
+                              multiple saved filters to be applied simultaneously on the same page</b>. I also explored adding distinct visual treatments for the currently applied filter, but implementing that required additional API 
+                              support, so it was deferred beyond phase one.
+                          </p>
+
+                          <p>
+                              Another major area I pushed on was naming flexibility. I advocated for <b>removing unnecessary input restrictions</b> and allowing users to include uppercase letters, spaces, and special characters in filter 
+                              names. Initially, the Bot Defense engineering team pushed back due to technical constraints and prioritization concerns. However, when other XC product teams later adopted the feature and supported the 
+                              change, I used that momentum to drive alignment back into Bot Defense. In the end, we established <b>a more user-friendly naming system while maintaining uniqueness</b> by allowing each filter name to be used 
+                              only once within the same namespace.
+                          </p>   
+
                         </td>
                         </tr>
+                    
 
                     </table>
 
@@ -724,10 +886,73 @@
 
 
 
+      </div>
+    </div>
+
+</div>  
 
 
 
-        <img src="img/f5_filter_reusability_picture/challenge_05.png" class="design_refinement_picture" alt="Challenge 5 - Deleted Filters">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Design Challenges & Iteration – Time Expiration Situations -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Design Challenges & Iteration – Time Expiration Situations</h3>
+
+                <h6 class="f5xc_color">Address conflict between limited data retention and custom time range selection.</h6>
+
+
+                <p>
+                  The system only retains data from the past 30 days, meaning users can only access information within that window. Because of that, we needed to carefully handle scenarios where saved filters referenced 
+                  outdated timeframes, resulting in partially or fully missing data.
+                </p>   
+
+            </div>
+        </div>
+
+
+
+
+          <img src="img/f5_filter_reusability_picture/challenge_03.0.png" class="big_picture_middle" alt="Time Selection Types">
+
+
+
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <p>
+                  There were two types of time selections in the system: The generic timeframes (relative time selection, such as “Past 7 Days”), and the custom time ranges, where users could select a specific period within the past 30 days.
+                </p>   
+
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_03.1.png" class="design_refinement_picture" alt="Ideate time expiration message presentation..">
 
         <div class="row">
             <div class="col-sm-12"> 
@@ -735,25 +960,23 @@
 
                     <table class="a">
                         <tr>
-                          <td class="column06"><img src="img/icons_numbers/icons_number-56.png" class="icon_numbers" alt="Number 5"></td>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            In some situations, the system could not present the updated view, so users might accidentally apply a deleted saved filter. (E.g., When a saved filter got removed from UserA side, but UserB has the 
-                            saved filter detail view open and has not refreshed to get the updated list yet, it is possible that UserB "apply" or "copy the URL" of a deleted saved filter.) I <b>listed down all the scenarios we 
-                            needed to address first</b>, and started to ideate potential solutions. My initial thought was showing some error messages when users applied a deleted saved filter, and automatically refreshing the page 
-                            for them. After syncing up with developers, I realized that the system did not know the filter had been deleted when it was applied. It required an extra API call to check it, which would lead to a 
-                            legacy issue.
+                             My initial proposal handled these two cases differently: For generic timeframes, I treated them as dynamic and reusable — for example, “Past 7 Days” would always represent the latest rolling seven-day 
+                             window, so these filters would never expire and could always be reapplied. For custom time ranges, the situation was more complex. If part or all of the selected timeframe fell outside the 30-day 
+                             retention window, the filter could return incomplete or invalid results. To prevent users from being misled, my initial approach was to disable those expired filters entirely, including their apply 
+                             and copy actions.
                           </p>
 
                           <p>
-                            Then we collaboratively proposed a new solution: <b>making an API call after a filter is applied</b> to check whether the associated saved filter still exists. If it has been deleted, we would display a message 
-                            prompting users to refresh the page to get the most up-to-date view. If users chooses not to refresh, but modifies some filter values and attempts to save, the “Update Saved Filters” button would be hidden, 
-                            while the option to “Save As” a new filter would remain available. Building on the feasible idea, we refined and iterated it, eventually arriving at an alternative version that could be more intuitive and 
-                            user-friendly: If users are only viewing the page and <b>make no changes, no reaction or message needs to be shown</b>. If users <b>make edits and attempt to update the filter, we display a message informing them that 
-                            the saved filter no longer exists and suggest using “Save As” to proceed</b>. If users <b>access a page via a URL tied to a deleted saved filter, we still present the filtered view, treating the filters as newly added</b>. 
-                            We would also show a message to inform users, and they have the option to save the filters as a new one.
-                          </p>
+                             Based on that logic, my initial design used warning icons with tooltip in the filter list to indicate expired timeframes. However, during iteration, I realized this approach relied on real-time API 
+                             calls, and we couldn’t reliably determine a filter’s expiration status directly within the list view. This led me to rethink the interaction and <b>collaborate with engineering on a more feasible solution</b>. 
+                             Eventually, I <b>utilized a dedicated tab to categorize expired filters, and paired it with clear expiration messaging</b> to help users quickly understand why those filters were no longer applicable.
+                          </p>   
+
                         </td>
                         </tr>
+                   
 
                     </table>
 
@@ -769,6 +992,348 @@
     </div>
 
 </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Design Challenges & Iteration – Filter Value Missing & Data Missing -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay02">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Design Challenges & Iteration – Filter Value Missing & Data Missing</h3>
+
+                <h6 class="f5xc_color">Handle dynamic filter keys and values caused by evolving configurations in saved filters.</h6>
+
+
+                <p>
+                  Filter keys and values were inherently dynamic and could change as configurations evolved. This meant a previously saved filter might later contain keys or values that no longer existed, so we needed a clear way 
+                  to handle and communicate these invalid states to users.
+                </p>   
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_04.1.png" class="design_refinement_picture" alt="Either automatically remove invalid filter values or disable the entire filter set.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
+                          <td class="column02"><p>
+                              In my initial exploration, I considered two approaches: Either automatically removing invalid filter values while notifying users of the changes, or disabling the entire filter set and displaying an 
+                              error message directly in the filter list view. However, during iteration, I realized <b>both approaches relied heavily on real-time API validation</b>, making them impractical within the existing 
+                              technical constraints.
+                          </p>
+                        
+
+                        </td>
+                        </tr>
+                   
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_04.2.png" class="design_refinement_picture" alt="Mark the missing values in both filter detail view and result page.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
+                          <td class="column02"><p>
+                              I then shifted the handling into the filter detail view instead. After validating with SMEs, I believed the better experience was to still allow users to apply the filter and view the available 
+                              results, rather than blocking them entirely. I explored marking missing values directly within the filter detail view, and indicating unavailable values again on the results page. However, after 
+                              syncing with engineering, I learned that <b>identifying exactly which values were missing required additional API calls</b>, which would <b>negatively impact system performance</b>.
+                          </p>
+                          
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_04.3.png" class="design_refinement_picture" alt="Display guidance messages on the results page to help users adjust invalid filters.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              Given that constraint, I explored alternative approaches – such as allowing filters to be applied while automatically omitting invalid values and notifying users afterward, or providing a general warning 
+                              message and guiding users to the filter detail view for more context. I also considered surfacing guidance directly on the results page to help users adjust invalid filters. However, I later realized <b>these 
+                              approaches were also infeasible due to the same API call constraints</b>.
+                          </p>
+                        
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_04.4.png" class="design_refinement_picture" alt="Utilize disclaimer and allow users to apply.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-55.png" class="icon_numbers" alt="Number 4"></td>
+                          <td class="column02"><p>
+                             I further explored giving users two options: applying the original filter set as-is, or applying the filter while omitting invalid values. However, after confirming with engineering, I learned that 
+                             even when invalid values were not actually applied, they would still appear in the filtered results view. Since we could not automatically remove those missing values from the UI, the experience 
+                             risked becoming misleading and confusing for users. As a result, I ultimately introduced a <b>disclaimer-based solution</b> as a pragmatic workaround to <b>address the API limitations while still keeping 
+                             users informed</b>.
+                          </p>
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Design Challenges & Iteration – Deleted Filters -->
+
+<div id="project_body_section">
+  <div class="project_body_overlay01">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <h3>Design Challenges & Iteration – Deleted Filters</h3>
+
+                <h6 class="f5xc_color">Address scenarios where the UI becomes out of sync with the latest system state.</h6>
+
+
+                <p>
+                  During implementation, we discovered edge cases where the UI could become out of sync with the latest system state. For example, if User A deleted a saved filter while User B still had its detail view open 
+                  without refreshing, User B could unintentionally apply or share a filter that no longer existed.
+                </p>   
+
+            </div>
+        </div>
+
+
+
+
+          <img src="img/f5_filter_reusability_picture/challenge_05.0.png" class="big_picture_middle" alt="The places where the UI could become out of sync with the latest system state.">
+
+
+
+
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                <p>
+                  To address these scenarios, I worked with the team to define safeguards such as error messaging and refresh handling to keep users informed and prevent invalid actions.
+                </p>   
+
+                </div>
+            </div>
+            
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_05.1.png" class="design_refinement_picture" alt="Map out four key scenarios.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
+                          <td class="column02"><p>
+                              I started by <b>mapping out four key scenarios</b> and exploring solutions for each. Throughout the process, I continuously involved the DS team in ideation and iteration to <b>ensure consistency 
+                              and bring in broader perspectives</b>. I also partnered closely with engineers to validate feasibility and investigate technical constraints, <b>ensuring the solutions were scalable and implementable</b>.
+                          </p>
+                        
+
+                        </td>
+                        </tr>
+                   
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_05.2.png" class="design_refinement_picture" alt="Convey current situations and react effectively.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
+                          <td class="column02"><p>
+                              My initial idea was to show an error message when users applied a deleted saved filter, and automatically refresh the page. However, after syncing with engineering, I learned the system <b>could not 
+                              detect deletion at the moment of application without making an additional API call</b>, which would lead to a legacy issue.
+                          </p>
+                          
+                          <p>
+                              We then co-created a new proposal: <b>triggering an API call to verify whether the saved filter still existed after a filter was applied</b>. If it has been deleted, users would be prompted 
+                              to refresh and retrieve the latest state. If they chose not to refresh but modified the filter, the “Update Saved Filter” option would be disabled, while “Save As” would remain available. 
+                          </p>   
+
+                          <p>
+                              Although this solution was workable, we believed a pre-check experience would provide a better experience. The DS team and I re-aligned with engineering to evaluate the cost of an additional API call, 
+                              and found it would introduce roughly 2–4 seconds of latency (server response time). To maintain a smooth experience, we might need a loading state (like a spinner) during the wait.
+                          </p>   
+
+
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <img src="img/f5_filter_reusability_picture/challenge_05.3.png" class="design_refinement_picture" alt="Provide feasible solutions based on different scenarios.">
+
+        <div class="row">
+            <div class="col-sm-12"> 
+                <div class="item04" id="f5xc_page">
+
+                    <table class="a">
+                        <tr>
+                          <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
+                          <td class="column02"><p>
+                              After another sync with backend engineers, I arrived at a solution that is both <b>feasible and more user-friendly</b>: If users are simply viewing the page with no changes, no message is shown. If they 
+                              edit the filters and choose to save as a new one, we allow it without interruption. If they attempt to update an existing filter, we notify them that the original saved filter no longer exists and 
+                              guide them to use “Save As” instead. If users land on a page via a URL linked to a deleted saved filter, we still render the filtered view as-is, treating it as a new filter state, while informing 
+                              users and offering the option to save it as a new filter.
+                          </p>
+                        
+                        </td>
+                        </tr>
+                    
+
+                    </table>
+
+              </div>
+            </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+</div>  
+
+
+
+
 
 
 
