@@ -205,7 +205,13 @@ ul, ol {
 		color:#079299;
 		font-weight: 550;
 	}
+
+    #menu.navbar-default .navbar-nav > li > a:focus { 
+    outline-color: transparent;
+    }
 	
+
+
 	
 	.navbar-header{
 		color: #262626;
@@ -366,6 +372,12 @@ ol.type li a:hover {
 }
 
 
+ol.type li a:focus {
+	outline-color: transparent;
+}
+
+
+
 .isotope-item {
 	z-index: 2
 }
@@ -519,6 +531,7 @@ padding-right: 10%;
 #about a:hover, a:focus {
 	text-decoration: none;
 	color: rgba(7,146,153,0.9);
+	outline: none;
 }
 
 #about a:visited {
@@ -608,14 +621,8 @@ img.team-img {
 
 /*Project Page*/
 
+
 /*Project Header*/
-
-
-
-
-
-
-
 
 
 @keyframes fadeInOverlay {
@@ -1313,9 +1320,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
-.hover_extra_link {
-	font-weight: 600;
-}
+
+
+
 
 
 
@@ -1795,6 +1802,29 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
+
+
+
+
+.hover_extra_link {
+	font-weight: 600;
+}
+
+
+#project_body_section .hover_extra_link:hover, .hover_extra_link:focus{
+	font-weight: 600;
+	color: rgba(7,146,153,0.9);
+	outline-color: transparent;
+
+}
+
+
+#project_body_section .hover_extra_link:active {
+	font-weight: 600;
+	color: rgba(38,38,38,0.8);
+	outline-color: transparent;
+
+}
 
 
 
