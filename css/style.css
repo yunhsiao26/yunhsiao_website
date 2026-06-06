@@ -1811,7 +1811,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-#project_body_section .hover_extra_link:hover, .hover_extra_link:focus{
+#project_body_section .hover_extra_link:hover, .hover_extra_link:focus, .hover_extra_link:active{
 	font-weight: 600;
 	color: rgba(7,146,153,0.9);
 	outline-color: transparent;
@@ -1819,12 +1819,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 
-#project_body_section .hover_extra_link:active {
-	font-weight: 600;
-	color: rgba(38,38,38,0.8);
-	outline-color: transparent;
-
-}
 
 
 
