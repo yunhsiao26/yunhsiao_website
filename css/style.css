@@ -201,10 +201,19 @@ ul, ol {
 		font-size: 15px;
 		letter-spacing: 1.3px;
 	}
+
 	#menu.navbar-default .navbar-nav > li > a:hover {
 		color:#079299;
 		font-weight: 550;
 	}
+	
+
+	#menu.navbar-default .navbar-nav > li > a:focus {
+		color:#079299;
+		font-weight: 550;
+	}
+
+
 
     #menu.navbar-default .navbar-nav > li > a:focus { 
     outline-color: transparent;
