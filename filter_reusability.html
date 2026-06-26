@@ -579,11 +579,8 @@
 
 
                 <p>
-                  There was no existing component to support this functionality, so we needed to create a new design pattern that <b>worked for Bot Defense and could scale across other XC workspaces</b>.
-                </p>   
-
-                <p>
-                  I started by exploring ways to reuse existing UI elements.
+                  There was no existing component to support this functionality, so we needed to create a new design pattern that <b>worked for Bot Defense and could scale across other XC workspaces</b>. I went through nearly 20 
+                  iterations before arriving at the final solution. Below are my key iterations that shaped the design.
                 </p>   
 
 
@@ -607,11 +604,11 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                              My exploration began with using the filter icon or the “more actions” control to trigger a dropdown menu. During iteration, I realized users could already share filtered views simply by copying the 
-                              browser URL, so a dedicated “copy to share” action wasn’t essential. I also received feedback that users wanted clearer visibility of which filter was currently applied, so I explored <b>surfacing the 
-                              applied filter name and status directly in the first layer</b> of the UI, and continued the action control iteration. I also <b>reduced the steps required to access saved filters</b> by introducing a dropdown 
-                              that displayed filters available for the current page. In parallel, I <b>refined the save logic with role-based permissions</b> – only filter owners and admins could update an existing saved filter after 
-                              editing, while other users could only “save as” a new version.
+                              My exploration began with reusing existing UI elements such as the filter icon or the “more actions” control to trigger a dropdown menu. During iteration, I realized users could already share filtered views 
+                              simply by copying the browser URL, so a dedicated “copy to share” action wasn’t essential. I also received feedback that users wanted clearer visibility of which filter was currently applied, so I 
+                              explored <b>surfacing the applied filter name and status directly in the first layer</b> of the UI, and continued the action control iteration. I also <b>reduced the steps required to access saved 
+                              filters</b> by introducing a dropdown that displayed filters available for the current page. In parallel, I <b>refined the save logic with role-based permissions</b> – only filter owners and admins 
+                              could update an existing saved filter after editing, while other users could only “save as” a new version.
                           </p>
                         
                         </td>
