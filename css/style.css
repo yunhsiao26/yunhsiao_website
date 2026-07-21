@@ -86,11 +86,6 @@ p.intro {
 
 
 
-.paragraph_with_space_above{
-	margin-top: 60px;
-}
-
-
 
 
 a {
@@ -1450,6 +1445,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+
 .project_overview_picture{
 	object-fit: contain;
 	width: 100%;
@@ -1753,10 +1749,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+.strategy_icon_two_column {
+	width: 50px;
+	height: 50px;
+	margin-top: 75%;
+}
+
+
+
+.strategy_icon_three_column {
+	width: 50px;
+	height: 50px;
+	margin-top: 60%;
+}
+
+
+
+
 .decision_icon {
 	width: 50px;
 	height: 50px;
-	margin-top: 50%;
+	margin-top: 40%;
 }
 
 
@@ -1788,6 +1801,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .paragraph_above_issue_section{
 	padding-bottom: 10%;
 }
+
+
+
+.paragraph_above_icon_section{
+	padding-bottom: 8%;
+}
+
+
+
+.paragraph_with_space_above{
+	margin-top: 60px;
+}
+
+
+
+
 
 
 
