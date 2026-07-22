@@ -710,11 +710,11 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-52.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                              My exploration began with reusing existing UI elements such as the filter icon or the “more actions” control to trigger a dropdown menu. During iteration, I realized users could already share filtered views 
-                              simply by copying the browser URL, so a dedicated “copy to share” action wasn’t essential. I also received feedback that users wanted clearer visibility of which filter was currently applied, so I 
-                              explored <b>surfacing the applied filter name and status directly in the first layer</b> of the UI, and continued the action control iteration. I also <b>reduced the steps required to access saved 
-                              filters</b> by introducing a dropdown that displayed filters available for the current page. In parallel, I <b>refined the save logic with role-based permissions</b> – only filter owners and admins 
-                              could update an existing saved filter after editing, while other users could only “save as” a new version.
+                              My exploration began with reusing existing UI elements such as the filter icon or the “more actions” control to trigger a dropdown menu. During iteration, I realized users could already share 
+                              filtered views simply by copying the browser URL, so a dedicated “copy to share” action was not essential, and people wanted clearer visibility of which filter was currently applied, so I explored 
+                              <b>surfacing the applied filter name and status directly in the first layer</b>, and removed the share action. I also <b>reduced the steps to access saved filters</b> by introducing a dropdown to display filters 
+                              available for the current page. In parallel, I <b>refined the save logic with role-based permissions</b> – only filter owners and admins could update an existing saved filter after editing, while others 
+                              could only “save as” a new version.
                           </p>
                         
                         </td>
@@ -743,14 +743,13 @@
                           <td class="column06"><img src="img/icons_numbers/icons_number-53.png" class="icon_numbers" alt="Number 2"></td>
                           <td class="column02"><p>
                               I later explored alternative information architectures for the filter feature, along with different visual treatments for edited saved filters. However, after consulting with the DS team, I realized 
-                              the change would have a much broader impact than expected. It required deeper exploration, which would significantly delay the release timeline, and likely couldn’t be rolled out consistently across 
-                              other XC workspaces at the same time. This would create potential inconsistencies in the platform experience. As a result, we decided not to pursue this direction for phase one, though it remained a 
-                              strong candidate for future phases or a dedicated design system initiative.
+                              the change would have a much broader impact than expected and required deeper exploration. It would significantly delay the release timeline, and likely could not be rolled out consistently across 
+                              other XC workspaces at the same time. As a result, we decided to defer this direction from Phase 1 and carry it forward as a standalone enhancement for a future phase.
                           </p>
                           
                           <p>
-                              This experience also reinforced an important mindset for me: although I was directly responsible for Bot Defense, my design decisions also impacted the broader XC ecosystem. I proactively <b>aligned 
-                              with my PM on the importance of designing beyond a single workspace</b>, which further shaped my approach of <b>involving the DS team early and making decisions from a more scalable, system-level perspective</b>.
+                              This experience reinforced an important mindset for me: Although I owned the Bot Defense experience, my design decisions impacted the broader XC platform. I <b>aligned closely with my PM to design 
+                              beyond a single workspace</b>, which further shaped my approach of <b>involving the Design System team early and making decisions from a more scalable, system-level perspective</b>.
                           </p>
 
                         </td>
@@ -779,11 +778,11 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-54.png" class="icon_numbers" alt="Number 3"></td>
                           <td class="column02"><p>
-                              Continuing the exploration, I moved the “Saved Filters” control into the first layer to make the feature more <b>visible and easier to access</b>, while also giving the “Save” action greater prominence. 
-                              I also explored consolidating the “Update” action with filter access interactions, and placing the “Save Filter” and filter access controls closer together to <b>strengthen their relationship and 
-                              improve usability</b>. To maintain consistency with other XC workspaces, I additionally explored using the “More” menu to house actions such as “Show/Hide Filters.” Eventually, we found a way to <b>surface 
-                              all key controls within the first layer in a cleaner and more concise layout</b>. To make the experience more user-friendly, I also introduced new actions such as “Return to Previous Status” and 
-                              “Restore Defaults.” Based on feedback from other designers, I categorized saved filters into “My Filters” and “Others” to <b>improve discoverability and browsing efficiency</b>.
+                              Continuing the exploration, to make the feature more <b>visible and easier to access</b>, I moved the “Saved Filters” control into the first layer and gave the “Save” action greater prominence. I also 
+                              explored consolidating the “Update” action with filter access control and placing the “Save Filter” action closer to <b>create a more intuitive workflow</b>. To maintain consistency with other XC 
+                              workspaces, I additionally explored using the “More” menu to house the “Show/Hide Filters” action. Eventually, we found <b>a cleaner layout to surface all key controls in the first layer</b>. 
+                              To make the experience more user-friendly, I introduced new actions such as “Return to Previous Status” and “Restore Defaults.” I also incorporated designer feedback and categorized saved 
+                              filters into “My Filters” and “Others” to <b>improve discoverability and browsing efficiency</b>.
                           </p>
                         
                           <p>
