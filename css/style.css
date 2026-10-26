@@ -515,11 +515,11 @@ ol.type li a:focus {
 	padding: 100px 0;
 	color: rgba(5,14,18,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
-	background: #f8f8f8; /* Old browsers */
-	background: -moz-linear-gradient(top, #f8f8f8, #f8f8f8); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #f8f8f8, #f8f8f8); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #f8f8f8, #f8f8f8); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8', GradientType=0 ); /* IE6-9 */
+	background: #f7f8f9; /* Old browsers */
+	background: -moz-linear-gradient(top, #f7f8f9, #f7f8f9); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #f7f8f9, #f7f8f9); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #f7f8f9, #f7f8f9); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f9', endColorstr='#f7f8f9', GradientType=0 ); /* IE6-9 */
 }
 
 .item-with-padding{
@@ -1427,15 +1427,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 }
 
 
-
 .project_body_overlay02 {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
-	background: -moz-linear-gradient(top, rgba(248,248,248), rgba(248,248,248)); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, rgba(248,248,248), rgba(248,248,248)); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, rgba(248,248,248), rgba(248,248,248)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#f8f8f8', GradientType=0 ); /* IE6-9 */
+	background: -moz-linear-gradient(top, rgba(247,248,2498), rgba(247,248,249)); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(247,248,249), rgba(247,248,249)); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(247,248,249), rgba(247,248,249)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##f7f8f9', endColorstr='#f7f8f9', GradientType=0 ); /* IE6-9 */
 }
+
 
 .project_body_overlay_white{
 	padding: 100px 0;
