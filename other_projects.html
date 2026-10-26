@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Other Projects</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href="img/web_logo.svg" type="image/x-icon">
+<link rel="apple-touch-icon" href="img/web_logo.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/web_logo.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/web_logo.svg">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+<script>
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(400,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(400,1);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+</script>
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+
+<!-- Navigation -->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="http://yunhsiao.space" class="navbar-brand page-scroll" href="#page-top"> <img class="weblogo" id="weblogo" src="img/web_logo/Yun_logo_dark.svg"></a> 
+      <a href="http://yunhsiao.space" class="navbar-brand page-scroll" href="#page-top">
+      Yun Hsiao
+      </a> 
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://yunhsiao.space/index.html#portfolio">Portfolio</a></li>
+          <li><a href="http://yunhsiao.space/index.html#about">About</a></li>
+          <li><a href="#footer" class="page-scroll">Contact</a></li>
+          <li><a href="Resume_Yun_Hsiao.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
+</nav>
+
+
+
+
+<!-- Header -->
+
+  <header id="project_header">
+      <div class="project_intro_other_projects text-center"></div>
+        <div class="project_intro_other_projects overlay">
+          <div class="container">
+            <div class="row">
+                <div class="col-sm-6"> 
+                  <div class="item01">
+                
+                      <h2>Other Projects</h2>
+                  
+                        <h6 class="theme_color">Usability. Scalability. Inclusivity. Elegance.</h6>
+
+                      <table class="a">
+                          <tr>
+                            <td class="column03"><p> <b>Project Type</b>: </p></td>
+                            <td class="column04"><p>Previous project collections</p></td>
+                          </tr>
+                          <tr>
+                            <td><p><b>Duration</b>:</p></td>
+                            <td><p>2017 - Present</p></td>
+                          </tr>
+                          <tr>
+                            <td><p><b>My Role</b>:</p></td>
+                            <td><p>UX design lead, graphic/visual designer</p></td>
+                          </tr>
+                        </table>
+
+                    </div>
+                  </div>
+
+              </div>     
+              <a href="#project_body_first_section" class="page-scroll"><img class="scrollbutton" src="img/scroll_down_grey.svg"></a>  
+          </div>
+        </div>
+    </header>
+
+
+
+
+    
+
+
+
+
+
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+
+      <div class="col-md-12 col-md-offset-0 section-title text-center">
+
+      <div class="larger-padding">
+      <div class="categories">
+
+          <ul class="cat">
+              <li>
+  
+            <ol class="type">
+              <li class="fade"><a href="#" data-filter="*" class="active">All</a></li>
+              <li class="fade"><a href="#" data-filter=".web">Web</a></li>
+              <li class="fade"><a href="#" data-filter=".app">App</a></li>
+              <li class="fade"><a href="#" data-filter=".graphic">Others</a></li>
+            </ol>
+  
+        </li>
+        </ul>
+
+      </div>
+
+
+
+      <div class="row">
+         <div class="portfolio-items">
+
+
+              <div class="col-sm-6 col-md-4 col-lg-4 web">
+                  <div class="portfolio-item">
+                    <div class="hover-bg"> <a href="http://yunhsiao.space/waf_exclusion_policy.html" title="F5XC – WAF Exclusion Policy">
+                      <div class="hover-text">
+                        <h4>F5XC – <br>WAF Exclusion Policy</h4>
+                        <h5>Achieving flexible blocking and false <br>positive prevention.</h5> </div>
+                      <img class="portfolio_photo" src="img/project_picture/waf_exclusion_policy_project_picture.jpg" class="img-responsive" alt="F5XC – WAF Exclusion Policy"> </a> </div>
+                  </div>
+                </div>
+
+
+
+            <div class="col-sm-6 col-md-4 col-lg-4 web">
+                <div class="portfolio-item">
+                  <div class="hover-bg"> <a href="http://yunhsiao.space/input_instruction.html" title="F5XC Design System – Input Instruction with Multi-validation">
+                    <div class="hover-text">
+                      <h4>F5XC Design System – <br>Input Instruction with <br>Multi-validation</h4>
+                      <h5>Improving multi-criteria checking.</h5> </div>
+                    <img class="portfolio_photo" src="img/project_picture/input_instruction_project_picture.jpg" class="img-responsive" alt="F5XC Design System – Input Instruction with Multi-validation"> </a> </div>
+                </div>
+              </div>
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-4 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/kosmos_measurements.html" title="KOSMOS – Measurements">
+                <div class="hover-text">
+                  <h4>KOSMOS – Measurements</h4>
+                  <h5>Supporting cardiac measurements & calculations.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/kosmos_measurements_project_picture.jpg" class="img-responsive" alt="KOSMOS – Measurements"> </a> </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-4 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/msa_edp.html" title="Microsoft Academic – Entity Detail">
+                <div class="hover-text">
+                  <h4>Microsoft Academic – Entity Detail</h4>
+                  <h5>Providing insights on research trends.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/msa_edp_project_picture.jpg" class="img-responsive" alt="Microsoft Academic – Entity Detail"> </a> </div>
+            </div>
+          </div>
+
+
+
+            <div class="col-sm-6 col-md-4 col-lg-4 app">
+                <div class="portfolio-item">
+                  <div class="hover-bg"> <a href="http://yunhsiao.space/kosmos_ots_exam_review.html" title="KOSMOS – OTS Exam Review">
+                    <div class="hover-text">
+                      <h4>KOSMOS – <br> OTS Exam Review</h4>
+                      <h5>Improving ultrasound exam content management.</h5> </div>
+                    <img class="portfolio_photo" src="img/project_picture/kosmos_ots_exam_review_project_picture.jpg" class="img-responsive" alt="KOSMOS – OTS Exam Review"> </a> </div>
+                </div>
+              </div>
+
+
+          <div class="col-sm-6 col-md-4 col-lg-4 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/kosmos_controls.html" title="KOSMOS – Scales & Controls">
+                <div class="hover-text">
+                  <h4>KOSMOS – <br> Scales & Controls</h4>
+                  <h5>Facilitating ultrasound scans and <br> disease diagnosis.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/kosmos_controls_project_picture.jpg" class="img-responsive" alt="KOSMOS – Scales & Controls"> </a> </div>
+            </div>
+          </div>
+
+
+            <div class="col-sm-6 col-md-4 col-lg-4 web">
+                <div class="portfolio-item">
+                  <div class="hover-bg"> <a href="http://yunhsiao.space/msa_topic_filter.html" title="Microsoft Academic – Topic Filter">
+                    <div class="hover-text">
+                      <h4>Microsoft Academic – Topic Filter</h4>
+                      <h5>Providing insights on research trends.</h5> </div>
+                    <img class="portfolio_photo" src="img/project_picture/msa_topic_filter_project_picture.jpg" class="img-responsive" alt="Microsoft Academic – Topic Filter"> </a> </div>
+                </div>
+              </div>
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-4 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/shard.html" title="Shard">
+                <div class="hover-text">
+                  <h4>Shard</h4>
+                  <h5>Streamlining design workflow.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/shard_project_picture.jpg" class="img-responsive" alt="Shard"> </a> </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col-sm-6 col-md-4 col-lg-4 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/parking_angel.html" title="Parking Angel">
+                <div class="hover-text">
+                  <h4>Parking Angel</h4>
+                  <h5>Facilitating efficient parking.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/parking_angel_project_picture.jpg" class="img-responsive" alt="Parking Angel"> </a> </div>
+            </div>
+          </div>
+
+
+        <div class="col-sm-6 col-md-4 col-lg-4 web">
+              <div class="portfolio-item">
+                <div class="hover-bg"> <a href="http://yunhsiao.space/cms.html" title="Concept Management">
+                  <div class="hover-text">
+                    <h4>Concept Management</h4>
+                    <h5>Enhancing team productivity.</h5> </div>
+                  <img class="portfolio_photo" src="img/project_picture/cms_project_picture.jpg" class="img-responsive" alt="Concept Management"> </a> </div>
+              </div>
+            </div>
+
+        
+          <div class="col-sm-6 col-md-4 col-lg-4 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/sushi_train.html" title="Sushi Train">
+                <div class="hover-text">
+                  <h4>Sushi Train</h4>
+                  <h5>Entertaining dining experience.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/sushi_train_project_picture.jpg" class="img-responsive" alt="Sushi Train"> </a> </div>
+            </div>
+          </div>
+
+        
+          <div class="col-sm-6 col-md-4 col-lg-4 graphic">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/design_gallery.html" title="Design Gallery">
+                <div class="hover-text">
+                  <h4>Design Gallery</h4>
+                  <h5>Creativity. Usability. Elegance.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/graphic_design_project_picture.jpg" class="img-responsive" alt="Design Gallery"> </a> </div>
+            </div>
+          </div>
+
+
+      
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+
+<div id="footer">
+  <div class="container text-center">
+      <div class="col-md-10  col-md-offset-1 section-title">
+
+      <div id="row">
+          <div class="col-md-3 col-sm-6">
+                <table>
+                    <tr>
+                      <td class="column_footer"><h3>F5</h3></td>
+                    </tr>
+                    <tr>
+                      <td><p><a href="http://yunhsiao.space/filter_reusability.html">F5XC – Filter Reusability</a></p></td>
+                    </tr> 
+                    <tr>
+                      <td><p><a href="http://yunhsiao.space/bad_bot_report.html">F5XC Bot Defense – Bad Bot Report</a></p></td>
+                    </tr>
+                    <tr>
+                      <td><p><a href="http://yunhsiao.space/waf_exclusion_policy.html">F5XC – WAF Exclusion Policy</a></p></td>
+                    </tr> 
+                    <tr>
+                      <td><p><a href="http://yunhsiao.space/input_instruction.html">F5XC Design System – Input Instruction with Multi Validation</a></p></td>
+                    </tr> 
+                </table>
+          </div>
+
+
+          <div class="col-md-3 col-sm-6">
+              <table>
+                  <tr>
+                    <td class="column_footer"><h3>EchoNous</h3></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/kosmos_up.html">KOSMOS UP</a></p></td>
+                  </tr> 
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/kosmos_measurements.html">KOSMOS – Measurements</a></p></td>
+                  </tr>                  
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/kosmos_ots_exam_review.html">KOSMOS – OTS Exam Review</a></p></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/kosmos_controls.html">KOSMOS – Scales & Controls </a></p></td>
+                  </tr>
+              </table>
+        </div>
+
+
+
+        <div class="col-md-3 col-sm-6">
+            <table>
+                <tr>
+                  <td class="column_footer"><h3>Microsoft Research</h3></td>
+                </tr>
+                <tr>
+                  <td><p><a href="http://yunhsiao.space/msa_edp.html">Microsoft Academic – Entity Detail Page</a></p></td>
+                </tr>
+                <tr>
+                  <td><p><a href="http://yunhsiao.space/msa_topic_filter.html">Microsoft Academic – Topic Filter</a></p></td>
+                </tr>
+            </table>
+      </div>
+
+
+        <div class="col-md-3 col-sm-6">
+              <table>
+                  <tr>
+                    <td class="column_footer"><h3>AmFam</h3></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/cms.html">Concept Management</a></p></td>
+                  </tr>
+              </table>
+        </div>
+
+   </div>
+</div>
+</div>
+
+
+
+
+
+  <div class="container text-center">
+      <div class="col-md-10  col-md-offset-1 section-title-smaller">
+          <div id="row">
+
+          <div class="col-md-3 col-sm-6">
+                <table>
+                    <tr>
+                      <td class="column_footer"><h3>UMich</h3></td>
+                    </tr>
+                    <tr>
+                    <tr>
+                      <td><p><a href="http://yunhsiao.space/shard.html">Shard</a></p></td>
+                    </tr>
+                </table>
+          </div>
+
+
+          <div class="col-md-3 col-sm-6">
+              <table>
+                  <tr>
+                    <td class="column_footer"><h3>UW</h3></td>
+                  </tr>
+                  <tr>
+                    <td><p><a href="http://yunhsiao.space/parking_angel.html">Parking Angel</a></p></td>
+                  </tr>
+                  <tr>
+                      <td><p><a href="http://yunhsiao.space/sushi_train.html">Sushi Train</a></p></td>
+                  </tr>
+              </table>
+        </div>
+
+
+
+        <div class="col-md-3 col-sm-6">
+            <table>
+                <tr>
+                  <td class="column_footer"><h3>Other Explorations</h3></td>
+                </tr>
+                <tr>
+                  <td><p><a href="http://yunhsiao.space/get4x.html">Get4x Redesign with GenAI</a></p></td>
+                </tr>  
+                <tr>
+                  <td><p><a href="http://yunhsiao.space/design_gallery.html">Design Gallery</a></p></td>
+                </tr>
+              </table>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6">
+        <table>
+            <tr>
+              <td class="column_footer"><h3>Contact</h3></td>
+            </tr>
+            <tr>
+                <td> 
+                  <a class="item_image" href="https://www.linkedin.com/in/yun-hsiao/" target="_blank"> <img class="media_icon" src="img/contact_me/linkedin_logo.svg" alt="LinkedIn"></a>
+                  <a class="item_image" href="mailto:yunhdesign@gmail.com" target="_blank"> <img class="media_icon" src="img/contact_me/email_logo.svg" alt="Email"></a>
+                  <a class="item_image" href="https://medium.com/@yunhsiao" target="_blank"> <img class="media_icon" src="img/contact_me/medium_logo.svg" alt="Medium"></a>
+                  <a class="item_image" href="https://dribbble.com/yunhsiao" target="_blank"> <img class="media_icon" src="img/contact_me/dribbble_logo.svg" alt="Dribbble"></a>
+                </td>
+            </tr>
+        </table>
+      </div>
+
+
+
+    <div id="row">
+    <div class="col-md-12">
+
+           <h4 class="footer_contact">yunhdesign@gmail.com &nbsp; | &nbsp; (206) - 673 - 6727</h4>
+           <h5 class="text_center">Copyright &copy; 2026 by Yun Hsiao.</h5>
+     </div>
+ </div>
+
+
+
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/SmoothScroll.js"></script> 
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<script type="text/javascript" src="js/jquery.isotope.js"></script> 
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script> 
+<script type="text/javascript" src="js/main.js"></script>
+
+
+
+
+</body>
+</html>

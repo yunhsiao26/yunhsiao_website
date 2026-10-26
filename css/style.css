@@ -2,7 +2,7 @@ body, html {
 	font-family: 'Avenir', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	width: 100% !important;
 	height: 100% !important;
 	line-height: 150%;
@@ -16,7 +16,7 @@ h1 {
 	letter-spacing: 0.5px;
 	font-weight: 550;
 	font-family: 'Poppins', sans-serif;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 }
 
 
@@ -24,7 +24,7 @@ h2 {
 	font-size: 34px;
 	line-height: 150%;
 	margin: 0;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	margin-bottom: 30px;
 	letter-spacing: 0.1px;
 	font-weight: 500;
@@ -36,7 +36,7 @@ h3 {
 	font-size: 25px;
 	letter-spacing: 0.2px;
 	line-height: 150%;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 550;
 	padding-bottom: 0px;
 }
@@ -45,7 +45,7 @@ h3 {
 h4 {
 	font-size: 23px;
 	line-height: 34px;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 550;
 	line-height: 150%;
 }
@@ -53,11 +53,12 @@ h4 {
 h5 {
 	line-height: 20px;
 	font-weight: 700;
+    padding-bottom: 25px;
 }
 
 h6 {
 	font-size: 18px;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 300;
 	line-height: 30px;
 	margin-top: 0px;
@@ -73,7 +74,7 @@ p {
 	padding-top: 10px;
 	line-height: 34px;
 	text-align: left;
-	color: rgba(38,38,38,0.75);
+	color: rgba(5,14,18,0.75);
 }
 
 
@@ -89,7 +90,7 @@ p.intro {
 
 
 a {
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 500;
 }
 
@@ -100,7 +101,7 @@ a:hover, a:focus {
 }
 
 a:visited {
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 650;
 }
 
@@ -114,7 +115,7 @@ ul, ol {
 
 
 b{
-	color: rgba(38,38,38,0.9);
+	color: rgba(5,14,18,0.9);
 	font-weight: 800;
 }
 
@@ -172,14 +173,14 @@ ul, ol {
 	
 	#menu.navbar-default {
 		background-color:  transparent;
-		color: rgba(38,38,38,0.8);
+		color: rgba(5,14,18,0.8);
 		font-weight: 450;
 		text-transform: uppercase;
 		letter-spacing: 1.3px;
 	}
 	
 	#menu a.navbar-brand i.fa {
-		color: rgba(38,38,38,0.8);
+		color: rgba(5,14,18,0.8);
 	}
 
 
@@ -190,22 +191,23 @@ ul, ol {
 
 
 
+
 	#menu.navbar-default .navbar-nav > li > a {
 		text-transform: uppercase;
-		color: rgba(38,38,38,0.8);
+		color: rgba(5,14,18,0.8);
 		font-size: 15px;
 		letter-spacing: 1.3px;
 	}
 
 	#menu.navbar-default .navbar-nav > li > a:hover {
 		color:#079299;
-		font-weight: 550;
+		font-weight: 450;
 	}
 	
 
 	#menu.navbar-default .navbar-nav > li > a:focus {
 		color:#079299;
-		font-weight: 550;
+		font-weight: 450;
 	}
 
 
@@ -218,21 +220,21 @@ ul, ol {
 
 	
 	.navbar-header{
-		color: #262626;
+		color: rgba(5,14,18,0.8);
 		font-weight: 500;
 	}
 	
 	.on {
 		background-color: #ffffff !important;
 		padding: 0 !important;
-		-webkit-box-shadow: 0px 3px 6px rgba(38,38,38,0.1);
-		-moz-box-shadow:    0px 3px 6px rgba(38,38,38,0.1);
-		box-shadow:         0px 3px 6px rgba(38,38,38,0.1);
+		-webkit-box-shadow: 0px 3px 6px rgba(5,14,18,0.1);
+		-moz-box-shadow:    0px 3px 6px rgba(5,14,18,0.1);
+		box-shadow:         0px 3px 6px rgba(5,14,18,0.1);
 	}
 	
 	
 	.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-		color:  rgba(38,38,38,0.8) !important;
+		color:  rgba(5,14,18,0.8) !important;
 		background-color: transparent;
 		font-weight: 650;
 	}
@@ -244,7 +246,7 @@ ul, ol {
 		font-weight: 650;
 	}
 	.navbar-default .navbar-toggle:hover >.icon-bar {
-		background-color: rgba(70,69,71, 0.8);
+		background-color: rgba(5,14,18, 0.5);
 	}
 	
 	
@@ -299,14 +301,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#053740', end
 
 
 .section-title {
-	padding: 25px 0 26px 0;
+	padding: 25px 0 10px 0;
 }
+
+.section-title-smaller {
+	padding: 0px 0 0px 0;
+}
+
+
+
 
 .intro .intro-text p {
 	font-size: 18px;
 	margin-bottom: 0px;
 	margin-top: 10px;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	text-align: center;
 }
 header .intro-text {
@@ -329,10 +338,11 @@ header .intro-text {
 
 
 #portfolio h5 {
-	font-size: 12px;
+	font-size: 14px;
 	font-weight: 100;
 	color: #ffffff;
 }
+
 
 
 .larger-padding{
@@ -340,7 +350,8 @@ header .intro-text {
 }
 
 .categories {
-	padding-bottom: 8%;
+	padding-top: 3%;
+	padding-bottom: 5%;
 	text-align: center;
 }
 ul.cat li {
@@ -356,20 +367,20 @@ ol.type li {
 }
 ol.type li a {
 	background: transparent;
-	border: 1.3px solid rgba(22, 21, 21, 0.9);
-	color: rgba(22, 21, 21, 0.9);
+	border: 1.3px solid rgba(5,14,18,0.9);
+	color: rgba(5,14,18,0.9);
 	padding: 5px 10px;
 	border-radius: 3px;
 }
 ol.type li a.active {
-	background: rgba(22, 21, 21, 0.9);
+	background: rgba(5,14,18,0.9);
 	color: rgba(245,245,245,0.9);
 	letter-spacing: 0.5px;
 	font-weight: 500;
 }
 
 ol.type li a:hover {
-	background: rgba(22, 21, 21, 0.9);
+	background: rgba(5,14,18,0.9);
 	color: rgba(255,255,255);
 	letter-spacing: 0.5px;
 	font-weight: 500;
@@ -453,7 +464,7 @@ ol.type li a:focus {
 	margin: 0 auto;
 	color: #ffffff;
 	font-weight: 500;
-	background: rgba(22, 21, 21, 0.75);
+	background: rgba(5,14,18,0.75);
 	padding: 33% 0 0 0;
 	height: 100%;
 	width: 100%;
@@ -502,7 +513,7 @@ ol.type li a:focus {
 /* About Section */
 #about {
 	padding: 100px 0;
-	color: rgba(38,38,38,0.9);
+	color: rgba(5,14,18,0.9);
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#20a6bb+0,25bad0+50 */
 	background: #f8f8f8; /* Old browsers */
 	background: -moz-linear-gradient(top, #f8f8f8, #f8f8f8); /* FF3.6-15 */
@@ -528,7 +539,7 @@ padding-right: 10%;
 
 
 #about a {
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 700;
 }
 
@@ -539,7 +550,7 @@ padding-right: 10%;
 }
 
 #about a:visited {
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 700;
 }
 
@@ -616,7 +627,7 @@ img.team-img {
 }
 #team .thumbnail .caption {
 	padding: 9px;
-	color: rgba(40,33,32, 0.8);
+	color: rgba(5,14,18,0.8);
 }
 
 
@@ -637,6 +648,43 @@ img.team-img {
 	  opacity: 1; /* End fully visible */
 	}
   }
+
+
+
+
+
+
+
+
+
+.project_intro_other_projects {
+	display: table;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding-bottom: 3%; 
+	background: url(../img/project_header/other_projects_header.jpg) no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	animation: fadeInOverlay 1s ease-in-out forwards; 
+}
+
+
+
+
+.project_intro_other_projects .overlay {
+	padding: 100px 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
+	background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 0%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 ); /* IE6-9 */
+}
+
+
+
 
 
 
@@ -1166,7 +1214,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 #project_header h2 {
 	line-height: 46px;
 	margin: 0;
-	color: rgba(38,38,38,0.9);
+	color: rgba(5,14,18,0.9);
 	font-size: 34px;
 	letter-spacing: 0px;
 	font-weight: 500;
@@ -1188,7 +1236,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	padding-top: 10px;
 	line-height: 30px;
 	text-align: left;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 }
 
 
@@ -1412,7 +1460,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .item02 h4 {
 	font-size: 20px;
-	color: rgba(38,38,38,0.8);
+	color: rgba(5,14,18,0.8);
 	font-weight: 550;
 	line-height: 150%;
 	padding-top: 10%;
@@ -1872,7 +1920,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 /* Footer Section*/
 #footer {
-	background: rgba(22, 21, 21, 0.9);
+	background: rgba(5, 14, 18, 0.9);
 	padding: 25px 0 20px 0;
 }
 
