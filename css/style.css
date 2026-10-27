@@ -431,10 +431,7 @@ ol.type li a:focus {
 	height: auto;
 	border-radius: 8px;
 }
-	
-.portfolio-items{
-	align-items: center;
-}
+
 
 .portfolio-item {
 	margin: 8% 0% 8% 0%;
