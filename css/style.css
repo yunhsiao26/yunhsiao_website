@@ -586,16 +586,54 @@ display: inline-block;
 
 .homepage-photo-btn:hover {
   transform: scale(1.1) rotate(-12deg);
+  background: rgba(7,146,153,0.9);
 }
 
 
+.homepage-photo-btn:focus {
+  transform: scale(1.1) rotate(-12deg);
+  background: rgba(7,146,153,0.9);
+}
+
+
+
 .email_graphic_style{
-	width: 64px;
-	height: 64px;
+	width: 72px;
+	height: 72px;
 	filter: alpha(opacity=100);
 	background: transparent;
 	border: transparent;
 }
+
+
+
+.rotating-element {
+  animation: email_graphic 2s ease-in-out infinite alternate;    /* Apply the animation named 'email_graphic' */
+}
+
+
+.rotating-element:hover {
+  animation-play-state: paused; 
+}
+
+
+.rotating-element:focus {
+  animation-play-state: paused; 
+}
+
+
+@keyframes email_graphic {
+  from {
+    transform: rotate(12deg);
+  }
+  to {
+    transform: rotate(-12deg);
+  }
+}
+
+
+
+
 
 
 
