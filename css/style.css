@@ -555,6 +555,54 @@ padding-right: 10%;
 }
 
 
+
+.homepage-photo{
+position: relative;
+display: inline-block;
+}
+
+.homepage-photo img {
+  display: block;
+  max-width: 100%;
+  border-radius: 1000px;
+  box-shadow: 2px 2px 30px 8px rgba(5,14,18, 0.1);  /* syntax: offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.homepage-photo-btn {
+  position: absolute;
+  right: 96px;             /* distance from the right edge */
+  bottom: 24px;            /* distance from the bottom edge */
+  width: 96px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: rgba(5,14,18, 0.9);
+  border-radius: 50%;
+  box-shadow: 0px 0px 30px 8px rgba(5,14,18, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.homepage-photo-btn:hover {
+  transform: scale(1.1) rotate(-12deg);
+}
+
+
+.email_graphic_style{
+	width: 64px;
+	height: 64px;
+	filter: alpha(opacity=100);
+	background: transparent;
+	border: transparent;
+}
+
+
+
+
+
+
+
 /* img.about-img { } */
 
 
