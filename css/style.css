@@ -426,11 +426,14 @@ ol.type li a:focus {
 }
 
 
+
 .portfolio_photo{
 	width: 100%;
-	height: auto;
+    height: auto;
 	border-radius: 8px;
 }
+	
+
 
 
 .portfolio-item {
@@ -442,6 +445,7 @@ ol.type li a:focus {
 	-o-transition: all 0.5s ease-out;
 	transition: all 0.5s ease-out;
 }
+
 .portfolio-item:hover {
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
@@ -497,6 +501,9 @@ ol.type li a:focus {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
+
+
+
 
 
 
@@ -600,7 +607,7 @@ display: inline-block;
 
 
 .rotating-element {
-  animation: email_graphic 2s ease-in-out infinite alternate;    /* Apply the animation named 'email_graphic' */
+  animation: email_graphic 1.8s ease-in-out infinite alternate;    /* Apply the animation named 'email_graphic' */
 }
 
 
