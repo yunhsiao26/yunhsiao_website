@@ -1578,7 +1578,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', end
 .project_body_overlay02 {
 	padding: 100px 0;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#053740+0,053740+100&1+0,0.6+100 */
-	background: -moz-linear-gradient(top, rgba(247,248,2498), rgba(247,248,249)); /* FF3.6-15 */
+	background: -moz-linear-gradient(top, rgba(247,248,249), rgba(247,248,249)); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(247,248,249), rgba(247,248,249)); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(247,248,249), rgba(247,248,249)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='##f7f8f9', endColorstr='#f7f8f9', GradientType=0 ); /* IE6-9 */
