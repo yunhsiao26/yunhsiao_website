@@ -466,7 +466,7 @@ ol.type li a:focus {
 	color: #ffffff;
 	font-weight: 500;
 	background: rgba(5,14,18,0.75);
-	padding: 33% 0 0 0;
+	padding: 25% 0 0 0;
 	height: 100%;
 	width: 100%;
 	opacity: 0;
@@ -501,6 +501,69 @@ ol.type li a:focus {
 .hover-bg:hover .hover-text {
 	opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+.portfolio-item .hover-square-bg {
+	overflow: hidden;
+	position: relative;
+	border-radius: 8px;
+}
+
+.hover-square-bg .hover-square-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	font-weight: 500;
+	background: rgba(5,14,18,0.75);
+	padding: 33% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-square-bg .hover-square-text>h4 {
+	opacity: 0;
+	color: #fff;
+	font-weight: 400;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+.hover-square-bg:hover .hover-square-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-square-bg .hover-square-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+.hover-square-bg:hover .hover-square-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hover-square-bg:hover .hover-square-text {
+	opacity: 1;
+}
+
+
+
+
+
+
 
 
 
