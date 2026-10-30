@@ -1411,7 +1411,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 #get4x_page .fa-caret-right{
-	color: #A6843B;
+	color: #BF9A4A;
 }
 
 
@@ -1420,7 +1420,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 .f5xc_color{
  /* 1. Define your gradient colors */
-  background-image: linear-gradient(45deg, #226EAA, #3061CA, #604AB5);
+  background-image: linear-gradient(45deg, #0058fa,#3061CA,#602AB1);
   
   /* 2. Clip the background to the text shapes */
   -webkit-background-clip: text;
@@ -1461,7 +1461,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 #kosmos_up_page .fa-caret-right{
-	color: #3C5CC2;
+	color: #517EE1;
 }
 
 
