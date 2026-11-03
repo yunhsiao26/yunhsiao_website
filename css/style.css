@@ -2128,6 +2128,137 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 
+/* Side Section Navigation (project pages) */
+#side_nav {
+	position: fixed;
+	left: 32px;
+	top: 50%;
+	z-index: 998;
+	transform: translate(-12px, -50%);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+#side_nav.visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translate(0, -50%);
+}
+
+#side_nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#side_nav li {
+	margin: 0;
+	padding: 0;
+}
+
+#side_nav a,
+#side_nav a:visited {
+	display: flex;
+	align-items: center;
+	padding: 7px 0;
+	font-size: 16px;
+	font-weight: 450;
+	letter-spacing: 0.5px;
+	line-height: 1.4;
+	color: rgba(5,14,18,0.5);
+	text-decoration: none;
+	transition: color 0.25s ease;
+}
+
+#side_nav a:hover,
+#side_nav a:focus {
+	color: rgba(5,14,18,0.8);
+	font-weight: 450;
+	outline: none;
+}
+
+#side_nav a.active,
+#side_nav a.active:visited {
+	color: rgba(5,14,18,0.9);
+	font-weight: 650;
+}
+
+/* Hide on small tablets and phones (below Bootstrap md) */
+@media (max-width: 991px) {
+	#side_nav {
+		display: none;
+	}
+}
+
+/* Shift content that sits close to the left edge so it clears the side
+   navigation. Only applies on pages that have a #side_nav. The shift shrinks
+   as the window widens and the side margin grows, reaching 0 when the margin
+   alone is enough. */
+body:has(#side_nav) {
+	--side_nav_shift: 0px;
+}
+
+/* md (tablet landscape / small laptop): 970px container */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body:has(#side_nav) {
+		--side_nav_shift: max(0px, calc(160px - (100vw - 970px) / 2));
+	}
+}
+
+/* lg (desktop): 1170px container */
+@media (min-width: 1200px) {
+	body:has(#side_nav) {
+		--side_nav_shift: max(0px, calc(160px - (100vw - 1170px) / 2));
+	}
+}
+
+/* Multi-column rows (two or three columns) move right as a whole. Full-width
+   items inside the same row (intro text, images) are pulled back so they stay
+   aligned with the rest of the page. */
+body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) .row:has(> .col-sm-6, > .col-sm-4) {
+	padding-left: var(--side_nav_shift);
+}
+
+body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) .row:has(> .col-sm-6, > .col-sm-4) > :is(.col-sm-12, img) {
+	margin-left: calc(-1 * var(--side_nav_shift));
+	width: calc(100% + var(--side_nav_shift));
+}
+
+/* Standalone section headings (e.g. "Design Process") move right too. */
+body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) :is(.container > .item02, .row:not(:has(> .col-sm-6, > .col-sm-4)) > .item02) {
+	margin-left: var(--side_nav_shift);
+}
+
+/* Columns nested inside a full-width column (e.g. Shard's Design Features):
+   narrow them evenly and push the first one right so they clear the side
+   navigation, while the intro text above them stays in place. Only from
+   992px up, where the sidebar shows; below that Bootstrap's own column
+   widths apply (full width on phones). */
+@media (min-width: 992px) {
+	body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) .col-sm-12 > .col-sm-6 {
+		width: calc(50% - var(--side_nav_shift) / 2);
+	}
+
+	body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) .col-sm-12 > .col-sm-4 {
+		width: calc(33.3333% - var(--side_nav_shift) / 3);
+	}
+
+	body:has(#side_nav) :is(.project_body_overlay01, .project_body_overlay02, .project_body_overlay_white) .col-sm-12 > :not(.col-sm-6, .col-sm-4) + :is(.col-sm-6, .col-sm-4) {
+		margin-left: var(--side_nav_shift);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2264,3 +2395,7 @@ header .intro-text {
 }
 
 }
+
+
+
+
