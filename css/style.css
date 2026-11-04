@@ -702,7 +702,8 @@ position: relative;
 display: inline-block;
 }
 
-.homepage-photo img {
+/* Profile photo only – keeps the round shape and shadow off the email icon inside the button */
+.homepage-photo > img {
   display: block;
   max-width: 100%;
   border-radius: 1000px;
@@ -741,9 +742,10 @@ display: inline-block;
 .email_graphic_style{
 	width: 72px;
 	height: 72px;
-	filter: alpha(opacity=100);
 	background: transparent;
 	border: transparent;
+	/* Shadow that follows the envelope shape itself (not a circle) */
+	filter: drop-shadow(0px 4px 6px rgba(5,14,18,0.1));
 }
 
 
