@@ -131,46 +131,51 @@ $(window).on("load",function() {
 
       <div class="larger-padding">
 
-      <div class="row">
+      <!-- Hierarchical project grid (layout rules in css/style.css → "Homepage – Hierarchical Project Grid") -->
+      <div class="project_grid">
 
-      <!-- ================= 1st ROW ================= -->
-
-            <div class="col-sm-6 col-md-6 col-lg-6 app">
-                <div class="portfolio-item">
-                  <div class="hover-bg"> <a href="http://yunhsiao.space/get4x.html" title="Get4x Redesign with GenAI">
-                    <div class="hover-text">
-                      <h4>Get4x Redesign with GenAI</h4>
-                      <h5>Streamlining currency exchange with GenAI.</h5> </div>
-                    <img class="portfolio_photo" src="img/project_picture/get4x_project_picture.jpg" alt="Get4x Redesign with GenAI"> </a> </div>
-                </div>
-              </div>
-
-
-            <div class="col-sm-6 col-md-6 col-lg-6 web">
-                <div class="portfolio-item">
-                  <div class="hover-bg"> <a href="http://yunhsiao.space/filter_reusability.html" title="F5XC – Filter Reusability">
-                    <div class="hover-text">
-                      <h4>F5XC – Filter Reusability</h4>
-                      <h5>Smoothing operation and communication<br> for resolution validation.</h5> </div>
-                    <img class="portfolio_photo" src="img/project_picture/filter_reusability_project_picture.jpg" alt="F5XC – Filter Reusability"> </a> </div>
-                </div>
-              </div>
+      <!-- ================= ROW 1 – left (1/3) ================= -->
+          <div class="project_grid_item project_grid_item_01 app">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/get4x.html" title="Get4x Redesign with GenAI">
+                <div class="hover-text">
+                  <h4>Get4x Redesign with GenAI</h4>
+                  <h5>Streamlining currency exchange with GenAI.</h5> </div>
+                  <picture>
+                  <source media="(min-width: 992px)" srcset="img/project_picture/get4x_project_picture_narrow.jpg">
+                  <img class="portfolio_photo" src="img/project_picture/get4x_project_picture.jpg" alt="Get4x Redesign with GenAI">
+                  </picture>              
+              </a> </div>
+            </div>
+          </div>
 
 
-      <!-- ================= 2nd ROW ================= -->
+      <!-- ================= ROW 1 – right (2/3) ================= -->
+          <div class="project_grid_item project_grid_item_02 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/filter_reusability.html" title="F5XC – Filter Reusability">
+                <div class="hover-text">
+                  <h4>F5XC – Filter Reusability</h4>
+                  <h5>Smoothing operation and communication<br> for resolution validation.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/filter_reusability_project_picture.jpg" alt="F5XC – Filter Reusability"> </a> </div>
+            </div>
+          </div>
 
-              <div class="col-sm-6 col-md-6 col-lg-6 web">
-                  <div class="portfolio-item">
-                    <div class="hover-bg"> <a href="http://yunhsiao.space/bad_bot_report.html" title="F5XC Bot Defense – Bad Bot Report">
-                      <div class="hover-text">
-                        <h4>F5XC Bot Defense – Bad Bot Report</h4>
-                        <h5>Diving deeper into analytics for bot defense.</h5> </div>
-                      <img class="portfolio_photo" src="img/project_picture/bad_bot_report_project_picture.jpg" alt="F5XC Bot Defense – Bad Bot Report"> </a> </div>
-                  </div>
-                </div>
+
+      <!-- ================= ROW 2 – left (2/3) ================= -->
+          <div class="project_grid_item project_grid_item_03 web">
+            <div class="portfolio-item">
+              <div class="hover-bg"> <a href="http://yunhsiao.space/bad_bot_report.html" title="F5XC Bot Defense – Bad Bot Report">
+                <div class="hover-text">
+                  <h4>F5XC Bot Defense – Bad Bot Report</h4>
+                  <h5>Diving deeper into analytics for bot defense.</h5> </div>
+                <img class="portfolio_photo" src="img/project_picture/bad_bot_report_project_picture.jpg" alt="F5XC Bot Defense – Bad Bot Report"> </a> </div>
+            </div>
+          </div>
 
 
-          <div class="col-sm-6 col-md-6 col-lg-6 web">
+      <!-- ================= ROW 3 – left (2/3) ================= -->
+          <div class="project_grid_item project_grid_item_04 web">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/kosmos_up.html" title="KOSMOS UP">
                 <div class="hover-text">
@@ -181,15 +186,18 @@ $(window).on("load",function() {
           </div>
 
 
-
-      <!-- ================= 3rd ROW ================= -->
-          <div class="col-sm-6 col-md-6 col-lg-6 graphic">
+      <!-- ================= ROWS 2–3 – right (1/3, tall) ================= -->
+          <div class="project_grid_item project_grid_item_05 graphic">
             <div class="portfolio-item">
               <div class="hover-bg"> <a href="http://yunhsiao.space/other_projects.html" title="Other Projects">
                 <div class="hover-text">
                   <h4>Other Projects</h4>
                   <h5>Usability. Scalability. Inclusivity. Elegance.</h5> </div>
-                <img class="portfolio_photo" src="img/project_picture/other_projects_picture.jpg" alt="Other Projects"> </a> </div>
+                  <picture>
+                  <source media="(min-width: 992px)" srcset="img/project_picture/other_projects_picture_tall.jpg">
+                  <img class="portfolio_photo" src="img/project_picture/other_projects_picture.jpg" alt="Other Projects">
+                  </picture>
+                </a> </div>
             </div>
           </div>
 
