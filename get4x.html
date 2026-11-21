@@ -1015,23 +1015,22 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-59.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            I hypothesized that users would prefer a map-first experience, so instead of requiring upfront location and currency selection, I redesigned the flow to <b>bring users directly into the map experience, 
+                            I hypothesized that users would prefer a map-first experience, so instead of requiring upfront location and currency selection, I redesigned the flow to <b>take them straight to the map, 
                             enabling immediate exploration</b> from the moment they open the app. Users can then easily adjust the location and currency to match their specific needs.
                           </p>
                         
                           
                           <p>
-                            To improve transparency and user control, I replaced the opaque “Recommendations” feature with <b>a criteria-based filtering system that breaks decision factors down clearly</b>. Based on early exploration, 
-                            I identified exchange rate, cash inventory, reviews, distance, and operating status as the most important criteria. I initially explored distance and area-based filters, but later removed them, as 
-                            there are relatively few money changers within a given area, and users can easily assess proximity through pinch-to-zoom on the map. Physical distance or shared area does not always correlate with 
-                            convenience either. I also considered retaining the “Recommendations” option, but ultimately removed it to avoid conflicts with manual filters. The final design focuses on four key criteria with "available 
+                            To improve transparency and user control, I replaced the opaque “Recommendations” feature with <b>a criteria-based filtering system</b>. Based on early exploration, I identified exchange rate, 
+                            cash inventory, reviews, distance, and operating status as the most important criteria. I initially explored distance and area-based filters, but later removed them, as there are relatively few 
+                            money changers within a given area, and users can easily assess proximity through pinch-to-zoom on the map. Physical distance or shared area does not always correlate with convenience either. 
+                            I also considered retaining the “Recommendations” option, but ultimately removed it to avoid conflicts with manual filters. The final design focuses on four key criteria with "available 
                             inventory" and "review at lest 4.0" applied by default as recommendations to help users <b>narrow results quickly while retaining full control over filtering</b>.
                           </p>                                         
       
                         
                           <p>
-                            Besides, for iOS, I <b>followed platform-specific navigation patterns</b>, interaction behaviors, and the latest visual design guidelines to ensure <b>consistency with current conventions</b> and achieve strong 
-                            external relevance.
+                            Besides, for iOS, I <b>followed platform-specific navigation patterns</b>, interaction behaviors, and the latest visual design guidelines to ensure <b>consistency with current conventions</b>.
                           </p>                              
                       
                         
@@ -1060,12 +1059,13 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-60.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            For the map view, I <b>designed for three primary scenarios</b>. When users are in a supported city, the app displays the corresponding city map with their current location and nearby money changers. Default 
-                            currencies are preselected based on the city's most commonly exchanged pairs, and users can tap a rate label to view a money changer’s profile and reserve instantly right below the page (in the bottom 
-                            sheet). When users switch to a city they are not currently in, the map shifts to a region-based view, highlighting the best available exchange rates in each area. Based on the hypothesis that exchange 
-                            rate is users' primary decision factor, this view helps them quickly identify promising regions.  Users can tap a rate label to zoom into a region and explore all money changers within it. If users are 
-                            outside supported cities, the experience defaults to Singapore, 4xLabs' primary market, providing a consistent fallback experience. By tailoring the experience to different scenarios, <b>exploration becomes 
-                            more contextual, efficient, and intuitive</b>.
+                            For the map view, I <b>designed for three primary scenarios</b>. First, when users are in a supported city, they’ll see a map centered on their current location, 
+                            showing nearby money changers. The most commonly exchanged currency pair is preselected by default. Tapping a rate label opens a bottom sheet for users to 
+                            view details and make a reservation. Second, when users switch to a city they are not currently in, the map shifts to a region-based view, highlighting the 
+                            best available exchange rates in each area. Based on the hypothesis that exchange rate is users' primary decision factor, this view helps them quickly 
+                            identify promising regions. Users can tap a rate label to zoom into a region and explore all money changers within it. Lastly, when users are outside 
+                            supported cities, the experience defaults to Singapore, 4xLabs' primary market, providing a consistent fallback. By tailoring the experience to different 
+                            scenarios, exploration becomes more <b>contextual, efficient, and intuitive</b>.
                           </p></td>
                         </tr>
                     
@@ -1111,7 +1111,7 @@
 
 
                 <p>
-                  Beyond enhancing the existing map and list views, I explored a GenAI-powered discovery flow to offer a more intuitive and personalized exploration experience. 
+                  Beyond enhancing the existing map and list views, I explored a GenAI-powered discovery flow to make exploration more intuitive and personalized.
                 </p>   
 
 
@@ -1133,21 +1133,19 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-59.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            I initially envisioned the AI assistant as a standalone experience. After several iterations and SME feedback, I <b>integrated the AI assistant into the browsing experience to create a more 
-                            seamless discovery flow</b>. I also renamed the section Explore to reflect its expanded role. I replaced the list view with the AI assistant because GenAI could handle most discovery tasks more 
-                            naturally. Compared with the map view, the list view was also used less frequently. Given the freed-up space, I elevated the “Saved List” to the primary navigation to better support expats who 
-                            frequently return to the same money changers.
+                            I moved from a standalone assistant to one <b>embedded in the Explore experience</b>, creating a more seamless discovery flow. I then replaced the less frequently 
+                            used list view with the AI assistant, since GenAI could support most discovery tasks in a more natural and flexible way.
                           </p>
                         
                           <p>
-                            I also reworked the conversation structure — shifting from a single conversation thread to scenario-based channels driven by user filters and entry points. This later evolved into <b>starting a new 
-                            conversation by default</b>, while still allowing users to revisit past sessions. This approach helps <b>reduce hallucination risks and prevents outdated information from carrying over and potentially 
-                            misleading users</b>.
+                            I also reworked the conversation structure — shifting from a single ongoing thread to scenario-based conversations shaped by users’ filters and entry points. 
+                            This later evolved into <b>starting a new conversation by default</b>, while still letting users revisit past sessions. This helps <b>reduce hallucination risks and 
+                            prevents outdated information from carrying over</b>.
                           </p>                           
                         
                           <p>
-                            Finally, I shifted the AI assistant from a general help tool to a more <b>guided, personalized experience</b> powered by suggested queries. I also finalized the service logic: the assistant is only 
-                            available after login to <b>protect user privacy, ensure data security, and optimize system resource allocation</b>.
+                            I later shifted the assistant from a general-purpose help tool to a more <b>guided, personalized experience</b> with suggested queries. Finally, I defined the access 
+                            logic: the assistant is only available after login to <b>protect user privacy, ensure data security, and focus system resources on engaged users</b>.
                           </p>                              
                         
                           </td>
@@ -1176,9 +1174,11 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-60.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            For the query input, I introduced suggested prompts to <b>eliminate the blank-state problem and help users get started quickly</b>. I also made the input flexible, allowing users to type, use voice, or attach 
-                            media. To keep the interface clean and intuitive, I grouped related functions together and aligned interaction patterns with familiar GenAI conventions. During iteration, I replaced the expand input 
-                            control with a clear-all action. Since the input field auto-expands and queries are typically short in this context, expansion added little value. This change also improved space efficiency on mobile.
+                            For the query input, I added suggested prompts to <b>help users get started and avoid a blank state</b>, along with a flexible input that supports text, voice, 
+                            and media attachments. To keep the interface clean and intuitive, I grouped related functions together and aligned interaction patterns with familiar GenAI 
+                            conventions. During iteration, I replaced the expand input control with a clear-all action. Since the input field auto-expands and queries are typically 
+                            short in this context, expansion added little value. This change also improved space efficiency on mobile. I also considered the web experience to <b>ensure 
+                            consistency across the mobile app and website</b>.
                           </p></td>
                         </tr>
                     
@@ -1211,10 +1211,9 @@
                         
                           <p>
                             Upon further consideration, I realized that exchange rates and store availability change over time. Without real-time updates, the information could quickly become outdated and potentially mislead 
-                            users when they return. To ensure accuracy, I redirected users from the data grid to the money changer’s main page,  where they can verify real-time rates and availability before reserving. <b>To 
-                            increase transparency and build trust, I also added a brief explanation of how the results were generated</b>, helping connect the output with the follow-up suggestions. Finally, to <b>improve one-handed 
-                            usability, account for varying dexterity, and cover the cases with multiple follow-up suggestions</b>, I introduced recommended query buttons, enabling users to easily scan, tap, and continue the 
-                            conversation.
+                            users when they return. To ensure accuracy, I redirected users from the data grid to the money changer’s main page,  where they can verify real-time rates and availability before reserving. To 
+                            <b>increase transparency and build trust</b>, I also added a <b>brief explanation of how the results were generated</b>, connecting them to the suggested next steps. Finally, to <b>improve one-handed 
+                            usability and accommodate different levels of dexterity</b>, I introduced <b>recommended query buttons</b>. They also make it easier to scan multiple suggestions, tap one, and continue the conversation.
                           </p>                           
                         
                           </td>
@@ -1243,16 +1242,13 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-62.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            Regarding the assistant’s scope, my initial idea was to go beyond currency exchange to cover broader finance-related questions to drive more engagement. Topics included resource allocation guidance, 
-                            investigation suggestions, or even definitions and regulatory lookups. I also considered allowing more open-ended conversations with the assistant responding first and then gently steering users back 
-                            to finance topics.
+                            For the assistant’s scope, I initially considered going beyond currency exchange to cover broader finance-related questions and encourage more engagement. 
+                            I also explored allowing more open-ended conversations with the assistant responding first and then gently steering users back to finance topics. However, 
+                            I realized this could waste system resources and generate low-value data for 4xLabs, given its focus on financial services. <b>Taking the company’s strategic 
+                            direction into account</b>, I shifted to a more <b>focused strategy</b>: clearly defining the assistant’s scope and guiding users toward relevant finance-related 
+                            queries while keeping the experience helpful and frustration-free.
                           </p>
-                        
-                          <p>
-                            However, I later realized this could lead to inefficient resource usage and generate low-value data for 4xLabs, given its focus on financial services. <b>Taking the company’s strategic direction into 
-                            account</b>, I ultimately chose a more <b>constrained approach</b>: clearly defining the assistant’s scope and guiding users directly toward finance-related queries while minimizing frustration.
-                          </p>                           
-                        
+                                           
                           </td>
                         </tr>
                     
@@ -1278,9 +1274,9 @@
                         <tr>
                           <td class="column06"><img src="img/icons_numbers/icons_number-63.png" class="icon_numbers" alt="Number 1"></td>
                           <td class="column02"><p>
-                            As the core user flow evolved and AI responses improved, I expanded the design to cover additional scenarios beyond non-financial queries. For risky or harmful inputs, the system clearly communicates 
-                            its limitations and gently redirects users back to relevant exchange topics. I also addressed cases where questions cannot be answered. My approach was guided by a few key principles: <b>clarity 
-                            and brevity</b>, <b>proactive interaction guidance</b>, and <b>dynamic error handling through clarifying questions</b>.
+                            As the core user flow evolved and AI responses improved, I expanded the design to cover more scenarios. For risky or harmful inputs, the assistant clearly 
+                            explains its limitations and gently redirects users to relevant currency exchange topics. I also designed for questions the assistant cannot answer, guided 
+                            by three key principles: <b>clarity and brevity</b>, <b>proactive interaction guidance</b>, and <b>dynamic error handling through clarifying questions</b>.
                           </p></td>
                         </tr>
                     
@@ -1329,8 +1325,8 @@
 
 
                 <p>
-                  Once users select a money changer, they can initiate the reservation process by completing and submitting a reservation form to lock in the exchange rate and amount. Upon submission, users receive a 
-                  notification for status update and a confirmation that can be presented at the storefront. This project also covers the ideal end-to-end reservation flow to ensure a smooth and reliable experience.
+                  Once users select a money changer, they can submit a reservation form to lock in their preferred exchange rate and amount. They then receive status updates and a 
+                  confirmation to present at the store. The project also explores the ideal end-to-end reservation journey to ensure a smooth and reliable experience.
                 </p>   
 
 
@@ -1358,8 +1354,8 @@
                           </p>
                         
                           <p>
-                            I also improved how reservation drafts are handled. Drafts are securely saved to the user's account, with <b>sensitive information (e.g., ID numbers) masked to comply with the Personal Data Protection Act 
-                            (PDPA) requirements</b>. Accessing a saved draft requires re-authentication, such as SMS verification, and inactive drafts are automatically deleted after 14 days to <b>protect user privacy</b>.
+                            I also improved how reservation drafts are handled. Drafts are securely saved to the user's account, with <b>sensitive information (e.g., ID numbers) masked to comply with the PDPA requirements</b>. 
+                            Accessing a saved draft requires re-authentication, such as SMS verification, and inactive drafts are automatically deleted after 14 days to <b>protect user privacy</b>.
                           </p>                             
                         
                           </td>
@@ -1394,9 +1390,9 @@
                           </p>
                           
                           <p>
-                            I also defined a comprehensive notification taxonomy, balancing business goals with user experience. The system <b>supports eight notification types</b>: reservation confirmation, reservation cancellation, 
-                            exchange completion, feedback reminders, reservation draft reminders, reservation deletion reminders, rate-drop alerts (from saved money changers and frequently exchanged currencies, configurable in 
-                            settings), and new money changer promotions — designed to <b>benefit both users and money changers without becoming intrusive</b>.
+                            I also defined a comprehensive <b>notification system</b>, <b>benefiting both users and money changers without becoming intrusive</b>, with eight notification types: reservation confirmation, reservation cancellation, 
+                            exchange completion, feedback reminders, reservation draft reminders, reservation deletion reminders, rate-drop alerts (from saved money changers and frequently exchanged currencies, configurable in settings),
+                            and new money changer promotions.
                           </p>    
 
                           <p>
@@ -1451,8 +1447,8 @@
                       <h6 class="get4x_color">Demonstrate the core user flow – exploration, reservation, and confirmation.</h6>
 
                      <p>
-                        Below are the hi-fi prototypes demonstrating the core user flow of the redesigned Get4x — from exploration and reservation to confirmation. In addition to mobile app (iOS) version, I also created a web 
-                        mockup using the Explore first layer as an example to show how the new visual style and design patterns translate seamlessly to the web experience.
+                        Below are the hi-fi prototypes showcasing the redesigned Get4x core journey, from exploration and reservation to confirmation. Alongside the iOS app, I also 
+                        created a web mockup of the Explore landing screen to demonstrate how the new visual style and design patterns translate across platforms.
                      </p>  
     
                       </div>
